@@ -6,7 +6,7 @@ https://nvd.nist.gov/800-53/Rev4
 
 Languages:
 - English (en)
-- Brazilian Portuguese (br)
+- Brazilian Portuguese (br) **( INCOMPLETE / _INCOMPLETO_ )**
 
 Help me translate it if you can! :)  
 _Me ajude a traduzir se puder! :)_
