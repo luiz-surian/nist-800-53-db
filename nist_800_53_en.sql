@@ -270,8 +270,7 @@ d. Determines that the following events are to be audited within the information
 "Audit record content that may be necessary to satisfy the requirement of this control, includes, for example, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked. Event outcomes can include indicators of event success or failure and event-specific results (e.g., the security state of the information system after the event occurred)."
 ),
 (29, 2, 4, 1, 1,
-"
-AUDIT STORAGE CAPACITY",
+"AUDIT STORAGE CAPACITY",
 "The organization allocates audit record storage capacity in accordance with [Assignment: organization-defined audit record storage requirements].",
 "Organizations consider the types of auditing to be performed and the audit processing requirements when allocating audit storage capacity. Allocating sufficient audit storage capacity reduces the likelihood of such capacity being exceeded and resulting in the potential loss or reduction of auditing capability."
 ),

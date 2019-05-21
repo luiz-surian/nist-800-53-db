@@ -330,7 +330,7 @@ a. Desenvolve, documenta e dissemina para [Atribuição: funcionários e/ou depa
 2. Procedimentos para facilitar a implementação da política de auditoria e prestação de contas e controles associados de auditoria e prestação de contas; e
 b. Revisa e atualiza:
 1. Política de auditoria e prestação de contas [Atribuição: frequência definida pela organização]; e
-2. Procedimentos de auditoria e prestação de contas [Atribuição: frequência definida pela organização]."
+2. Procedimentos de auditoria e prestação de contas [Atribuição: frequência definida pela organização].",
 "Este controle aborda o estabelecimento de políticas e procedimentos para a implementação efetiva de controles de segurança selecionados e melhorias de controle na família AU. As políticas e procedimentos refletem as leis federais aplicáveis, ordens executivas, diretivas, regulamentos, políticas, padrões e diretrizes.
 Políticas e Procedimentos a nível organizacional podem substituir a necessidade de políticas e procedimentos específicos por sistemas.
 A política pode ser incluída como parte da política geral de segurança da informação para organizações ou, inversamente, pode ser representada por múltiplas políticas refletindo a natureza complexa da organização.
