@@ -279,24 +279,42 @@ b. Emprega [Atribuição: mecanismo automáticos ou processos manuais definidos 
 A informação deve ser classificada de acordo com o conteúdo, tipo, categoria de segurança ou restrições de acesso aplicáveis."
 ),
 (22, 1, 22, 3, 1,
-"", 
-"",
-""
+"CONTEÚDO PUBLICAMENTE ACESSÍVEL", 
+"A organização:
+a. Designa funcionários autorizados para publicar informações em sistemas que são publicamente acessíveis;
+b. Treina os funcionários para garantir que as informações públicas não contenham informações que não deveriam ser acessíveis publicamente;
+c. Revisa o conteúdo proposto antes de ser publicado para garantir que não possui informações confidenciais; e
+d. Revisa os conteúdos já publicados a cada [Atribuição: período de tempo definido pela organização] e remove informações que não deveriam ter sido publicadas caso sejam encontradas.",
+"Em acordo com a lei, Ordens Executivas, diretrizes, políticas, regulamentos, padrões e/ou guias, o público geral não está autorizado a acessar informações confidenciais (por exemplo, informações protegidas pela LGPD ou informações proprietárias). Esse controle é sobre sistemas que são controlados pela organização e são acessíveis ao público geral, geralmente sem identificação ou autenticação.
+A disponibilização publica de informações não-organizacionais também se enquadra às políticas da empresa."
 ),
 (23, 1, 23, 0, 0,
-"DATA MINING PROTECTION", 
-"The organization employs [Assignment: organization-defined data mining prevention and detection techniques] for [Assignment: organization-defined data storage objects] to adequately detect and protect against data mining.",
-"Data storage objects include, for example, databases, database records, and database fields. Data mining prevention and detection techniques include, for example: I. limiting the types of responses provided to database queries; II. limiting the number/frequency of database queries to increase the work factor needed to determine the contents of such databases; and III. notifying organizational personnel when atypical database queries or accesses occur. This control focuses on the protection of organizational information from data mining while such information resides in organizational data stores. In contrast, AU-13 focuses on monitoring for organizational information that may have been mined or otherwise obtained from data stores and is now available as open source information residing on external sites, for example, through social networking or social media websites."
+"PROTEÇÃO CONTRA MINERAÇÃO DE DADOS", 
+"A organização emprega [Atribuição: técnicas de detecção e prevenção de mineração de dados definidos pela organização] para [Atribuição: objetos de armazenamento de informações] a fim de adequadamente detectar e proteger suas informações contra mineração de dados.",
+"Mineração de dados (data mining) é o processo de explorar grandes quantidades de dados à procura de padrões consistentes, como regras de associação ou sequências temporais, para obter informações privilegiadas sem prévia autorização.
+Objetos de armazenamento de informações incluem, por exemplo, banco de dados, tabelas, campos e documentos.
+Técnicas de prevenção e detecção de mineração de dados incluem, por exemplo:
+I. Limitar o tipo das respostas provenientes de comandos ao banco de dados;
+II. Limitar a quantidade e frequência de comandos ao banco de dados;
+III. Notificar funcionários autorizados quando comandos atípicos acontecerem ao banco de dados.
+Esse controle é sobre proteger e evitar que os dados sejam minerados, em contra partida, o controle AU-13 retrata quando o dado já foi minerado e está disponível a público em sites externos, como redes sociais por exemplo."
 ),
 (24, 1, 24, 0, 0,
-"ACCESS CONTROL DECISIONS", 
-"The organization establishes procedures to ensure [Assignment: organization-defined access control decisions] are applied to each access request prior to access enforcement.",
-"Access control decisions (also known as authorization decisions) occur when authorization information is applied to specific accesses. In contrast, access enforcement occurs when information systems enforce access control decisions. While it is very common to have access control decisions and access enforcement implemented by the same entity, it is not required and it is not always an optimal implementation choice. For some architectures and distributed information systems, different entities may perform access control decisions and access enforcement."
+"DECISÕES DE CONTROLE DE ACESSO",
+"A organização estabelece procedimentos para garantir que [Atribuição: decisões de controle de acesso definidas pela organização] sejam aplicadas a cada solicitação de acesso antes de ser efetivado.",
+"As decisões de controle de acesso (também conhecidas como decisões de autorização) ocorrem quando as informações de autorização são aplicadas a acessos específicos. Em contraste, a aplicação de acesso ocorre quando os sistemas de informações aplicam as decisões de controle de acesso. Embora seja muito comum ter decisões de controle de acesso e aplicação de acesso implementadas por na mesma entidade, não é necessária e nem sempre é uma opção de implementação ideal. Para algumas arquiteturas e sistemas de informações distribuídas, diferentes entidades podem executar decisões de controle de acesso e acesso à aplicação. "
 ),
 (25, 1, 25, 0, 0,
-"REFERENCE MONITOR", 
-"The information system implements a reference monitor for [Assignment: organization-defined access control policies] that is tamper proof, always invoked, and small enough to be subject to analysis and testing, the completeness of which can be assured.",
-"Information is represented internally within information systems using abstractions known as data structures. Internal data structures can represent different types of entities, both active and passive. Active entities, also known as subjects, are typically associated with individuals, devices, or processes acting on behalf of individuals. Passive entities, also known as objects, are typically associated with data structures such as records, buffers, tables, files, inter-process pipes, and communications ports. Reference monitors typically enforce mandatory access control policies - a type of access control that restricts access to objects based on the identity of subjects or groups to which the subjects belong. The access controls are mandatory because subjects with certain privileges (i.e., access permissions) are restricted from passing those privileges on to any other subjects, either directly or indirectly - that is, the information system strictly enforces the access control policy based on the rule set established by the policy. The tamper proof property of the reference monitor prevents adversaries from compromising the functioning of the mechanism. The always invoked property prevents adversaries from bypassing the mechanism and hence violating the security policy. The smallness property helps to ensure the completeness in the analysis and testing of the mechanism to detect weaknesses or deficiencies (i.e., latent flaws) that would prevent the enforcement of the security policy."
+"MONITOR DE REFERÊNCIA", 
+"O sistema implementa um monitor de referência para [Atribuição: políticas de controle de acesso definidos pela organização] que é inviolável, sempre presente, e pequeno o suficiente para estar sujeito a análise e teste, cuja integridade pode ser assegurada.",
+"A informação é representada internamente em sistemas de informação usando abstrações conhecidas como estruturas de dados. Estruturas de dados internas podem representar diferentes tipos de entidades, ativas e passivas.
+Entidades ativas, são normalmente associadas a indivíduos, dispositivos ou processos agindo em nome de indivíduos.
+As entidades passivas, são normalmente associadas a estruturas de dados, como registros, buffers, tabelas, arquivos, pipes entre processos e portas de comunicação.
+Os monitores de referência normalmente aplicam políticas de controle de acesso obrigatório - um tipo de controle de acesso que restringe o acesso a objetos com base na identidade dos assuntos ou grupos aos quais os assuntos pertencem.
+Os controles de acesso são obrigatórios porque os sujeitos com certos privilégios (isto é, permissões de acesso) são impedidos de passar esses privilégios para qualquer outro assunto, direta ou indiretamente, ou seja, o sistema de informações aplica rigorosamente a política de controle de acesso com base no conjunto de regras estabelecido pela política.
+A propriedade inviolável do monitor de referência impede que os adversários comprometam o funcionamento do mecanismo.
+A propriedade sempre presente impede que os adversários contornem o mecanismo e, portanto, violem a política de segurança.
+A propriedade de ser pequeno ajuda a garantir a integridade na análise e teste do mecanismo para detectar deficiências ou deficiências (ou seja, falhas latentes) que impediriam a aplicação da política de segurança."
 );
 
 --AU - Audit and Accountability
@@ -305,33 +323,43 @@ INSERT INTO "security_control"
 "control", "description", "guidance")
 VALUES
 (26, 2, 1, 1, 1,
-"AUDIT AND ACCOUNTABILITY POLICY AND PROCEDURES",
-"The organization: 
-a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
-1. An audit and accountability policy that addresses purpose, scope, roles, responsibilities, management commitment, coordination among organizational entities, and compliance; and 
-2. Procedures to facilitate the implementation of the audit and accountability policy and associated audit and accountability controls; and 
-b. Reviews and updates the current: 
-1. Audit and accountability policy [Assignment: organization-defined frequency]; and 
-2. Audit and accountability procedures [Assignment: organization-defined frequency]. ",
-"This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the AU family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
+"POLÍTICA E PROCEDIMENTOS DE AUDITORIA E DE RESPONSABILIDADE",
+"A organização:
+a. Desenvolve, documenta e dissemina para [Atribuição: funcionários e/ou departamentos definidos pela organização]:
+1. Uma política de auditoria e prestação de contas que contemple propósito, escopo, funções, responsabilidades, comprometimento de gerenciamento, coordenação entre entidades organizacionais e conformidade; e
+2. Procedimentos para facilitar a implementação da política de auditoria e prestação de contas e controles associados de auditoria e prestação de contas; e
+b. Revisa e atualiza:
+1. Política de auditoria e prestação de contas [Atribuição: frequência definida pela organização]; e
+2. Procedimentos de auditoria e prestação de contas [Atribuição: frequência definida pela organização]."
+"Este controle aborda o estabelecimento de políticas e procedimentos para a implementação efetiva de controles de segurança selecionados e melhorias de controle na família AU. As políticas e procedimentos refletem as leis federais aplicáveis, ordens executivas, diretivas, regulamentos, políticas, padrões e diretrizes.
+Políticas e Procedimentos a nível organizacional podem substituir a necessidade de políticas e procedimentos específicos por sistemas.
+A política pode ser incluída como parte da política geral de segurança da informação para organizações ou, inversamente, pode ser representada por múltiplas políticas refletindo a natureza complexa da organização.
+Os procedimentos podem ser estabelecidos para o programa de segurança em geral e para sistemas específicos, se necessário.
+A estratégia de gerenciamento de risco organizacional é um fator chave no estabelecimento de políticas e procedimentos."
 ),
 (27, 2, 2, 1, 1,
-"AUDIT EVENTS",
-"The organization: 
-a. Determines that the information system is capable of auditing the following events: [Assignment: organization-defined auditable events]; 
-b. Coordinates the security audit function with other organizational entities requiring audit-related information to enhance mutual support and to help guide the selection of auditable events; 
-c. Provides a rationale for why the auditable events are deemed to be adequate to support after-the-fact investigations of security incidents; and 
-d. Determines that the following events are to be audited within the information system: [Assignment: organization-defined audited events (the subset of the auditable events defined in AU-2 a.) along with the frequency of (or situation requiring) auditing for each identified event].",
-"An event is any observable occurrence in an organizational information system. Organizations identify audit events as those events which are significant and relevant to the security of information systems and the environments in which those systems operate in order to meet specific and ongoing audit needs. Audit events can include, for example, password changes, failed logons, or failed accesses related to information systems, administrative privilege usage, PIV credential usage, or third-party credential usage. In determining the set of auditable events, organizations consider the auditing appropriate for each of the security controls to be implemented. To balance auditing requirements with other information system needs, this control also requires identifying that subset of auditable events that are audited at a given point in time. For example, organizations may determine that information systems must have the capability to log every file access both successful and unsuccessful, but not activate that capability except for specific circumstances due to the potential burden on system performance. Auditing requirements, including the need for auditable events, may be referenced in other security controls and control enhancements. Organizations also include auditable events that are required by applicable federal laws, Executive Orders, directives, policies, regulations, and standards. Audit records can be generated at various levels of abstraction, including at the packet level as information traverses the network. Selecting the appropriate level of abstraction is a critical aspect of an audit capability and can facilitate the identification of root causes to problems. Organizations consider in the definition of auditable events, the auditing necessary to cover related events such as the steps in distributed, transaction-based processes (e.g., processes that are distributed across multiple organizations) and actions that occur in service-oriented architectures."
+"EVENTOS DE AUDITORIA",
+"A organização:
+a. Determina que o sistema é capaz de auditar os seguintes eventos: [Atribuição: eventos auditáveis ​​definidos pela organização];
+b. Coordena a função de auditoria de segurança com outras entidades organizacionais que exigem informações relacionadas à auditoria para aprimorar o suporte mútuo e ajudar a orientar a seleção de eventos auditáveis;
+c. Fornece uma justificativa para o motivo pelo qual os eventos auditáveis ​​são considerados adequados para apoiar investigações após o fato de incidentes de segurança; e
+d. Determina que os seguintes eventos devem ser auditados dentro do sistema de informação: [Atribuição: eventos auditados definidos pela organização (o subconjunto dos eventos auditáveis ​​definidos em AU-2 a.) Juntamente com a frequência de (ou situação que requer) auditoria para cada evento identificado].",
+"Um evento é qualquer ocorrência observável em sistemas organizacionais.
+A organização identifica os eventos de auditoria como aqueles que são significativos e relevantes para a segurança dos sistemas de informação e os ambientes em que esses sistemas operam para atender necessidades de auditoria específicas e contínuas.
+Os eventos podem incluir, por exemplo, alterações de senha, logons com falha ou falhas de acesso a sistemas de informações, uso de privilégios administrativos, uso de credenciais de PIV ou uso de credenciais de terceiros.
+Ao determinar o conjunto de eventos auditáveis, a organização deverá considerar a auditoria apropriada para equilibrar os requisitos de auditoria com outras necessidades do sistema de informação, esse controle também requer a identificação do subconjunto de eventos auditáveis ​​que são auditados em um determinado momento, por exemplo, a organização pode determinar que os sistemas devem ter a capacidade de registrar todos os acessos bem-sucedidos e mal-sucedidos a arquivos, exceto em circunstâncias específicas, devido à  potencial sobrecarga no desempenho do sistema.
+Os requisitos de auditoria, incluindo a necessidade de eventos auditáveis, podem ser referenciados em outros controles de segurança e aprimoramentos de controle. As organizações também incluem eventos auditáveis ​​que são exigidos pelas leis federais aplicáveis, ordens executivas, diretivas, políticas, regulamentos e normas.
+Os registros de auditoria podem ser gerados em vários níveis de abstração, inclusive no nível do pacote, à medida que as informações percorrem a rede. Selecionar o nível apropriado de abstração é um aspecto crítico de um recurso de auditoria e pode facilitar a identificação de causas-raiz para problemas.
+A organização deverá considerar na definição de eventos auditáveis, a auditoria necessária para cobrir eventos relacionados, como as etapas em processos distribuídos e baseados em transações (por exemplo, processos distribuídos em várias organizações) e ações que ocorrem em arquiteturas orientadas a serviços."
 ),
 (28, 2, 3, 1, 1,
-"CONTENT OF AUDIT RECORDS",
-"The information system generates audit records containing information that establishes what type of event occurred, when the event occurred, where the event occurred, the source of the event, the outcome of the event, and the identity of any individuals or subjects associated with the event.",
-"Audit record content that may be necessary to satisfy the requirement of this control, includes, for example, time stamps, source and destination addresses, user/process identifiers, event descriptions, success/fail indications, filenames involved, and access control or flow control rules invoked. Event outcomes can include indicators of event success or failure and event-specific results (e.g., the security state of the information system after the event occurred)."
+"CONTEÚDO DOS REGISTROS DE AUDITORIA", 
+"O sistema gera registros de auditoria que possuem informações que estabelecem qual tipo de evento ocorreu, quando aconteceu, aonde, e o resultado ocorrido em conjunto com a identificação de usuários e processos envolvidos no sistema.",
+"Os conteúdos dos registros de auditoria necessários para satisfazer o requisito desse controle, inclui, por exemplo, registros de data e hora, endereços de origem e destino, identificadores de usuário / processo, descrições de eventos, indicações de sucesso / falha, nomes de arquivos envolvidos e controle de acesso ou controle de fluxo regras invocadas.
+Os resultados do evento podem incluir indicadores de sucesso ou falha do evento e resultados específicos do evento (por exemplo, o estado de segurança do sistema de informações após a ocorrência do evento)."
 ),
 (29, 2, 4, 1, 1,
-"
-AUDIT STORAGE CAPACITY",
+"AUDIT STORAGE CAPACITY",
 "The organization allocates audit record storage capacity in accordance with [Assignment: organization-defined audit record storage requirements].",
 "Organizations consider the types of auditing to be performed and the audit processing requirements when allocating audit storage capacity. Allocating sufficient audit storage capacity reduces the likelihood of such capacity being exceeded and resulting in the potential loss or reduction of auditing capability."
 ),
