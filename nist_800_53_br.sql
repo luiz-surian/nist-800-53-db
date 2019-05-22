@@ -53,7 +53,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(1, 1, 1, 1, 1,
+(1, 1, 1, 1, 1, --AC-1
 "POLÍTICA E PROCEDIMENTOS DE CONTROLE DE ACESSO",
 "A organização:
 a. Desenvolve, documenta e dissemina para [Atribuição: funcionários e/ou departamentos definidos pela organização]:
@@ -62,14 +62,14 @@ a. Desenvolve, documenta e dissemina para [Atribuição: funcionários e/ou depa
 b. Revisa e atualiza:
 1. Política de controle de acesso a cada [Atribuição: frequência definida pela organização]; e
 2. Procedimentos de controle de acesso a cada [Atribuição: frequência definida pela organização].",
-"Esse controle aborda a criação de políticas e procedimentos para a implementação efetiva de controles de segurança e aprimoramentos na família 'AC'.
+"Esse controle aborda a criação de políticas e procedimentos para a implementação efetiva de controles de segurança e aprimoramentos na família AC.
 As políticas e procedimentos refletem as leis federais, ordens executivas, diretivas, regulamentos, políticas, normas e diretrizes.
 Políticas e procedimentos de segurança a nível organizacional podem substituir a necessidade de políticas e procedimentos específicos por sistema.
 A política pode fazer parte da política geral de segurança da informação organizacional ou, poderá0 ser representada por múltiplas políticas individuais.
 Os procedimentos podem ser estabelecidos para o programa de segurança organizacional e/ou para sistemas de informação específicos, se necessário.
 A estratégia de gerenciamento de risco organizacional é um fator chave no estabelecimento das políticas e procedimentos."
 ),
-(2, 1, 2, 1, 1,
+(2, 1, 2, 1, 1, --AC-2
 "GESTÃO DE CONTA",
 "A organização:
 a. Identifica e seleciona os seguintes tipos de contas do sistema de informações para oferecer suporte a missões / funções de negócios organizacionais: [Atribuição: tipos de conta do sistema de informações definidas pela organização];
@@ -102,12 +102,12 @@ Essas contas permanecem disponíveis e não estão sujeitas a datas automáticas
 I. quando contas compartilhadas / de grupo, de emergência ou temporárias não são mais necessárias; ou 
 II. quando os indivíduos são transferidos ou terminados. Alguns tipos de contas do sistema de informações podem exigir treinamento especializado."
 ),
-(3, 1, 3, 1, 1,
+(3, 1, 3, 1, 1, --AC-3
 "GARANTIA DE ACESSO", 
 "O sistema de informação garante que apenas funcionários e/ou sistemas autorizados possuam acesso à informações e recursos do sistema de acordo com as políticas de controle de acesso.",
 "Políticas de controle de acesso (por exemplo, políticas baseadas em identidade, políticas baseadas em funções, matrizes de controle, criptografia) controlam o acesso entre entidades ou assuntos ativos (ou seja, usuários ou processos agindo em nome de usuários) e entidades ou objetos passivos (por exemplo, dispositivos, arquivos, registros, domínios) em sistemas de informação. Além de impor o acesso autorizado no nível do sistema de informações e reconhecer que os sistemas de informação podem hospedar muitos aplicativos e serviços em apoio a missões organizacionais e operações de negócios, os mecanismos de imposição de acesso também podem ser empregados no nível de aplicativo e serviço para fornecer maior segurança das informações."
 ),
-(4, 1, 4, 1, 2,
+(4, 1, 4, 1, 2, --AC-4
 "APLICAÇÃO DO FLUXO DE INFORMAÇÃO", 
 "O sistema de informações impõe controles sobre o fluxo de informações dentro do sistema e entre sistemas interconectados baseados em [Atribuição: políticas de controle de fluxo de informações definidas pela organização].",
 "O controle do fluxo de informações regula onde as informações podem viajar dentro de um sistema e/ou entre sistemas e sem explícita consideração aos acessos subsequentes a essas informações. As restrições de controle de fluxo incluem, por exemplo, impedir que as informações sejam transmitidas em claro para a Internet, bloqueando o tráfego externo que afirma ser de dentro da organização, restringindo solicitações à Internet que não são provenientes do Proxy interno, e limitar as transferências de informações entre organizações com base em estruturas de dados e conteúdo. A transferência de informações entre sistemas de informações que representam diferentes domínios de segurança com diferentes diretivas de segurança apresenta o risco de tais transferências violarem uma ou mais políticas de segurança de domínio. Em tais situações, os proprietários / administradores de informações fornecem orientação em pontos de execução de política designados entre sistemas interconectados. As organizações consideram a exigência de soluções de arquitetura específicas quando necessário para aplicar políticas de segurança específicas. A aplicação inclui, por exemplo:
@@ -116,7 +116,7 @@ II. empregar mecanismos de hardware para impor fluxos de informação unidirecio
 III. implementar mecanismos de recondicionamento confiáveis ​​para reatribuir atributos de segurança e etiquetas de segurança. 
 A organização deverá empregar políticas de controle de fluxo de informações e mecanismos de aplicação para controlar o fluxo de informações entre fontes e destinos designados (por exemplo, redes, indivíduos e dispositivos) nos sistemas de informação e entre sistemas interconectados. O controle de fluxo é baseado nas características da informação e/ou no caminho da informação. A aplicação ocorre, por exemplo, em dispositivos de proteção de limites (por exemplo, gateways, roteadores, proteções, túneis criptografados, firewalls) que empregam conjuntos de regras ou estabelecem configurações que restringem os serviços do sistema de informações, fornecem um recurso de filtragem de pacotes baseado em informações de cabeçalho ou capacidade de filtragem de mensagens com base no conteúdo da mensagem (por exemplo, implementando pesquisas por palavra-chave ou usando características do documento). Também deve-se considerar a confiabilidade dos mecanismos de filtragem / inspeção (por exemplo, hardware, firmware e componentes de software) que são essenciais para a imposição do fluxo de informações. Os controles AC-3 até AC-22 abordam principalmente as necessidades de solução entre domínios, que se concentram em técnicas de filtragem mais avançadas, análises aprofundadas e mecanismos de imposição de fluxo mais fortes implementados em produtos de domínio cruzado, por exemplo, proteções de alta segurança. Tais capacidades geralmente não estão disponíveis em produtos comerciais."
 ),
-(5, 1, 5, 1, 2,
+(5, 1, 5, 1, 2, --AC-5
 "SEGRAGAÇÃO DE FUNÇÕES", 
 "A organização:
 a. Segrega [Atribuição: funções definidas pela organização];
@@ -128,7 +128,7 @@ I. Dividir acesso e funções do sistema entre diferentes funcionários e/ou dep
 II. Atribuir funções de suporte do sistema a diferentes usuários (Por exemplo, controle do sistema, programação, controle de configurações, testes de qualidade e segurança de rede); e
 III. Garante que funcionários da segurança que administram as funções de controle de acesso não administrem as auditorias."
 ),
-(6, 1, 6, 1, 2,
+(6, 1, 6, 1, 2, --AC-6
 "MENOR PRIVILÉGIO", 
 "A organização deverá empregar o princípio do menor privilégio, permitindo que usuários, usuários sistêmicos e processos possuam acesso apenas as funções necessárias para a execução de sua função.",
 "O princípio do menor privilégio também deverá ser aplicado aos processos usados pelos sistemas de informação, garantindo que esses processos não possuam permissões mais do que as necessárias para garantir seu funcionamento.
@@ -136,7 +136,7 @@ A organização poderá criar novos processos, funções, grupos e usuários de 
 O princípio do menor privilégio deverá ser adotado ao desenvolvimento, implementação e operação dos sistemas de informação.
 O uso de contas Administrativas, Root, Sudo, devem ser evitadas ao máximo."
 ),
-(7, 1, 7, 2, 1,
+(7, 1, 7, 2, 1, --AC-7
 "CONTROLE DE TENTATIVAS SEM SUCESSO DE LOGIN", 
 "O sistema:
 a. Deverá limitar tentativas inválidas de login consecutivas a [Atribuição: número definido pela organização] vezes por um usuário dentro de [Atribuição: período de tempo definido pela organização]; e
@@ -144,7 +144,7 @@ b. Automaticamente [Selecionar: bloqueia a conta por [Atribuição: período de 
 "Esse controle se aplica a todos os sistemas, independente se forem acessado internamente ou externamente. Para se prevenir uma potencial indisponibilidade de serviço (DoS) ou ataques de força-bruta para descobrir um login válido.
 Esse controle deverá ser aplicado tanto no sistema operacional quanto nas aplicações."
 ),
-(8, 1, 8, 1, 1,
+(8, 1, 8, 1, 1, --AC-8
 "NOTIFICAÇÃO SOBRE O USO DO SISTEMA", 
 "O sistema:
 a. Antes de disponibilizar o acesso deve mostrar para os usuários [Atribuição: mensagem definida pela organização] que possui informações sobre o controle de segurança e privacidade consistentes com as leis federais, Ordens Executivas, diretrizes, políticas, regulamentos, padrões e guias, e mostra que:
@@ -161,17 +161,17 @@ c. Para sistemas que são acessíveis publicamente:
 Esses avisos só são necessários para a interface dos sistemas que irão possui interação humana, portanto não são necessários para processos ou usuários sistêmicos.
 A organização deverá considerar que essa mensagem poderá necessitar ser traduzida para diferentes línguas de acordo com as regiões demográficas."
 ),
-(9, 1, 9, 0, 0,
+(9, 1, 9, 0, 0, --AC-9
 "NOTIFICAÇÃO SOBRE ÚLTIMO LOGIN", 
 "O sistema deverá notificar o usuário, assim que fizer um login com sucesso, o dia e hora do seu ultimo logon (acesso).",
 "Esse controle é aplicável sobre logons de sistemas que possuem interfaces gráficas e em outros tipos de arquiteturas (por exemplo, terminal)."
 ),
-(10, 1, 10, 3, 3,
+(10, 1, 10, 3, 3, --AC-10
 "CONTROLE DE SESSÃO ATUAL", 
 "O sistema deverá limitar o número de sessões consecutivas de cada usuário e/ou grupo para [Atribuição: número definido pela organização].",
 "A organização poderá definir o número máximo de sessões ocorrendo ao mesmo tempo, ou seja, um usuário logando com a mesma conta em várias janelas e/ou dispositivos diferentes. Essa definição poderá ser global. por tipo de conta (por exemplo, usuário privilegiado, usuário comum, domínio, grupo, aplicação), por conta individual ou por uma combinação de ambos."
 ),
-(11, 1, 11, 3, 2,
+(11, 1, 11, 3, 2, --AC-11
 "BLOQUEAR SESSÃO", 
 "O sistema:
 a. Previne que suas funções sejam acessadas após efetuar o bloqueio automático quando o usuário ficar inativo por [Atribuição: período de tempo definido pela organização] ou por pedido do próprio usuário; e
@@ -180,19 +180,19 @@ b. Permanece sem acesso até que o usuário refaça o login com as credenciais c
 Geralmente este controle fica a nível do sistema operacional, porém poderá ser implementado a nível de aplicação caso seja necessário.
 Esse controle não substitui a necessidade do usuário realmente sair do sistema, como deve ocorrer, por exemplo, ao final do expediente."
 ),
-(12, 1, 12, 2, 2,
+(12, 1, 12, 2, 2, --AC-12
 "FINALIZAR SESSÃO", 
 "O sistema irá efetuar o logout do usuário automaticamente após [Atribuição: controles e eventos definidos pela organização]",
 "Esse controle se trata da finalização do acesso lógico aos sistemas, ao contrário do controle SC-10 que se trata de comunicações da rede.
 Uma sessão lógica é iniciada quando um usuário (ou processo) acessa um sistema organizacional. Ao finalizar um sessão, todos os processos do sistema associados ao usuário em questão deverão ser finalizados, com exceção de processos que são criado com o propósito de persistir após o logout.
 Para o evento de finalizar sessão ocorrer poderá ser por pedido do usuário, período de inatividade, incidentes e/ou restrições de dias e horários."
 ),
-(13, 1, 13, 0, 0,
+(13, 1, 13, 0, 0, --AC-13
 "Revisão e Supervisão - Controle de Acesso", 
 "[Removido: Incorporado ao AC-2 e AU-6].",
 NULL
 ),
-(14, 1, 14, 3, 1,
+(14, 1, 14, 3, 1, --AC-14
 "AÇÕES PERMITIDAS SEM IDENTIFICAÇÃO OU AUTENTICAÇÃO", 
 "A organização:
 a. Identifica que [Atribuição: ações definidas pela organização] poderão ser executadas no sistema sem a necessidade da identificação ou autenticação do usuário.
@@ -200,12 +200,12 @@ b. Documenta e provê suporte ao plano de segurança do sistema que permite aç�
 "Esse controle se refere a situações onde a organização necessita que determinadas ações possam ocorrer no sistema sem uma identificação ou autenticação prévia por parte do usuário, como exemplo, o uso do site da organização disponível publicamente.
 O número de ações deste tipo deverá ser limitado para somente o que for necessário."
 ),
-(15, 1, 15, 0, 0,
+(15, 1, 15, 0, 0, --AC-15
 "MARCAÇÃO AUTOMÁTICA", 
 "[Removido: Incorporado ao MP-3].",
 NULL
 ),
-(16, 1, 16, 0, 0,
+(16, 1, 16, 0, 0, --AC-16
 "ATRIBUTOS DE SEGURANÇA", 
 "A organização:
 a. Provê os meios necessários para associar [Atribuição: atributos de segurança definidos pela organização] que possuem [Atribuição: valores sobre os atributos de segurança definidos pela organização] com informação armazenada, em processo ou transmissão;
@@ -222,7 +222,7 @@ Existe um amplo intervalo de valores que podem ser atribuídos a qualquer atribu
 O termo rotulagem de segurança refere-se à associação de atributos de segurança com sujeitos e objetos representados por estruturas internas de dados dentro de sistemas de informações organizacionais, para permitir a imposição de políticas de segurança da informação baseadas no sistema de informações. As etiquetas de segurança incluem, por exemplo, autorizações de acesso, proteção do ciclo de vida de dados (isto é, encriptação e expiração de dados), nacionalidade, afiliação como contratante e classificação de informações de acordo com os requisitos legais e de conformidade. O termo marcação de segurança refere-se à associação de atributos de segurança com objetos de forma legível, para permitir a imposição de políticas de segurança da informação baseadas em processos organizacionais.
 O controle base AC-16 representa o requisito para associação de atributos baseada em usuário (marcação). Os aprimoramentos do AC-16 representam requisitos adicionais, incluindo associação de atributos baseada no sistema (rotulagem). Os tipos de atributos incluem, por exemplo, nível de classificação para objetos e nível de autorização (autorização de acesso) para sujeitos. Um exemplo de valor para ambos os tipos de atributos é segredo absoluto."
 ),
-(17, 1, 17, 1, 1,
+(17, 1, 17, 1, 1, --AC-17
 "ACESSO REMOTO", 
 "A organização:
 a. Estabelece e documenta restrições de uso, requerimentos de conexão e guia de implementação para cada tipo de acesso remoto permitido; e
@@ -231,7 +231,7 @@ b. Autoriza o acesso remoto aos sistemas antes de permitir esse tipo de conexão
 Mas de qualquer forma, VPNs ainda acontecem sobre conexões externas, não garantindo a disponibilidade da comunicação, e pela comunicação ser encriptada as ferramentas de controle e monitoramento contra códigos maliciosos serão afetadas.
 As permissões de acesso não são definidos por esse controle, e sim pelo AC-3."
 ),
-(18, 1, 18, 1, 1,
+(18, 1, 18, 1, 1, --AC-18
 "ACESSO WIRELESS", 
 "A organização:
 a. Estabelece restrições de uso, requerimentos de configuração e conexão, e guias de implementação para acessos sem fio (wireless); e
@@ -239,7 +239,7 @@ b. Autoriza acessos sem fio para o sistema antes de permitir a conexão.",
 "Tecnologias sem fio são, por exemplo, radio (AM/FM), Wi-Fi (802.11x), mobile (GSM) e Bluetooth.
 Conexões sem fio devem utilizar protocolos de autenticação que provêm proteção a credencial e autenticação mútua."
 ),
-(19, 1, 19, 1, 1,
+(19, 1, 19, 1, 1, --AC-19
 "CONTROLE DE ACESSO PARA DISPOSITIVOS MÓVEIS", 
 "A organização:
 a. Estabelece restrição de uso, requerimentos de configuração e conexão e guia de implementação para dispositivos móveis controlados pela organização; e
@@ -254,7 +254,7 @@ O poder de processamento de um dispositível móvel pode ser comparado ao de um 
 Controles de uso incluem, por exemplo, controle de configurações, identificação e autenticação do aparelho, implementação de software mandatório (Antivírus, Firewall, etc.), scan periódico de vulnerabilidades e códigos maliciosos, atualização frequente de seus componentes, verificações de integridade e desativar hardware desnecessário (por exemplo, Infravermelho, Bluetooth, etc.) quando não são necessários para desempenhar determinado função/negócio.
 Poderão existir outros controles ocorrendo ao mesmo tempo quando necessário, o controle AC-20 determina dispositivos móveis que não são da organização."
 ),
-(20, 1, 20, 1, 1,
+(20, 1, 20, 1, 1, --AC-20
 "USO DE SISTEMAS EXTERNOS", 
 "A organização estabelece termos e condições, consistentes com qualquer relação de confiança estabelecida com outras organizações que possuem, operam e/ou mantêm sistemas externos, permitido que funcionários autorizados:
 a. Acessem as informações contidas no sistema externo; e
@@ -270,7 +270,7 @@ Para alguns sistemas externos, como exemplo, sistemas operados por agentes feder
 A autorização de indivíduos inclui, por exemplo, funcionários da organização, contratados e fornecedores. As restrições sobre os tipos de acesso aos sistemas externos não precisam ser idênticos a todos os envolvidos, elas podem variar por tipo de acesso, organização, cargo, departamento, entre outros.
 A organização deve estabelecer termos e condições para o uso dos sistemas externos de acordo com suas próprias políticas internas de segurança e procedimentos. Os termos devem, no mínimo, apontar quais tipos de informações poderão ser acessadas nos sistemas externos. E quais podem ou não podem ser processadas, armazenadas ou transmitidas. Se esses termos não podem ser estabelecidos em conjunto com o dono do sistema, a organização deverá implementar essas restrições internamente."
 ),
-(21, 1, 21, 2, 2,
+(21, 1, 21, 2, 2, --AC-21
 "COMPARTILHAMENTO DE INFORMAÇÕES", 
 "A organização:
 a. Facilita o compartilhamento das informações ao permitir que usuários autorizados determinem podem ou não compartilhar com determinado usuário [Atribuição: circunstâncias onde o compartilhamento deverá ser discreto]; e
@@ -278,7 +278,7 @@ b. Emprega [Atribuição: mecanismo automáticos ou processos manuais definidos 
 "Esse controle se aplica a informações que são restritas de alguma forma (por exemplo, informações pessoais, médicas, contratuais e proprietárias) baseada em determinação formal ou administrativa. Dependendo das circunstâncias, o compartilhamento deverá se limitar a nível organizacional, departamental, por grupo, ou individual.
 A informação deve ser classificada de acordo com o conteúdo, tipo, categoria de segurança ou restrições de acesso aplicáveis."
 ),
-(22, 1, 22, 3, 1,
+(22, 1, 22, 3, 1, --AC-22
 "CONTEÚDO PUBLICAMENTE ACESSÍVEL", 
 "A organização:
 a. Designa funcionários autorizados para publicar informações em sistemas que são publicamente acessíveis;
@@ -288,7 +288,7 @@ d. Revisa os conteúdos já publicados a cada [Atribuição: período de tempo d
 "Em acordo com a lei, Ordens Executivas, diretrizes, políticas, regulamentos, padrões e/ou guias, o público geral não está autorizado a acessar informações confidenciais (por exemplo, informações protegidas pela LGPD ou informações proprietárias). Esse controle é sobre sistemas que são controlados pela organização e são acessíveis ao público geral, geralmente sem identificação ou autenticação.
 A disponibilização publica de informações não-organizacionais também se enquadra às políticas da empresa."
 ),
-(23, 1, 23, 0, 0,
+(23, 1, 23, 0, 0, --AC-23
 "PROTEÇÃO CONTRA MINERAÇÃO DE DADOS", 
 "A organização emprega [Atribuição: técnicas de detecção e prevenção de mineração de dados definidos pela organização] para [Atribuição: objetos de armazenamento de informações] a fim de adequadamente detectar e proteger suas informações contra mineração de dados.",
 "Mineração de dados (data mining) é o processo de explorar grandes quantidades de dados à procura de padrões consistentes, como regras de associação ou sequências temporais, para obter informações privilegiadas sem prévia autorização.
@@ -299,12 +299,12 @@ II. Limitar a quantidade e frequência de comandos ao banco de dados;
 III. Notificar funcionários autorizados quando comandos atípicos acontecerem ao banco de dados.
 Esse controle é sobre proteger e evitar que os dados sejam minerados, em contra partida, o controle AU-13 retrata quando o dado já foi minerado e está disponível a público em sites externos, como redes sociais por exemplo."
 ),
-(24, 1, 24, 0, 0,
+(24, 1, 24, 0, 0, --AC-24
 "DECISÕES DE CONTROLE DE ACESSO",
 "A organização estabelece procedimentos para garantir que [Atribuição: decisões de controle de acesso definidas pela organização] sejam aplicadas a cada solicitação de acesso antes de ser efetivado.",
 "As decisões de controle de acesso (também conhecidas como decisões de autorização) ocorrem quando as informações de autorização são aplicadas a acessos específicos. Em contraste, a aplicação de acesso ocorre quando os sistemas de informações aplicam as decisões de controle de acesso. Embora seja muito comum ter decisões de controle de acesso e aplicação de acesso implementadas por na mesma entidade, não é necessária e nem sempre é uma opção de implementação ideal. Para algumas arquiteturas e sistemas de informações distribuídas, diferentes entidades podem executar decisões de controle de acesso e acesso à aplicação. "
 ),
-(25, 1, 25, 0, 0,
+(25, 1, 25, 0, 0, --AC-25
 "MONITOR DE REFERÊNCIA", 
 "O sistema implementa um monitor de referência para [Atribuição: políticas de controle de acesso definidos pela organização] que é inviolável, sempre presente, e pequeno o suficiente para estar sujeito a análise e teste, cuja integridade pode ser assegurada.",
 "A informação é representada internamente em sistemas de informação usando abstrações conhecidas como estruturas de dados. Estruturas de dados internas podem representar diferentes tipos de entidades, ativas e passivas.
@@ -322,7 +322,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(26, 2, 1, 1, 1,
+(26, 2, 1, 1, 1, --AU-1
 "POLÍTICA E PROCEDIMENTOS DE AUDITORIA E DE RESPONSABILIDADE",
 "A organização:
 a. Desenvolve, documenta e dissemina para [Atribuição: funcionários e/ou departamentos definidos pela organização]:
@@ -337,7 +337,7 @@ A política pode ser incluída como parte da política geral de segurança da in
 Os procedimentos podem ser estabelecidos para o programa de segurança em geral e para sistemas específicos, se necessário.
 A estratégia de gerenciamento de risco organizacional é um fator chave no estabelecimento de políticas e procedimentos."
 ),
-(27, 2, 2, 1, 1,
+(27, 2, 2, 1, 1, --AU-2
 "EVENTOS DE AUDITORIA",
 "A organização:
 a. Determina que o sistema é capaz de auditar os seguintes eventos: [Atribuição: eventos auditáveis ​​definidos pela organização];
@@ -352,61 +352,61 @@ Os requisitos de auditoria, incluindo a necessidade de eventos auditáveis, pode
 Os registros de auditoria podem ser gerados em vários níveis de abstração, inclusive no nível do pacote, à medida que as informações percorrem a rede. Selecionar o nível apropriado de abstração é um aspecto crítico de um recurso de auditoria e pode facilitar a identificação de causas-raiz para problemas.
 A organização deverá considerar na definição de eventos auditáveis, a auditoria necessária para cobrir eventos relacionados, como as etapas em processos distribuídos e baseados em transações (por exemplo, processos distribuídos em várias organizações) e ações que ocorrem em arquiteturas orientadas a serviços."
 ),
-(28, 2, 3, 1, 1,
+(28, 2, 3, 1, 1, --AU-3
 "CONTEÚDO DOS REGISTROS DE AUDITORIA", 
 "O sistema gera registros de auditoria que possuem informações que estabelecem qual tipo de evento ocorreu, quando aconteceu, aonde, e o resultado ocorrido em conjunto com a identificação de usuários e processos envolvidos no sistema.",
 "Os conteúdos dos registros de auditoria necessários para satisfazer o requisito desse controle, inclui, por exemplo, registros de data e hora, endereços de origem e destino, identificadores de usuário / processo, descrições de eventos, indicações de sucesso / falha, nomes de arquivos envolvidos e controle de acesso ou controle de fluxo regras invocadas.
 Os resultados do evento podem incluir indicadores de sucesso ou falha do evento e resultados específicos do evento (por exemplo, o estado de segurança do sistema de informações após a ocorrência do evento)."
 ),
-(29, 2, 4, 1, 1,
+(29, 2, 4, 1, 1, --AU-4
 "AUDIT STORAGE CAPACITY",
 "The organization allocates audit record storage capacity in accordance with [Assignment: organization-defined audit record storage requirements].",
 "Organizations consider the types of auditing to be performed and the audit processing requirements when allocating audit storage capacity. Allocating sufficient audit storage capacity reduces the likelihood of such capacity being exceeded and resulting in the potential loss or reduction of auditing capability."
 ),
-(30, 2, 5, 1, 1,
+(30, 2, 5, 1, 1, --AU-5
 "RESPONSE TO AUDIT PROCESSING FAILURES",
 "The information system: 
 a. Alerts [Assignment: organization-defined personnel or roles] in the event of an audit processing failure; and 
 b. Takes the following additional actions: [Assignment: organization-defined actions to be taken (e.g., shut down information system, overwrite oldest audit records, stop generating audit records)].",
 "Audit processing failures include, for example, software/hardware errors, failures in the audit capturing mechanisms, and audit storage capacity being reached or exceeded. Organizations may choose to define additional actions for different audit processing failures (e.g., by type, by location, by severity, or a combination of such factors). This control applies to each audit data storage repository (i.e., distinct information system component where audit records are stored), the total audit storage capacity of organizations (i.e., all audit data storage repositories combined), or both."
 ),
-(31, 2, 6, 1, 1,
+(31, 2, 6, 1, 1, --AU-6
 "AUDIT REVIEW, ANALYSIS, AND REPORTING",
 "The organization: 
 a. Reviews and analyzes information system audit records [Assignment: organization-defined frequency] for indications of [Assignment: organization-defined inappropriate or unusual activity]; and 
 b. Reports findings to [Assignment: organization-defined personnel or roles].",
 "Audit review, analysis, and reporting covers information security-related auditing performed by organizations including, for example, auditing that results from monitoring of account usage, remote access, wireless connectivity, mobile device connection, configuration settings, system component inventory, use of maintenance tools and nonlocal maintenance, physical access, temperature and humidity, equipment delivery and removal, communications at the information system boundaries, use of mobile code, and use of VoIP. Findings can be reported to organizational entities that include, for example, incident response team, help desk, information security group/department. If organizations are prohibited from reviewing and analyzing audit information or unable to conduct such activities (e.g., in certain national security applications or systems), the review/analysis may be carried out by other organizations granted such authority."
 ),
-(32, 2, 7, 2, 2,
+(32, 2, 7, 2, 2, --AU-7
 "AUDIT REDUCTION AND REPORT GENERATION",
 "The information system provides an audit reduction and report generation capability that: 
 a. Supports on-demand audit review, analysis, and reporting requirements and after-the-fact investigations of security incidents; and 
 b. Does not alter the original content or time ordering of audit records.",
 "Audit reduction is a process that manipulates collected audit information and organizes such information in a summary format that is more meaningful to analysts. Audit reduction and report generation capabilities do not always emanate from the same information system or from the same organizational entities conducting auditing activities. Audit reduction capability can include, for example, modern data mining techniques with advanced data filters to identify anomalous behavior in audit records. The report generation capability provided by the information system can generate customizable reports. Time ordering of audit records can be a significant issue if the granularity of the timestamp in the record is insufficient."
 ),
-(33, 2, 8, 1, 1,
+(33, 2, 8, 1, 1, --AU-8
 "TIME STAMPS",
 "The information system: 
 a. Uses internal system clocks to generate time stamps for audit records; and 
 b. Records time stamps for audit records that can be mapped to Coordinated Universal Time (UTC) or Greenwich Mean Time (GMT) and meets [Assignment: organization-defined granularity of time measurement]. ",
 "Time stamps generated by the information system include date and time. Time is commonly expressed in Coordinated Universal Time (UTC), a modern continuation of Greenwich Mean Time (GMT), or local time with an offset from UTC. Granularity of time measurements refers to the degree of synchronization between information system clocks and reference clocks, for example, clocks synchronizing within hundreds of milliseconds or within tens of milliseconds. Organizations may define different time granularities for different system components. Time service can also be critical to other security capabilities such as access control and identification and authentication, depending on the nature of the mechanisms used to support those capabilities."
 ),
-(34, 2, 9, 1, 1,
+(34, 2, 9, 1, 1, --AU-9
 "PROTECTION OF AUDIT INFORMATION",
 "The information system protects audit information and audit tools from unauthorized access, modification, and deletion.",
 "Audit information includes all information (e.g., audit records, audit settings, and audit reports) needed to successfully audit information system activity. This control focuses on technical protection of audit information. Physical protection of audit information is addressed by media protection controls and physical and environmental protection controls."
 ),
-(35, 2, 10, 2, 3,
+(35, 2, 10, 2, 3, --AU-10
 "NON-REPUDIATION",
 "The information system protects against an individual (or process acting on behalf of an individual) falsely denying having performed [Assignment: organization-defined actions to be covered by non-repudiation].",
-"Types of individual actions covered by non-repudiation include, for example, creating information, sending and receiving messages, approving information (e.g., indicating concurrence or signing a contract). Non-repudiation protects individuals against later claims by: I. authors of not having authored particular documents; II. senders of not having transmitted messages; III. receivers of not having received messages; or IV. signatories of not having signed documents. Non-repudiation services can be used to determine if information originated from a particular individual, or if an individual took specific actions (e.g., sending an email, signing a contract, approving a procurement request) or received specific information. Organizations obtain non-repudiation services by employing various techniques or mechanisms (e.g., digital signatures, digital message receipts)."
+"Types of individual actions covered by non-repudiation include, for example, creating information, sending and receiving messages, approving information (e.g., indicating concurrence or signing a contract). Non-repudiation protects individuals against later claims by: (i) authors of not having authored particular documents; (ii) senders of not having transmitted messages; (iii) receivers of not having received messages; or (iv) signatories of not having signed documents. Non-repudiation services can be used to determine if information originated from a particular individual, or if an individual took specific actions (e.g., sending an email, signing a contract, approving a procurement request) or received specific information. Organizations obtain non-repudiation services by employing various techniques or mechanisms (e.g., digital signatures, digital message receipts)."
 ),
-(36, 2, 11, 3, 1,
+(36, 2, 11, 3, 1, --AU-11
 "AUDIT RECORD RETENTION",
 "The organization retains audit records for [Assignment: organization-defined time period consistent with records retention policy] to provide support for after-the-fact investigations of security incidents and to meet regulatory and organizational information retention requirements.",
 "Organizations retain audit records until it is determined that they are no longer needed for administrative, legal, audit, or other operational purposes. This includes, for example, retention and availability of audit records relative to Freedom of Information Act (FOIA) requests, subpoenas, and law enforcement actions. Organizations develop standard categories of audit records relative to such types of actions and standard response processes for each type of action. The National Archives and Records Administration (NARA) General Records Schedules provide federal policy on record retention."
 ),
-(37, 2, 12, 1, 1,
+(37, 2, 12, 1, 1, --AU-12
 "AUDIT GENERATION",
 "The information system: 
 a. Provides audit record generation capability for the auditable events defined in AU-2 a. at [Assignment: organization-defined information system components]; 
@@ -414,22 +414,22 @@ b. Allows [Assignment: organization-defined personnel or roles] to select which 
 c. Generates audit records for the events defined in AU-2 d. with the content defined in AU-3.",
 "Audit records can be generated from many different information system components. The list of audited events is the set of events for which audits are to be generated. These events are typically a subset of all events for which the information system is capable of generating audit records."
 ),
-(38, 2, 13, 0, 0,
+(38, 2, 13, 0, 0, --AU-13
 "MONITORING FOR INFORMATION DISCLOSURE",
 "The organization monitors [Assignment: organization-defined open source information and/or information sites] [Assignment: organization-defined frequency] for evidence of unauthorized disclosure of organizational information.",
 "Open source information includes, for example, social networking sites."
 ),
-(39, 2, 14, 0, 0,
+(39, 2, 14, 0, 0, --AU-14
 "SESSION AUDIT",
 "The information system provides the capability for authorized users to select a user session to capture/record or view/hear.",
 "Session audits include, for example, monitoring keystrokes, tracking websites visited, and recording information and/or file transfers. Session auditing activities are developed, integrated, and used in consultation with legal counsel in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, or standards."
 ),
-(40, 2, 15, 0, 0,
+(40, 2, 15, 0, 0, --AU-15
 "ALTERNATE AUDIT CAPABILITY",
 "The organization provides an alternate audit capability in the event of a failure in primary audit capability that provides [Assignment: organization-defined alternate audit functionality].",
 "Since an alternate audit capability may be a short-term protection employed until the failure in the primary auditing capability is corrected, organizations may determine that the alternate audit capability need only provide a subset of the primary audit functionality that is impacted by the failure."
 ),
-(41, 2, 16, 0, 0,
+(41, 2, 16, 0, 0, --AU-16
 "CROSS-ORGANIZATIONAL AUDITING",
 "The organization employs [Assignment: organization-defined methods] for coordinating [Assignment: organization-defined audit information] among external organizations when audit information is transmitted across organizational boundaries.",
 "When organizations use information systems and/or services of external organizations, the auditing capability necessitates a coordinated approach across organizations. For example, maintaining the identity of individuals that requested particular services across organizational boundaries may often be very difficult, and doing so may prove to have significant performance ramifications. Therefore, it is often the case that cross-organizational auditing (e.g., the type of auditing capability provided by service-oriented architectures) simply captures the identity of individuals issuing requests at the initial information system, and subsequent systems record that the requests emanated from authorized individuals."
@@ -440,7 +440,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(42, 3, 1, 1, 1,
+(42, 3, 1, 1, 1, --AT-1
 "SECURITY AWARENESS AND TRAINING POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -451,7 +451,7 @@ b. Reviews and updates the current:
 2. Security awareness and training procedures [Assignment: organization-defined frequency].",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the AT family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(43, 3, 2, 1, 1,
+(43, 3, 2, 1, 1, --AT-2
 "SECURITY AWARENESS TRAINING",
 "The organization provides basic security awareness training to information system users (including managers, senior executives, and contractors): 
 a. As part of initial training for new users; 
@@ -459,7 +459,7 @@ b. When required by information system changes; and
 c. [Assignment: organization-defined frequency] thereafter.",
 "Organizations determine the appropriate content of security awareness training and security awareness techniques based on the specific organizational requirements and the information systems to which personnel have authorized access. The content includes a basic understanding of the need for information security and user actions to maintain security and to respond to suspected security incidents. The content also addresses awareness of the need for operations security. Security awareness techniques can include, for example, displaying posters, offering supplies inscribed with security reminders, generating email advisories/notices from senior organizational officials, displaying logon screen messages, and conducting information security awareness events."
 ),
-(44, 3, 3, 1, 1,
+(44, 3, 3, 1, 1, --AT-3
 "ROLE-BASED SECURITY TRAINING",
 "The organization provides role-based security training to personnel with assigned security roles and responsibilities: 
 a. Before authorizing access to the information system or performing assigned duties; 
@@ -467,14 +467,14 @@ b. When required by information system changes; and
 c. [Assignment: organization-defined frequency] thereafter.",
 "Organizations determine the appropriate content of security training based on the assigned roles and responsibilities of individuals and the specific security requirements of organizations and the information systems to which personnel have authorized access. In addition, organizations provide enterprise architects, information system developers, software developers, acquisition/procurement officials, information system managers, system/network administrators, personnel conducting configuration management and auditing activities, personnel performing independent verification and validation activities, security control assessors, and other personnel having access to system-level software, adequate security-related technical training specifically tailored for their assigned duties. Comprehensive role-based training addresses management, operational, and technical roles and responsibilities covering physical, personnel, and technical safeguards and countermeasures. Such training can include for example, policies, procedures, tools, and artifacts for the organizational security roles defined. Organizations also provide the training necessary for individuals to carry out their responsibilities related to operations and supply chain security within the context of organizational information security programs. Role-based security training also applies to contractors providing services to federal agencies."
 ),
-(45, 3, 4, 3, 1,
+(45, 3, 4, 3, 1, --AT-4
 "SECURITY TRAINING RECORDS",
 "The organization: 
 a. Documents and monitors individual information system security training activities including basic security awareness training and specific information system security training; and 
 b. Retains individual training records for [Assignment: organization-defined time period]. ",
 "Documentation for specialized training may be maintained by individual supervisors at the option of the organization."
 ),
-(46, 3, 5, 0, 0,
+(46, 3, 5, 0, 0, --AT-5
 "CONTACTS WITH SECURITY GROUPS AND ASSOCIATIONS",
 "[Withdrawn: Incorporated into PM-15].",
 NULL
@@ -485,7 +485,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(47, 4, 1, 1, 1,
+(47, 4, 1, 1, 1, --CM-1
 "CONFIGURATION MANAGEMENT POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -496,12 +496,12 @@ b. Reviews and updates the current:
 2. Configuration management procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the CM family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(48, 4, 2, 1, 1,
+(48, 4, 2, 1, 1, --CM-2
 "BASELINE CONFIGURATION",
 "The organization develops, documents, and maintains under configuration control, a current baseline configuration of the information system.",
 "This control establishes baseline configurations for information systems and system components including communications and connectivity-related aspects of systems. Baseline configurations are documented, formally reviewed and agreed-upon sets of specifications for information systems or configuration items within those systems. Baseline configurations serve as a basis for future builds, releases, and/or changes to information systems. Baseline configurations include information about information system components (e.g., standard software packages installed on workstations, notebook computers, servers, network components, or mobile devices; current version numbers and patch information on operating systems and applications; and configuration settings/parameters), network topology, and the logical placement of those components within the system architecture. Maintaining baseline configurations requires creating new baselines as organizational information systems change over time. Baseline configurations of information systems reflect the current enterprise architecture."
 ),
-(49, 4, 3, 1, 2,
+(49, 4, 3, 1, 2, --CM-3
 "CONFIGURATION CHANGE CONTROL",
 "The organization: 
 a. Determines the types of changes to the information system that are configuration-controlled; 
@@ -513,33 +513,33 @@ f. Audits and reviews activities associated with configuration-controlled change
 g. Coordinates and provides oversight for configuration change control activities through [Assignment: organization-defined configuration change control element (e.g., committee, board)] that convenes [Selection (one or more): [Assignment: organization-defined frequency]; [Assignment: organization-defined configuration change conditions]]. ",
 "Configuration change controls for organizational information systems involve the systematic proposal, justification, implementation, testing, review, and disposition of changes to the systems, including system upgrades and modifications. Configuration change control includes changes to baseline configurations for components and configuration items of information systems, changes to configuration settings for information technology products (e.g., operating systems, applications, firewalls, routers, and mobile devices), unscheduled/unauthorized changes, and changes to remediate vulnerabilities. Typical processes for managing configuration changes to information systems include, for example, Configuration Control Boards that approve proposed changes to systems. For new development information systems or systems undergoing major upgrades, organizations consider including representatives from development organizations on the Configuration Control Boards. Auditing of changes includes activities before and after changes are made to organizational information systems and the auditing activities required to implement such changes."
 ),
-(50, 4, 4, 2, 1,
+(50, 4, 4, 2, 1, --CM-4
 "SECURITY IMPACT ANALYSIS",
 "The organization analyzes changes to the information system to determine potential security impacts prior to change implementation.",
 "Organizational personnel with information security responsibilities (e.g., Information System Administrators, Information System Security Officers, Information System Security Managers, and Information System Security Engineers) conduct security impact analyses. Individuals conducting security impact analyses possess the necessary skills/technical expertise to analyze the changes to information systems and the associated security ramifications. Security impact analysis may include, for example, reviewing security plans to understand security control requirements and reviewing system design documentation to understand control implementation and how specific changes might affect the controls. Security impact analyses may also include assessments of risk to better understand the impact of the changes and to determine if additional security controls are required. Security impact analyses are scaled in accordance with the security categories of the information systems."
 ),
-(51, 4, 5, 1, 2,
+(51, 4, 5, 1, 2, --CM-5
 "ACCESS RESTRICTIONS FOR CHANGE",
 "The organization defines, documents, approves, and enforces physical and logical access restrictions associated with changes to the information system.",
 "Any changes to the hardware, software, and/or firmware components of information systems can potentially have significant effects on the overall security of the systems. Therefore, organizations permit only qualified and authorized individuals to access information systems for purposes of initiating changes, including upgrades and modifications. Organizations maintain records of access to ensure that configuration change control is implemented and to support after-the-fact actions should organizations discover any unauthorized changes. Access restrictions for change also include software libraries. Access restrictions include, for example, physical and logical access controls (see AC-3 and PE-3), workflow automation, media libraries, abstract layers (e.g., changes implemented into third-party interfaces rather than directly into information systems), and change windows (e.g., changes occur only during specified times, making unauthorized changes easy to discover)."
 ),
-(52, 4, 6, 1, 1,
+(52, 4, 6, 1, 1, --CM-6
 "CONFIGURATION SETTINGS",
 "The organization: 
 a. Establishes and documents configuration settings for information technology products employed within the information system using [Assignment: organization-defined security configuration checklists] that reflect the most restrictive mode consistent with operational requirements; 
 b. Implements the configuration settings; 
 c. Identifies, documents, and approves any deviations from established configuration settings for [Assignment: organization-defined information system components] based on [Assignment: organization-defined operational requirements]; and 
 d. Monitors and controls changes to the configuration settings in accordance with organizational policies and procedures.",
-"Configuration settings are the set of parameters that can be changed in hardware, software, or firmware components of the information system that affect the security posture and/or functionality of the system. Information technology products for which security-related configuration settings can be defined include, for example, mainframe computers, servers (e.g., database, electronic mail, authentication, web, proxy, file, domain name), workstations, input/output devices (e.g., scanners, copiers, and printers), network components (e.g., firewalls, routers, gateways, voice and data switches, wireless access points, network appliances, sensors), operating systems, middleware, and applications. Security-related parameters are those parameters impacting the security state of information systems including the parameters required to satisfy other security control requirements. Security-related parameters include, for example: I. registry settings; II. account, file, directory permission settings; and III. settings for functions, ports, protocols, services, and remote connections. Organizations establish organization-wide configuration settings and subsequently derive specific settings for information systems. The established settings become part of the systems configuration baseline. Common secure configurations (also referred to as security configuration checklists, lockdown and hardening guides, security reference guides, security technical implementation guides) provide recognized, standardized, and established benchmarks that stipulate secure configuration settings for specific information technology platforms/products and instructions for configuring those information system components to meet operational requirements. Common secure configurations can be developed by a variety of organizations including, for example, information technology product developers, manufacturers, vendors, consortia, academia, industry, federal agencies, and other organizations in the public and private sectors. Common secure configurations include the United States Government Configuration Baseline (USGCB) which affects the implementation of CM-6 and other controls such as AC-19 and CM-7. The Security Content Automation Protocol (SCAP) and the defined standards within the protocol (e.g., Common Configuration Enumeration) provide an effective method to uniquely identify, track, and control configuration settings. OMB establishes federal policy on configuration requirements for federal information systems."
+"Configuration settings are the set of parameters that can be changed in hardware, software, or firmware components of the information system that affect the security posture and/or functionality of the system. Information technology products for which security-related configuration settings can be defined include, for example, mainframe computers, servers (e.g., database, electronic mail, authentication, web, proxy, file, domain name), workstations, input/output devices (e.g., scanners, copiers, and printers), network components (e.g., firewalls, routers, gateways, voice and data switches, wireless access points, network appliances, sensors), operating systems, middleware, and applications. Security-related parameters are those parameters impacting the security state of information systems including the parameters required to satisfy other security control requirements. Security-related parameters include, for example: (i) registry settings; (ii) account, file, directory permission settings; and (iii) settings for functions, ports, protocols, services, and remote connections. Organizations establish organization-wide configuration settings and subsequently derive specific settings for information systems. The established settings become part of the systems configuration baseline. Common secure configurations (also referred to as security configuration checklists, lockdown and hardening guides, security reference guides, security technical implementation guides) provide recognized, standardized, and established benchmarks that stipulate secure configuration settings for specific information technology platforms/products and instructions for configuring those information system components to meet operational requirements. Common secure configurations can be developed by a variety of organizations including, for example, information technology product developers, manufacturers, vendors, consortia, academia, industry, federal agencies, and other organizations in the public and private sectors. Common secure configurations include the United States Government Configuration Baseline (USGCB) which affects the implementation of CM-6 and other controls such as AC-19 and CM-7. The Security Content Automation Protocol (SCAP) and the defined standards within the protocol (e.g., Common Configuration Enumeration) provide an effective method to uniquely identify, track, and control configuration settings. OMB establishes federal policy on configuration requirements for federal information systems."
 ),
-(53, 4, 7, 1, 1,
+(53, 4, 7, 1, 1, --CM-7
 "LEAST FUNCTIONALITY",
 "The organization: 
 a. Configures the information system to provide only essential capabilities; and 
 b. Prohibits or restricts the use of the following functions, ports, protocols, and/or services: [Assignment: organization-defined prohibited or restricted functions, ports, protocols, and/or services]. ",
 "Information systems can provide a wide variety of functions and services. Some of the functions and services, provided by default, may not be necessary to support essential organizational operations (e.g., key missions, functions). Additionally, it is sometimes convenient to provide multiple services from single information system components, but doing so increases risk over limiting the services provided by any one component. Where feasible, organizations limit component functionality to a single function per device (e.g., email servers or web servers, but not both). Organizations review functions and services provided by information systems or individual components of information systems, to determine which functions and services are candidates for elimination (e.g., Voice Over Internet Protocol, Instant Messaging, auto-execute, and file sharing). Organizations consider disabling unused or unnecessary physical and logical ports/protocols (e.g., Universal Serial Bus, File Transfer Protocol, and Hyper Text Transfer Protocol) on information systems to prevent unauthorized connection of devices, unauthorized transfer of information, or unauthorized tunneling. Organizations can utilize network scanning tools, intrusion detection and prevention systems, and end-point protections such as firewalls and host-based intrusion detection systems to identify and prevent the use of prohibited functions, ports, protocols, and services."
 ),
-(54, 4, 8, 1, 1,
+(54, 4, 8, 1, 1, --CM-8
 "INFORMATION SYSTEM COMPONENT INVENTORY",
 "The organization: 
 a. Develops and documents an inventory of information system components that: 
@@ -550,7 +550,7 @@ a. Develops and documents an inventory of information system components that:
 b. Reviews and updates the information system component inventory [Assignment: organization-defined frequency]. ",
 "Organizations may choose to implement centralized information system component inventories that include components from all organizational information systems. In such situations, organizations ensure that the resulting inventories include system-specific information required for proper component accountability (e.g., information system association, information system owner). Information deemed necessary for effective accountability of information system components includes, for example, hardware inventory specifications, software license information, software version numbers, component owners, and for networked components or devices, machine names and network addresses. Inventory specifications include, for example, manufacturer, device type, model, serial number, and physical location."
 ),
-(55, 4, 9, 1, 2,
+(55, 4, 9, 1, 2, --CM-9
 "CONFIGURATION MANAGEMENT PLAN",
 "The organization develops, documents, and implements a configuration management plan for the information system that: 
 a. Addresses roles, responsibilities, and configuration management processes and procedures; 
@@ -559,7 +559,7 @@ c. Defines the configuration items for the information system and places the con
 d. Protects the configuration management plan from unauthorized disclosure and modification. ",
 "Configuration management plans satisfy the requirements in configuration management policies while being tailored to individual information systems. Such plans define detailed processes and procedures for how configuration management is used to support system development life cycle activities at the information system level. Configuration management plans are typically developed during the development/acquisition phase of the system development life cycle. The plans describe how to move changes through change management processes, how to update configuration settings and baselines, how to maintain information system component inventories, how to control development, test, and operational environments, and how to develop, release, and update key documents. Organizations can employ templates to help ensure consistent and timely development and implementation of configuration management plans. Such templates can represent a master configuration management plan for the organization at large with subsets of the plan implemented on a system by system basis. Configuration management approval processes include designation of key management stakeholders responsible for reviewing and approving proposed changes to information systems, and personnel that conduct security impact analyses prior to the implementation of changes to the systems. Configuration items are the information system items (hardware, software, firmware, and documentation) to be configuration-managed. As information systems continue through the system development life cycle, new configuration items may be identified and some existing configuration items may no longer need to be under configuration control."
 ),
-(56, 4, 10, 2, 1,
+(56, 4, 10, 2, 1, --CM-10
 "SOFTWARE USAGE RESTRICTIONS",
 "The organization: 
 a. Uses software and associated documentation in accordance with contract agreements and copyright laws; 
@@ -567,7 +567,7 @@ b. Tracks the use of software and associated documentation protected by quantity
 c. Controls and documents the use of peer-to-peer file sharing technology to ensure that this capability is not used for the unauthorized distribution, display, performance, or reproduction of copyrighted work. ",
 "Software license tracking can be accomplished by manual methods (e.g., simple spreadsheets) or automated methods (e.g., specialized tracking applications) depending on organizational needs."
 ),
-(57, 4, 11, 1, 1,
+(57, 4, 11, 1, 1, --CM-11
 "USER-INSTALLED SOFTWARE",
 "The organization: 
 a. Establishes [Assignment: organization-defined policies] governing the installation of software by users; 
@@ -581,7 +581,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(58, 5, 1, 1, 1,
+(58, 5, 1, 1, 1, --CP-1
 "CONTINGENCY PLANNING POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -592,7 +592,7 @@ b. Reviews and updates the current:
 2. Contingency planning procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the CP family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(59, 5, 2, 1, 1,
+(59, 5, 2, 1, 1, --CP-2
 "CONTINGENCY PLAN",
 "The organization: 
 a. Develops a contingency plan for the information system that: 
@@ -610,7 +610,7 @@ f. Communicates contingency plan changes to [Assignment: organization-defined ke
 g. Protects the contingency plan from unauthorized disclosure and modification.",
 "Contingency planning for information systems is part of an overall organizational program for achieving continuity of operations for mission/business functions. Contingency planning addresses both information system restoration and implementation of alternative mission/business processes when systems are compromised. The effectiveness of contingency planning is maximized by considering such planning throughout the phases of the system development life cycle. Performing contingency planning on hardware, software, and firmware development can be an effective means of achieving information system resiliency. Contingency plans reflect the degree of restoration required for organizational information systems since not all systems may need to fully recover to achieve the level of continuity of operations desired. Information system recovery objectives reflect applicable laws, Executive Orders, directives, policies, standards, regulations, and guidelines. In addition to information system availability, contingency plans also address other security-related events resulting in a reduction in mission and/or business effectiveness, such as malicious attacks compromising the confidentiality or integrity of information systems. Actions addressed in contingency plans include, for example, orderly/graceful degradation, information system shutdown, fallback to a manual mode, alternate information flows, and operating in modes reserved for when systems are under attack. By closely coordinating contingency planning with incident handling activities, organizations can ensure that the necessary contingency planning activities are in place and activated in the event of a security incident."
 ),
-(60, 5, 3, 2, 1,
+(60, 5, 3, 2, 1, --CP-3
 "CONTINGENCY TRAINING",
 "The organization provides contingency training to information system users consistent with assigned roles and responsibilities: 
 a. Within [Assignment: organization-defined time period] of assuming a contingency role or responsibility; 
@@ -618,7 +618,7 @@ b. When required by information system changes; and
 c. [Assignment: organization-defined frequency] thereafter.",
 "Contingency training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure that the appropriate content and level of detail is included in such training. For example, regular users may only need to know when and where to report for duty during contingency operations and if normal duties are affected; system administrators may require additional training on how to set up information systems at alternate processing and storage sites; and managers/senior leaders may receive more specific training on how to conduct mission-essential functions in designated off-site locations and how to establish communications with other governmental entities for purposes of coordination on contingency-related activities. Training for contingency roles/responsibilities reflects the specific continuity requirements in the contingency plan."
 ),
-(61, 5, 4, 2, 1,
+(61, 5, 4, 2, 1, --CP-4
 "CONTINGENCY PLAN TESTING",
 "The organization: 
 a. Tests the contingency plan for the information system [Assignment: organization-defined frequency] using [Assignment: organization-defined tests] to determine the effectiveness of the plan and the organizational readiness to execute the plan; 
@@ -626,19 +626,19 @@ b. Reviews the contingency plan test results; and
 c. Initiates corrective actions, if needed.",
 "Methods for testing contingency plans to determine the effectiveness of the plans and to identify potential weaknesses in the plans include, for example, walk-through and tabletop exercises, checklists, simulations (parallel, full interrupt), and comprehensive exercises. Organizations conduct testing based on the continuity requirements in contingency plans and include a determination of the effects on organizational operations, assets, and individuals arising due to contingency operations. Organizations have flexibility and discretion in the breadth, depth, and timelines of corrective actions."
 ),
-(62, 5, 5, 0, 0,
+(62, 5, 5, 0, 0, --CP-5
 "CONTINGENCY PLAN UPDATE",
 "[Withdrawn: Incorporated into CP-2].",
 NULL
 ),
-(63, 5, 6, 1, 2,
+(63, 5, 6, 1, 2, --CP-6
 "ALTERNATE STORAGE SITE",
 "The organization: 
 a. Establishes an alternate storage site including necessary agreements to permit the storage and retrieval of information system backup information; and 
 b. Ensures that the alternate storage site provides information security safeguards equivalent to that of the primary site. ",
 "Alternate storage sites are sites that are geographically distinct from primary storage sites. An alternate storage site maintains duplicate copies of information and data in the event that the primary storage site is not available. Items covered by alternate storage site agreements include, for example, environmental conditions at alternate sites, access rules, physical and environmental protection requirements, and coordination of delivery/retrieval of backup media. Alternate storage sites reflect the requirements in contingency plans so that organizations can maintain essential missions/business functions despite disruption, compromise, or failure in organizational information systems."
 ),
-(64, 5, 7, 1, 2,
+(64, 5, 7, 1, 2, --CP-7
 "ALTERNATE PROCESSING SITE",
 "The organization: 
 a. Establishes an alternate processing site including necessary agreements to permit the transfer and resumption of [Assignment: organization-defined information system operations] for essential missions/business functions within [Assignment: organization-defined time period consistent with recovery time and recovery point objectives] when the primary processing capabilities are unavailable; 
@@ -646,12 +646,12 @@ b. Ensures that equipment and supplies required to transfer and resume operation
 c. Ensures that the alternate processing site provides information security safeguards equivalent to those of the primary site.",
 "Alternate processing sites are sites that are geographically distinct from primary processing sites. An alternate processing site provides processing capability in the event that the primary processing site is not available. Items covered by alternate processing site agreements include, for example, environmental conditions at alternate sites, access rules, physical and environmental protection requirements, and coordination for the transfer/assignment of personnel. Requirements are specifically allocated to alternate processing sites that reflect the requirements in contingency plans to maintain essential missions/business functions despite disruption, compromise, or failure in organizational information systems."
 ),
-(65, 5, 8, 1, 2,
+(65, 5, 8, 1, 2, --CP-8
 "TELECOMMUNICATIONS SERVICES",
 "The organization establishes alternate telecommunications services including necessary agreements to permit the resumption of [Assignment: organization-defined information system operations] for essential missions and business functions within [Assignment: organization-defined time period] when the primary telecommunications capabilities are unavailable at either the primary or alternate processing or storage sites.",
 "This control applies to telecommunications services (data and voice) for primary and alternate processing and storage sites. Alternate telecommunications services reflect the continuity requirements in contingency plans to maintain essential missions/business functions despite the loss of primary telecommunications services. Organizations may specify different time periods for primary/alternate sites. Alternate telecommunications services include, for example, additional organizational or commercial ground-based circuits/lines or satellites in lieu of ground-based communications. Organizations consider factors such as availability, quality of service, and access when entering into alternate telecommunications agreements."
 ),
-(66, 5, 9, 1, 1,
+(66, 5, 9, 1, 1, --CP-9
 "INFORMATION SYSTEM BACKUP",
 "The organization: 
 a. Conducts backups of user-level information contained in the information system [Assignment: organization-defined frequency consistent with recovery time and recovery point objectives]; 
@@ -660,22 +660,22 @@ c. Conducts backups of information system documentation including security-relat
 d. Protects the confidentiality, integrity, and availability of backup information at storage locations.",
 "System-level information includes, for example, system-state information, operating system and application software, and licenses. User-level information includes any information other than system-level information. Mechanisms employed by organizations to protect the integrity of information system backups include, for example, digital signatures and cryptographic hashes. Protection of system backup information while in transit is beyond the scope of this control. Information system backups reflect the requirements in contingency plans as well as other organizational requirements for backing up information."
 ),
-(67, 5, 10, 1, 1,
+(67, 5, 10, 1, 1, --CP-10
 "INFORMATION SYSTEM RECOVERY AND RECONSTITUTION",
 "The organization provides for the recovery and reconstitution of the information system to a known state after a disruption, compromise, or failure.",
 "Recovery is executing information system contingency plan activities to restore organizational missions/business functions. Reconstitution takes place following recovery and includes activities for returning organizational information systems to fully operational states. Recovery and reconstitution operations reflect mission and business priorities, recovery point/time and reconstitution objectives, and established organizational metrics consistent with contingency plan requirements. Reconstitution includes the deactivation of any interim information system capabilities that may have been needed during recovery operations. Reconstitution also includes assessments of fully restored information system capabilities, reestablishment of continuous monitoring activities, potential information system reauthorizations, and activities to prepare the systems against future disruptions, compromises, or failures. Recovery/reconstitution capabilities employed by organizations can include both automated mechanisms and manual procedures."
 ),
-(68, 5, 11, 0, 0,
+(68, 5, 11, 0, 0, --CP-11
 "ALTERNATE COMMUNICATIONS PROTOCOLS",
 "The information system provides the capability to employ [Assignment: organization-defined alternative communications protocols] in support of maintaining continuity of operations.",
 "Contingency plans and the associated training and testing for those plans, incorporate an alternate communications protocol capability as part of increasing the resilience of organizational information systems. Alternate communications protocols include, for example, switching from Transmission Control Protocol/Internet Protocol (TCP/IP) Version 4 to TCP/IP Version 6. Switching communications protocols may affect software applications and therefore, the potential side effects of introducing alternate communications protocols are analyzed prior to implementation."
 ),
-(69, 5, 12, 0, 0,
+(69, 5, 12, 0, 0, --CP-12
 "SAFE MODE",
 "The information system, when [Assignment: organization-defined conditions] are detected, enters a safe mode of operation with [Assignment: organization-defined restrictions of safe mode of operation].",
 "For information systems supporting critical missions/business functions including, for example, military operations and weapons systems, civilian space operations, nuclear power plant operations, and air traffic control operations (especially real-time operational environments), organizations may choose to identify certain conditions under which those systems revert to a predefined safe mode of operation. The safe mode of operation, which can be activated automatically or manually, restricts the types of activities or operations information systems could execute when those conditions are encountered. Restriction includes, for example, allowing only certain functions that could be carried out under limited power or with reduced communications bandwidth."
 ),
-(70, 5, 13, 0, 0,
+(70, 5, 13, 0, 0, --CP-13
 "ALTERNATIVE SECURITY MECHANISMS",
 "The organization employs [Assignment: organization-defined alternative or supplemental security mechanisms] for satisfying [Assignment: organization-defined security functions] when the primary means of implementing the security function is unavailable or compromised.",
 "This control supports information system resiliency and contingency planning/continuity of operations. To ensure mission/business continuity, organizations can implement alternative or supplemental security mechanisms. These mechanisms may be less effective than the primary mechanisms (e.g., not as easy to use, not as scalable, or not as secure). However, having the capability to readily employ these alternative/supplemental mechanisms enhances overall mission/business continuity that might otherwise be adversely impacted if organizational operations had to be curtailed until the primary means of implementing the functions was restored. Given the cost and level of effort required to provide such alternative capabilities, this control would typically be applied only to critical security capabilities provided by information systems, system components, or information system services. For example, an organization may issue to senior executives and system administrators one-time pads in case multifactor tokens, the organization's standard means for secure remote authentication, is compromised."
@@ -686,7 +686,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(71, 6, 1, 1, 1,
+(71, 6, 1, 1, 1, --IA-1
 "IDENTIFICATION AND AUTHENTICATION POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -697,17 +697,17 @@ b. Reviews and updates the current:
 2. Identification and authentication procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the IA family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(72, 6, 2, 1, 1,
+(72, 6, 2, 1, 1, --IA-2
 "IDENTIFICATION AND AUTHENTICATION (ORGANIZATIONAL USERS)",
 "The information system uniquely identifies and authenticates organizational users (or processes acting on behalf of organizational users).",
-"Organizational users include employees or individuals that organizations deem to have equivalent status of employees (e.g., contractors, guest researchers). This control applies to all accesses other than: I. accesses that are explicitly identified and documented in AC-14; and II. accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity. Organizations employ passwords, tokens, or biometrics to authenticate user identities, or in the case multifactor authentication, or some combination thereof. Access to organizational information systems is defined as either local access or network access. Local access is any access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained by direct connections without the use of networks. Network access is access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained through network connections (i.e., nonlocal accesses). Remote access is a type of network access that involves communication through external networks (e.g., the Internet). Internal networks include local area networks and wide area networks. In addition, the use of encrypted virtual private networks (VPNs) for network connections between organization-controlled endpoints and non-organization controlled endpoints may be treated as internal networks from the perspective of protecting the confidentiality and integrity of information traversing the network. Organizations can satisfy the identification and authentication requirements in this control by complying with the requirements in Homeland Security Presidential Directive 12 consistent with the specific organizational implementation plans. Multifactor authentication requires the use of two or more different factors to achieve authentication. The factors are defined as: I. something you know (e.g., password, personal identification number [PIN]); II. something you have (e.g., cryptographic identification device, token); or III. something you are (e.g., biometric). Multifactor solutions that require devices separate from information systems gaining access include, for example, hardware tokens providing time-based or challenge-response authenticators and smart cards such as the U.S. Government Personal Identity Verification card and the DoD common access card. In addition to identifying and authenticating users at the information system level (i.e., at logon), organizations also employ identification and authentication mechanisms at the application level, when necessary, to provide increased information security. Identification and authentication requirements for other than organizational users are described in IA-8."
+"Organizational users include employees or individuals that organizations deem to have equivalent status of employees (e.g., contractors, guest researchers). This control applies to all accesses other than: (i) accesses that are explicitly identified and documented in AC-14; and (ii) accesses that occur through authorized use of group authenticators without individual authentication. Organizations may require unique identification of individuals in group accounts (e.g., shared privilege accounts) or for detailed accountability of individual activity. Organizations employ passwords, tokens, or biometrics to authenticate user identities, or in the case multifactor authentication, or some combination thereof. Access to organizational information systems is defined as either local access or network access. Local access is any access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained by direct connections without the use of networks. Network access is access to organizational information systems by users (or processes acting on behalf of users) where such access is obtained through network connections (i.e., nonlocal accesses). Remote access is a type of network access that involves communication through external networks (e.g., the Internet). Internal networks include local area networks and wide area networks. In addition, the use of encrypted virtual private networks (VPNs) for network connections between organization-controlled endpoints and non-organization controlled endpoints may be treated as internal networks from the perspective of protecting the confidentiality and integrity of information traversing the network. Organizations can satisfy the identification and authentication requirements in this control by complying with the requirements in Homeland Security Presidential Directive 12 consistent with the specific organizational implementation plans. Multifactor authentication requires the use of two or more different factors to achieve authentication. The factors are defined as: (i) something you know (e.g., password, personal identification number [PIN]); (ii) something you have (e.g., cryptographic identification device, token); or (iii) something you are (e.g., biometric). Multifactor solutions that require devices separate from information systems gaining access include, for example, hardware tokens providing time-based or challenge-response authenticators and smart cards such as the U.S. Government Personal Identity Verification card and the DoD common access card. In addition to identifying and authenticating users at the information system level (i.e., at logon), organizations also employ identification and authentication mechanisms at the application level, when necessary, to provide increased information security. Identification and authentication requirements for other than organizational users are described in IA-8."
 ),
-(73, 6, 3, 1, 2,
+(73, 6, 3, 1, 2, --IA-3
 "DEVICE IDENTIFICATION AND AUTHENTICATION",
 "The information system uniquely identifies and authenticates [Assignment: organization-defined specific and/or types of devices] before establishing a [Selection (one or more): local; remote; network] connection.",
 "Organizational devices requiring unique device-to-device identification and authentication may be defined by type, by device, or by a combination of type/device. Information systems typically use either shared known information (e.g., Media Access Control [MAC] or Transmission Control Protocol/Internet Protocol [TCP/IP] addresses) for device identification or organizational authentication solutions (e.g., IEEE 802.1x and Extensible Authentication Protocol [EAP], Radius server with EAP-Transport Layer Security [TLS] authentication, Kerberos) to identify/authenticate devices on local and/or wide area networks. Organizations determine the required strength of authentication mechanisms by the security categories of information systems. Because of the challenges of applying this control on large scale, organizations are encouraged to only apply the control to those limited number (and type) of devices that truly need to support this capability."
 ),
-(74, 6, 4, 1, 1,
+(74, 6, 4, 1, 1, --IA-4
 "IDENTIFIER MANAGEMENT",
 "The organization manages information system identifiers by: 
 a. Receiving authorization from [Assignment: organization-defined personnel or roles] to assign an individual, group, role, or device identifier; 
@@ -717,7 +717,7 @@ d. Preventing reuse of identifiers for [Assignment: organization-defined time pe
 e. Disabling the identifier after [Assignment: organization-defined time period of inactivity].",
 "Common device identifiers include, for example, media access control (MAC), Internet protocol (IP) addresses, or device-unique token identifiers. Management of individual identifiers is not applicable to shared information system accounts (e.g., guest and anonymous accounts). Typically, individual identifiers are the user names of the information system accounts assigned to those individuals. In such instances, the account management activities of AC-2 use account names provided by IA-4. This control also addresses individual identifiers not necessarily associated with information system accounts (e.g., identifiers used in physical security control databases accessed by badge reader systems for access to information systems). Preventing reuse of identifiers implies preventing the assignment of previously used individual, group, role, or device identifiers to different individuals, groups, roles, or devices."
 ),
-(75, 6, 5, 1, 1,
+(75, 6, 5, 1, 1, --IA-5
 "AUTHENTICATOR MANAGEMENT",
 "The organization manages information system authenticators by: 
 a. Verifying, as part of the initial authenticator distribution, the identity of the individual, group, role, or device receiving the authenticator; 
@@ -732,35 +732,35 @@ i. Requiring individuals to take, and having devices implement, specific securit
 j. Changing authenticators for group/role accounts when membership to those accounts changes.",
 "Individual authenticators include, for example, passwords, tokens, biometrics, PKI certificates, and key cards. Initial authenticator content is the actual content (e.g., the initial password) as opposed to requirements about authenticator content (e.g., minimum password length). In many cases, developers ship information system components with factory default authentication credentials to allow for initial installation and configuration. Default authentication credentials are often well known, easily discoverable, and present a significant security risk. The requirement to protect individual authenticators may be implemented via control PL-4 or PS-6 for authenticators in the possession of individuals and by controls AC-3, AC-6, and SC-28 for authenticators stored within organizational information systems (e.g., passwords stored in hashed or encrypted formats, files containing encrypted or hashed passwords accessible with administrator privileges). Information systems support individual authenticator management by organization-defined settings and restrictions for various authenticator characteristics including, for example, minimum password length, password composition, validation time window for time synchronous one-time tokens, and number of allowed rejections during the verification stage of biometric authentication. Specific actions that can be taken to safeguard authenticators include, for example, maintaining possession of individual authenticators, not loaning or sharing individual authenticators with others, and reporting lost, stolen, or compromised authenticators immediately. Authenticator management includes issuing and revoking, when no longer needed, authenticators for temporary access such as that required for remote maintenance. Device authenticators include, for example, certificates and passwords."
 ),
-(76, 6, 6, 2, 1,
+(76, 6, 6, 2, 1, --IA-6
 "AUTHENTICATOR FEEDBACK",
 "The information system obscures feedback of authentication information during the authentication process to protect the information from possible exploitation/use by unauthorized individuals.",
 "The feedback from information systems does not provide information that would allow unauthorized individuals to compromise authentication mechanisms. For some types of information systems or system components, for example, desktops/notebooks with relatively large monitors, the threat (often referred to as shoulder surfing) may be significant. For other types of systems or components, for example, mobile devices with 2-4 inch screens, this threat may be less significant, and may need to be balanced against the increased likelihood of typographic input errors due to the small keyboards. Therefore, the means for obscuring the authenticator feedback is selected accordingly. Obscuring the feedback of authentication information includes, for example, displaying asterisks when users type passwords into input devices, or displaying feedback for a very limited time before fully obscuring it."
 ),
-(77, 6, 7, 1, 1,
+(77, 6, 7, 1, 1, --IA-7
 "CRYPTOGRAPHIC MODULE AUTHENTICATION",
 "The information system implements mechanisms for authentication to a cryptographic module that meet the requirements of applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance for such authentication.",
 "Authentication mechanisms may be required within a cryptographic module to authenticate an operator accessing the module and to verify that the operator is authorized to assume the requested role and perform services within that role."
 ),
-(78, 6, 8, 1, 1,
+(78, 6, 8, 1, 1, --IA-8
 "IDENTIFICATION AND AUTHENTICATION (NON-ORGANIZATIONAL USERS)",
 "The information system uniquely identifies and authenticates non-organizational users (or processes acting on behalf of non-organizational users).",
 "Non-organizational users include information system users other than organizational users explicitly covered by IA-2. These individuals are uniquely identified and authenticated for accesses other than those accesses explicitly identified and documented in AC-14. In accordance with the E-Authentication E-Government initiative, authentication of non-organizational users accessing federal information systems may be required to protect federal, proprietary, or privacy-related information (with exceptions noted for national security systems). Organizations use risk assessments to determine authentication needs and consider scalability, practicality, and security in balancing the need to ensure ease of use for access to federal information and information systems with the need to protect and adequately mitigate risk. IA-2 addresses identification and authentication requirements for access to information systems by organizational users."
 ),
-(79, 6, 9, 0, 0,
+(79, 6, 9, 0, 0, --IA-9
 "SERVICE IDENTIFICATION AND AUTHENTICATION",
 "The organization identifies and authenticates [Assignment: organization-defined information system services] using [Assignment: organization-defined security safeguards].",
 "This control supports service-oriented architectures and other distributed architectural approaches requiring the identification and authentication of information system services. In such architectures, external services often appear dynamically. Therefore, information systems should be able to determine in a dynamic manner, if external providers and associated services are authentic. Safeguards implemented by organizational information systems to validate provider and service authenticity include, for example, information or code signing, provenance graphs, and/or electronic signatures indicating or including the sources of services."
 ),
-(80, 6, 10, 0, 0,
+(80, 6, 10, 0, 0, --IA-10
 "ADAPTIVE IDENTIFICATION AND AUTHENTICATION",
 "The organization requires that individuals accessing the information system employ [Assignment: organization-defined supplemental authentication techniques or mechanisms] under specific [Assignment: organization-defined circumstances or situations].",
 "Adversaries may compromise individual authentication mechanisms and subsequently attempt to impersonate legitimate users. This situation can potentially occur with any authentication mechanisms employed by organizations. To address this threat, organizations may employ specific techniques/mechanisms and establish protocols to assess suspicious behavior (e.g., individuals accessing information that they do not typically access as part of their normal duties, roles, or responsibilities, accessing greater quantities of information than the individuals would routinely access, or attempting to access information from suspicious network addresses). In these situations when certain preestablished conditions or triggers occur, organizations can require selected individuals to provide additional authentication information. Another potential use for adaptive identification and authentication is to increase the strength of mechanism based on the number and/or types of records being accessed."
 ),
-(81, 6, 11, 0, 0,
+(81, 6, 11, 0, 0, --IA-11
 "RE-AUTHENTICATION",
 "The organization requires users and devices to re-authenticate when [Assignment: organization-defined circumstances or situations requiring re-authentication].",
-"In addition to the re-authentication requirements associated with session locks, organizations may require re-authentication of individuals and/or devices in other situations including, for example: I. when authenticators change; II., when roles change; III. when security categories of information systems change; IV., when the execution of privileged functions occurs; V. after a fixed period of time; or VI. periodically."
+"In addition to the re-authentication requirements associated with session locks, organizations may require re-authentication of individuals and/or devices in other situations including, for example: (i) when authenticators change; (ii), when roles change; (iii) when security categories of information systems change; (iv), when the execution of privileged functions occurs; (v) after a fixed period of time; or (vi) periodically."
 );
 
 --IR - Incident Response
@@ -768,7 +768,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(82, 7, 1, 1, 1,
+(82, 7, 1, 1, 1, --IR-1
 "INCIDENT RESPONSE POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -779,7 +779,7 @@ b. Reviews and updates the current:
 2. Incident response procedures [Assignment: organization-defined frequency].",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the IR family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(83, 7, 2, 2, 1,
+(83, 7, 2, 2, 1, --IR-2
 "INCIDENT RESPONSE TRAINING",
 "The organization provides incident response training to information system users consistent with assigned roles and responsibilities: 
 a. Within [Assignment: organization-defined time period] of assuming an incident response role or responsibility; 
@@ -787,12 +787,12 @@ b. When required by information system changes; and
 c. [Assignment: organization-defined frequency] thereafter.",
 "Incident response training provided by organizations is linked to the assigned roles and responsibilities of organizational personnel to ensure the appropriate content and level of detail is included in such training. For example, regular users may only need to know who to call or how to recognize an incident on the information system; system administrators may require additional training on how to handle/remediate incidents; and incident responders may receive more specific training on forensics, reporting, system recovery, and restoration. Incident response training includes user training in the identification and reporting of suspicious activities, both from external and internal sources."
 ),
-(84, 7, 3, 2, 2,
+(84, 7, 3, 2, 2, --IR-3
 "INCIDENT RESPONSE TESTING",
 "The organization tests the incident response capability for the information system [Assignment: organization-defined frequency] using [Assignment: organization-defined tests] to determine the incident response effectiveness and documents the results.",
 "Organizations test incident response capabilities to determine the overall effectiveness of the capabilities and to identify potential weaknesses or deficiencies. Incident response testing includes, for example, the use of checklists, walk-through or tabletop exercises, simulations (parallel/full interrupt), and comprehensive exercises. Incident response testing can also include a determination of the effects on organizational operations (e.g., reduction in mission capabilities), organizational assets, and individuals due to incident response."
 ),
-(85, 7, 4, 1, 1,
+(85, 7, 4, 1, 1, --IR-4
 "INCIDENT HANDLING",
 "The organization: 
 a. Implements an incident handling capability for security incidents that includes preparation, detection and analysis, containment, eradication, and recovery; 
@@ -800,24 +800,24 @@ b. Coordinates incident handling activities with contingency planning activities
 c. Incorporates lessons learned from ongoing incident handling activities into incident response procedures, training, and testing, and implements the resulting changes accordingly. ",
 "Organizations recognize that incident response capability is dependent on the capabilities of organizational information systems and the mission/business processes being supported by those systems. Therefore, organizations consider incident response as part of the definition, design, and development of mission/business processes and information systems. Incident-related information can be obtained from a variety of sources including, for example, audit monitoring, network monitoring, physical access monitoring, user/administrator reports, and reported supply chain events. Effective incident handling capability includes coordination among many organizational entities including, for example, mission/business owners, information system owners, authorizing officials, human resources offices, physical and personnel security offices, legal departments, operations personnel, procurement offices, and the risk executive (function)."
 ),
-(86, 7, 5, 1, 1,
+(86, 7, 5, 1, 1, --IR-5
 "INCIDENT MONITORING",
 "The organization tracks and documents information system security incidents.",
 "Documenting information system security incidents includes, for example, maintaining records about each incident, the status of the incident, and other pertinent information necessary for forensics, evaluating incident details, trends, and handling. Incident information can be obtained from a variety of sources including, for example, incident reports, incident response teams, audit monitoring, network monitoring, physical access monitoring, and user/administrator reports."
 ),
-(87, 7, 6, 1, 1,
+(87, 7, 6, 1, 1, --IR-6
 "INCIDENT REPORTING",
 "The organization: 
 a. Requires personnel to report suspected security incidents to the organizational incident response capability within [Assignment: organization-defined time period]; and 
 b. Reports security incident information to [Assignment: organization-defined authorities]. ",
 "The intent of this control is to address both specific incident reporting requirements within an organization and the formal incident reporting requirements for federal agencies and their subordinate organizations. Suspected security incidents include, for example, the receipt of suspicious email communications that can potentially contain malicious code. The types of security incidents reported, the content and timeliness of the reports, and the designated reporting authorities reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Current federal policy requires that all federal agencies (unless specifically exempted from such requirements) report security incidents to the United States Computer Emergency Readiness Team (US-CERT) within specified time frames designated in the US-CERT Concept of Operations for Federal Cyber Security Incident Handling."
 ),
-(88, 7, 7, 2, 1,
+(88, 7, 7, 2, 1, --IR-7
 "INCIDENT RESPONSE ASSISTANCE",
 "The organization provides an incident response support resource, integral to the organizational incident response capability that offers advice and assistance to users of the information system for the handling and reporting of security incidents.",
 "Incident response support resources provided by organizations include, for example, help desks, assistance groups, and access to forensics services, when required."
 ),
-(89, 7, 8, 1, 1,
+(89, 7, 8, 1, 1, --IR-8
 "INCIDENT RESPONSE PLAN",
 "The organization: 
 a. Develops an incident response plan that: 
@@ -836,7 +836,7 @@ e. Communicates incident response plan changes to [Assignment: organization-defi
 f. Protects the incident response plan from unauthorized disclosure and modification.",
 "It is important that organizations develop and implement a coordinated approach to incident response. Organizational missions, business functions, strategies, goals, and objectives for incident response help to determine the structure of incident response capabilities. As part of a comprehensive incident response capability, organizations consider the coordination and sharing of information with external organizations, including, for example, external service providers and organizations involved in the supply chain for organizational information systems."
 ),
-(90, 7, 9, 0, 0,
+(90, 7, 9, 0, 0, --IR-9
 "INFORMATION SPILLAGE RESPONSE",
 "The organization responds to information spills by: 
 a. Identifying the specific information involved in the information system contamination; 
@@ -847,7 +847,7 @@ e. Identifying other information systems or system components that may have been
 f. Performing other [Assignment: organization-defined actions].",
 "Information spillage refers to instances where either classified or sensitive information is inadvertently placed on information systems that are not authorized to process such information. Such information spills often occur when information that is initially thought to be of lower sensitivity is transmitted to an information system and then is subsequently determined to be of higher sensitivity. At that point, corrective action is required. The nature of the organizational response is generally based upon the degree of sensitivity of the spilled information (e.g., security category or classification level), the security capabilities of the information system, the specific nature of contaminated storage media, and the access authorizations (e.g., security clearances) of individuals with authorized access to the contaminated system. The methods used to communicate information about the spill after the fact do not involve methods directly associated with the actual spill to minimize the risk of further spreading the contamination before such contamination is isolated and eradicated."
 ),
-(91, 7, 10, 0, 0,
+(91, 7, 10, 0, 0, --IR-10
 "INTEGRATED INFORMATION SECURITY ANALYSIS TEAM",
 "The organization establishes an integrated team of forensic/malicious code analysts, tool developers, and real-time operations personnel.",
 "Having an integrated team for incident response facilitates information sharing. Such capability allows organizational personnel, including developers, implementers, and operators, to leverage the team knowledge of the threat in order to implement defensive measures that will enable organizations to deter intrusions more effectively. Moreover, it promotes the rapid detection of intrusions, development of appropriate mitigations, and the deployment of effective defensive measures. For example, when an intrusion is detected, the integrated security analysis team can rapidly develop an appropriate response for operators to implement, correlate the new incident with information on past intrusions, and augment ongoing intelligence development. This enables the team to identify adversary TTPs that are linked to the operations tempo or to specific missions/business functions, and to define responsive actions in a way that does not disrupt the mission/business operations. Ideally, information security analysis teams are distributed within organizations to make the capability more resilient."
@@ -858,7 +858,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(92, 8, 1, 1, 1,
+(92, 8, 1, 1, 1, --MA-1
 "SYSTEM MAINTENANCE POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -869,7 +869,7 @@ b. Reviews and updates the current:
 2. System maintenance procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the MA family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(93, 8, 2, 2, 1,
+(93, 8, 2, 2, 1, --MA-2
 "CONTROLLED MAINTENANCE",
 "The organization: 
 a. Schedules, performs, documents, and reviews records of maintenance and repairs on information system components in accordance with manufacturer or vendor specifications and/or organizational requirements; 
@@ -878,14 +878,14 @@ c. Requires that [Assignment: organization-defined personnel or roles] explicitl
 d. Sanitizes equipment to remove all information from associated media prior to removal from organizational facilities for off-site maintenance or repairs; 
 e. Checks all potentially impacted security controls to verify that the controls are still functioning properly following maintenance or repair actions; and 
 f. Includes [Assignment: organization-defined maintenance-related information] in organizational maintenance records.",
-"This control addresses the information security aspects of the information system maintenance program and applies to all types of maintenance to any system component (including applications) conducted by any local or nonlocal entity (e.g., in-contract, warranty, in-house, software maintenance agreement). System maintenance also includes those components not directly associated with information processing and/or data/information retention such as scanners, copiers, and printers. Information necessary for creating effective maintenance records includes, for example: I. date and time of maintenance; II. name of individuals or group performing the maintenance; III. name of escort, if necessary; IV. a description of the maintenance performed; and V. information system components/equipment removed or replaced (including identification numbers, if applicable). The level of detail included in maintenance records can be informed by the security categories of organizational information systems. Organizations consider supply chain issues associated with replacement components for information systems."
+"This control addresses the information security aspects of the information system maintenance program and applies to all types of maintenance to any system component (including applications) conducted by any local or nonlocal entity (e.g., in-contract, warranty, in-house, software maintenance agreement). System maintenance also includes those components not directly associated with information processing and/or data/information retention such as scanners, copiers, and printers. Information necessary for creating effective maintenance records includes, for example: (i) date and time of maintenance; (ii) name of individuals or group performing the maintenance; (iii) name of escort, if necessary; (iv) a description of the maintenance performed; and (v) information system components/equipment removed or replaced (including identification numbers, if applicable). The level of detail included in maintenance records can be informed by the security categories of organizational information systems. Organizations consider supply chain issues associated with replacement components for information systems."
 ),
-(94, 8, 3, 3, 2,
+(94, 8, 3, 3, 2, --MA-3
 "MAINTENANCE TOOLS",
 "The organization approves, controls, and monitors information system maintenance tools.",
 "This control addresses security-related issues associated with maintenance tools used specifically for diagnostic and repair actions on organizational information systems. Maintenance tools can include hardware, software, and firmware items. Maintenance tools are potential vehicles for transporting malicious code, either intentionally or unintentionally, into a facility and subsequently into organizational information systems. Maintenance tools can include, for example, hardware/software diagnostic test equipment and hardware/software packet sniffers. This control does not cover hardware/software components that may support information system maintenance, yet are a part of the system, for example, the software implementing 'ping', 'ls', 'ipconfig', or the hardware and software implementing the monitoring port of an Ethernet switch."
 ),
-(95, 8, 4, 2, 1,
+(95, 8, 4, 2, 1, --MA-4
 "NONLOCAL MAINTENANCE",
 "The organization: 
 a. Approves and monitors nonlocal maintenance and diagnostic activities; 
@@ -895,7 +895,7 @@ d. Maintains records for nonlocal maintenance and diagnostic activities; and
 e. Terminates session and network connections when nonlocal maintenance is completed.",
 "Nonlocal maintenance and diagnostic activities are those activities conducted by individuals communicating through a network, either an external network (e.g., the Internet) or an internal network. Local maintenance and diagnostic activities are those activities carried out by individuals physically present at the information system or information system component and not communicating across a network connection. Authentication techniques used in the establishment of nonlocal maintenance and diagnostic sessions reflect the network access requirements in IA-2. Typically, strong authentication requires authenticators that are resistant to replay attacks and employ multifactor authentication. Strong authenticators include, for example, PKI where certificates are stored on a token protected by a password, passphrase, or biometric. Enforcing requirements in MA-4 is accomplished in part by other controls."
 ),
-(96, 8, 5, 2, 1,
+(96, 8, 5, 2, 1, --MA-5
 "MAINTENANCE PERSONNEL",
 "The organization: 
 a. Establishes a process for maintenance personnel authorization and maintains a list of authorized maintenance organizations or personnel; 
@@ -903,7 +903,7 @@ b. Ensures that non-escorted personnel performing maintenance on the information
 c. Designates organizational personnel with required access authorizations and technical competence to supervise the maintenance activities of personnel who do not possess the required access authorizations.",
 "This control applies to individuals performing hardware or software maintenance on organizational information systems, while PE-2 addresses physical access for individuals whose maintenance duties place them within the physical protection perimeter of the systems (e.g., custodial staff, physical plant maintenance personnel). Technical competence of supervising individuals relates to the maintenance performed on the information systems while having required access authorizations refers to maintenance on and near the systems. Individuals not previously identified as authorized maintenance personnel, such as information technology manufacturers, vendors, systems integrators, and consultants, may require privileged access to organizational information systems, for example, when required to conduct maintenance activities with little or no notice. Based on organizational assessments of risk, organizations may issue temporary credentials to these individuals. Temporary credentials may be for one-time use or for very limited time periods."
 ),
-(97, 8, 6, 2, 2,
+(97, 8, 6, 2, 2, --MA-6
 "TIMELY MAINTENANCE",
 "The organization obtains maintenance support and/or spare parts for [Assignment: organization-defined information system components] within [Assignment: organization-defined time period] of failure.",
 "Organizations specify the information system components that result in increased risk to organizational operations and assets, individuals, other organizations, or the Nation when the functionality provided by those components is not operational. Organizational actions to obtain maintenance support typically include having appropriate contracts in place."
@@ -914,7 +914,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(98, 9, 1, 1, 1,
+(98, 9, 1, 1, 1, --MP-1
 "MEDIA PROTECTION POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -925,26 +925,26 @@ b. Reviews and updates the current:
 2. Media protection procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the MP family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(99, 9, 2, 1, 1,
+(99, 9, 2, 1, 1, --MP-2
 "MEDIA ACCESS",
 "The organization restricts access to [Assignment: organization-defined types of digital and/or non-digital media] to [Assignment: organization-defined personnel or roles].",
 "Information system media includes both digital and non-digital media. Digital media includes, for example, diskettes, magnetic tapes, external/removable hard disk drives, flash drives, compact disks, and digital video disks. Non-digital media includes, for example, paper and microfilm. Restricting non-digital media access includes, for example, denying access to patient medical records in a community hospital unless the individuals seeking access to such records are authorized healthcare providers. Restricting access to digital media includes, for example, limiting access to design specifications stored on compact disks in the media library to the project leader and the individuals on the development team."
 ),
-(100, 9, 3, 2, 2,
+(100, 9, 3, 2, 2, --MP-3
 "MEDIA MARKING",
 "The organization: 
 a. Marks information system media indicating the distribution limitations, handling caveats, and applicable security markings (if any) of the information; and 
 b. Exempts [Assignment: organization-defined types of information system media] from marking as long as the media remain within [Assignment: organization-defined controlled areas].",
 "The term security marking refers to the application/use of human-readable security attributes. The term security labeling refers to the application/use of security attributes with regard to internal data structures within information systems (see AC-16). Information system media includes both digital and non-digital media. Digital media includes, for example, diskettes, magnetic tapes, external/removable hard disk drives, flash drives, compact disks, and digital video disks. Non-digital media includes, for example, paper and microfilm. Security marking is generally not required for media containing information determined by organizations to be in the public domain or to be publicly releasable. However, some organizations may require markings for public information indicating that the information is publicly releasable. Marking of information system media reflects applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance."
 ),
-(101, 9, 4, 1, 2,
+(101, 9, 4, 1, 2, --MP-4
 "MEDIA STORAGE",
 "The organization: 
 a. Physically controls and securely stores [Assignment: organization-defined types of digital and/or non-digital media] within [Assignment: organization-defined controlled areas]; and 
 b. Protects information system media until the media are destroyed or sanitized using approved equipment, techniques, and procedures.",
 "Information system media includes both digital and non-digital media. Digital media includes, for example, diskettes, magnetic tapes, external/removable hard disk drives, flash drives, compact disks, and digital video disks. Non-digital media includes, for example, paper and microfilm. Physically controlling information system media includes, for example, conducting inventories, ensuring procedures are in place to allow individuals to check out and return media to the media library, and maintaining accountability for all stored media. Secure storage includes, for example, a locked drawer, desk, or cabinet, or a controlled media library. The type of media storage is commensurate with the security category and/or classification of the information residing on the media. Controlled areas are areas for which organizations provide sufficient physical and procedural safeguards to meet the requirements established for protecting information and/or information systems. For media containing information determined by organizations to be in the public domain, to be publicly releasable, or to have limited or no adverse impact on organizations or individuals if accessed by other than authorized personnel, fewer safeguards may be needed. In these situations, physical access controls provide adequate protection."
 ),
-(102, 9, 5, 1, 2,
+(102, 9, 5, 1, 2, --MP-5
 "MEDIA TRANSPORT",
 "The organization: 
 a. Protects and controls [Assignment: organization-defined types of information system media] during transport outside of controlled areas using [Assignment: organization-defined security safeguards]; 
@@ -953,19 +953,19 @@ c. Documents activities associated with the transport of information system medi
 d. Restricts the activities associated with the transport of information system media to authorized personnel. ",
 "Information system media includes both digital and non-digital media. Digital media includes, for example, diskettes, magnetic tapes, external/removable hard disk drives, flash drives, compact disks, and digital video disks. Non-digital media includes, for example, paper and microfilm. This control also applies to mobile devices with information storage capability (e.g., smart phones, tablets, E-readers), that are transported outside of controlled areas. Controlled areas are areas or spaces for which organizations provide sufficient physical and/or procedural safeguards to meet the requirements established for protecting information and/or information systems. Physical and technical safeguards for media are commensurate with the security category or classification of the information residing on the media. Safeguards to protect media during transport include, for example, locked containers and cryptography. Cryptographic mechanisms can provide confidentiality and integrity protections depending upon the mechanisms used. Activities associated with transport include the actual transport as well as those activities such as releasing media for transport and ensuring that media enters the appropriate transport processes. For the actual transport, authorized transport and courier personnel may include individuals from outside the organization (e.g., U.S. Postal Service or a commercial transport or delivery service). Maintaining accountability of media during transport includes, for example, restricting transport activities to authorized personnel, and tracking and/or obtaining explicit records of transport activities as the media moves through the transportation system to prevent and detect loss, destruction, or tampering. Organizations establish documentation requirements for activities associated with the transport of information system media in accordance with organizational assessments of risk to include the flexibility to define different record-keeping methods for the different types of media transport as part of an overall system of transport-related records."
 ),
-(103, 9, 6, 1, 1,
+(103, 9, 6, 1, 1, --MP-6
 "MEDIA SANITIZATION",
 "The organization: 
 a. Sanitizes [Assignment: organization-defined information system media] prior to disposal, release out of organizational control, or release for reuse using [Assignment: organization-defined sanitization techniques and procedures] in accordance with applicable federal and organizational standards and policies; and 
 b. Employs sanitization mechanisms with the strength and integrity commensurate with the security category or classification of the information.",
 "This control applies to all information system media, both digital and non-digital, subject to disposal or reuse, whether or not the media is considered removable. Examples include media found in scanners, copiers, printers, notebook computers, workstations, network components, and mobile devices. The sanitization process removes information from the media such that the information cannot be retrieved or reconstructed. Sanitization techniques, including clearing, purging, cryptographic erase, and destruction, prevent the disclosure of information to unauthorized individuals when such media is reused or released for disposal. Organizations determine the appropriate sanitization methods recognizing that destruction is sometimes necessary when other methods cannot be applied to media requiring sanitization. Organizations use discretion on the employment of approved sanitization techniques and procedures for media containing information deemed to be in the public domain or publicly releasable, or deemed to have no adverse impact on organizations or individuals if released for reuse or disposal. Sanitization of non-digital media includes, for example, removing a classified appendix from an otherwise unclassified document, or redacting selected sections or words from a document by obscuring the redacted sections/words in a manner equivalent in effectiveness to removing them from the document. NSA standards and policies control the sanitization process for media containing classified information."
 ),
-(104, 9, 7, 1, 1,
+(104, 9, 7, 1, 1, --MP-7
 "MEDIA USE",
 "The organization [Selection: restricts; prohibits] the use of [Assignment: organization-defined types of information system media] on [Assignment: organization-defined information systems or system components] using [Assignment: organization-defined security safeguards].",
 "Information system media includes both digital and non-digital media. Digital media includes, for example, diskettes, magnetic tapes, external/removable hard disk drives, flash drives, compact disks, and digital video disks. Non-digital media includes, for example, paper and microfilm. This control also applies to mobile devices with information storage capability (e.g., smart phones, tablets, E-readers). In contrast to MP-2, which restricts user access to media, this control restricts the use of certain types of media on information systems, for example, restricting/prohibiting the use of flash drives or external hard disk drives. Organizations can employ technical and nontechnical safeguards (e.g., policies, procedures, rules of behavior) to restrict the use of information system media. Organizations may restrict the use of portable storage devices, for example, by using physical cages on workstations to prohibit access to certain external ports, or disabling/removing the ability to insert, read or write to such devices. Organizations may also limit the use of portable storage devices to only approved devices including, for example, devices provided by the organization, devices provided by other approved organizations, and devices that are not personally owned. Finally, organizations may restrict the use of portable storage devices based on the type of device, for example, prohibiting the use of writeable, portable storage devices, and implementing this restriction by disabling or removing the capability to write to such devices."
 ),
-(105, 9, 8, 0, 0,
+(105, 9, 8, 0, 0, --MP-8
 "MEDIA DOWNGRADING",
 "The organization: 
 a. Establishes [Assignment: organization-defined information system media downgrading process] that includes employing downgrading mechanisms with [Assignment: organization-defined strength and integrity]; 
@@ -980,7 +980,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(106, 10, 1, 1, 1,
+(106, 10, 1, 1, 1, --PS-1
 "PERSONNEL SECURITY POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -991,7 +991,7 @@ b. Reviews and updates the current:
 2. Personnel security procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the PS family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(107, 10, 2, 1, 1,
+(107, 10, 2, 1, 1, --PS-2
 "POSITION RISK DESIGNATION",
 "The organization: 
 a. Assigns a risk designation to all organizational positions; 
@@ -999,14 +999,14 @@ b. Establishes screening criteria for individuals filling those positions; and
 c. Reviews and updates position risk designations [Assignment: organization-defined frequency].",
 "Position risk designations reflect Office of Personnel Management policy and guidance. Risk designations can guide and inform the types of authorizations individuals receive when accessing organizational information and information systems. Position screening criteria include explicit information security role appointment requirements (e.g., training, security clearances)."
 ),
-(108, 10, 3, 1, 1,
+(108, 10, 3, 1, 1, --PS-3
 "PERSONNEL SCREENING",
 "The organization: 
 a. Screens individuals prior to authorizing access to the information system; and 
 b. Rescreens individuals according to [Assignment: organization-defined conditions requiring rescreening and, where rescreening is so indicated, the frequency of such rescreening].",
 "Personnel screening and rescreening activities reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, guidance, and specific criteria established for the risk designations of assigned positions. Organizations may define different rescreening conditions and frequencies for personnel accessing information systems based on types of information processed, stored, or transmitted by the systems."
 ),
-(109, 10, 4, 1, 1,
+(109, 10, 4, 1, 1, --PS-4
 "PERSONNEL TERMINATION",
 "The organization, upon termination of individual employment: 
 a. Disables information system access within [Assignment: organization-defined time period]; 
@@ -1017,16 +1017,16 @@ e. Retains access to organizational information and information systems formerly
 f. Notifies [Assignment: organization-defined personnel or roles] within [Assignment: organization-defined time period].",
 "Information system-related property includes, for example, hardware authentication tokens, system administration technical manuals, keys, identification cards, and building passes. Exit interviews ensure that terminated individuals understand the security constraints imposed by being former employees and that proper accountability is achieved for information system-related property. Security topics of interest at exit interviews can include, for example, reminding terminated individuals of nondisclosure agreements and potential limitations on future employment. Exit interviews may not be possible for some terminated individuals, for example, in cases related to job abandonment, illnesses, and nonavailability of supervisors. Exit interviews are important for individuals with security clearances. Timely execution of termination actions is essential for individuals terminated for cause. In certain situations, organizations consider disabling the information system accounts of individuals that are being terminated prior to the individuals being notified."
 ),
-(110, 10, 5, 2, 1,
+(110, 10, 5, 2, 1, --PS-5
 "PERSONNEL TRANSFER",
 "The organization: 
 a. Reviews and confirms ongoing operational need for current logical and physical access authorizations to information systems/facilities when individuals are reassigned or transferred to other positions within the organization; 
 b. Initiates [Assignment: organization-defined transfer or reassignment actions] within [Assignment: organization-defined time period following the formal transfer action]; 
 c. Modifies access authorization as needed to correspond with any changes in operational need due to reassignment or transfer; and 
 d. Notifies [Assignment: organization-defined personnel or roles] within [Assignment: organization-defined time period].",
-"This control applies when reassignments or transfers of individuals are permanent or of such extended durations as to make the actions warranted. Organizations define actions appropriate for the types of reassignments or transfers, whether permanent or extended. Actions that may be required for personnel transfers or reassignments to other positions within organizations include, for example: I. returning old and issuing new keys, identification cards, and building passes; II. closing information system accounts and establishing new accounts; III. changing information system access authorizations (i.e., privileges); and IV. providing for access to official records to which individuals had access at previous work locations and in previous information system accounts."
+"This control applies when reassignments or transfers of individuals are permanent or of such extended durations as to make the actions warranted. Organizations define actions appropriate for the types of reassignments or transfers, whether permanent or extended. Actions that may be required for personnel transfers or reassignments to other positions within organizations include, for example: (i) returning old and issuing new keys, identification cards, and building passes; (ii) closing information system accounts and establishing new accounts; (iii) changing information system access authorizations (i.e., privileges); and (iv) providing for access to official records to which individuals had access at previous work locations and in previous information system accounts."
 ),
-(111, 10, 6, 3, 1,
+(111, 10, 6, 3, 1, --PS-6
 "ACCESS AGREEMENTS",
 "The organization: 
 a. Develops and documents access agreements for organizational information systems; 
@@ -1036,7 +1036,7 @@ c. Ensures that individuals requiring access to organizational information and i
 2. Re-sign access agreements to maintain access to organizational information systems when access agreements have been updated or [Assignment: organization-defined frequency].",
 "Access agreements include, for example, nondisclosure agreements, acceptable use agreements, rules of behavior, and conflict-of-interest agreements. Signed access agreements include an acknowledgement that individuals have read, understand, and agree to abide by the constraints associated with organizational information systems to which access is authorized. Organizations can use electronic signatures to acknowledge access agreements unless specifically prohibited by organizational policy."
 ),
-(112, 10, 7, 1, 1,
+(112, 10, 7, 1, 1, --PS-7
 "THIRD-PARTY PERSONNEL SECURITY",
 "The organization: 
 a. Establishes personnel security requirements including security roles and responsibilities for third-party providers; 
@@ -1046,7 +1046,7 @@ d. Requires third-party providers to notify [Assignment: organization-defined pe
 e. Monitors provider compliance.",
 "Third-party providers include, for example, service bureaus, contractors, and other organizations providing information system development, information technology services, outsourced applications, and network and security management. Organizations explicitly include personnel security requirements in acquisition-related documents. Third-party providers may have personnel working at organizational facilities with credentials, badges, or information system privileges issued by organizations. Notifications of third-party personnel changes ensure appropriate termination of privileges and credentials. Organizations define the transfers and terminations deemed reportable by security-related characteristics that include, for example, functions, roles, and nature of credentials/privileges associated with individuals transferred or terminated."
 ),
-(113, 10, 8, 3, 1,
+(113, 10, 8, 3, 1, --PS-8
 "PERSONNEL SANCTIONS",
 "The organization: 
 a. Employs a formal sanctions process for individuals failing to comply with established information security policies and procedures; and 
@@ -1059,7 +1059,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(114, 11, 1, 1, 1,
+(114, 11, 1, 1, 1, --PE-1
 "PHYSICAL AND ENVIRONMENTAL PROTECTION POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -1070,7 +1070,7 @@ b. Reviews and updates the current:
 2. Physical and environmental protection procedures [Assignment: organization-defined frequency].",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the PE family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(115, 11, 2, 1, 1,
+(115, 11, 2, 1, 1, --PE-2
 "PHYSICAL ACCESS AUTHORIZATIONS",
 "The organization: 
 a. Develops, approves, and maintains a list of individuals with authorized access to the facility where the information system resides; 
@@ -1079,7 +1079,7 @@ c. Reviews the access list detailing authorized facility access by individuals [
 d. Removes individuals from the facility access list when access is no longer required.",
 "This control applies to organizational employees and visitors. Individuals (e.g., employees, contractors, and others) with permanent physical access authorization credentials are not considered visitors. Authorization credentials include, for example, badges, identification cards, and smart cards. Organizations determine the strength of authorization credentials needed (including level of forge-proof badges, smart cards, or identification cards) consistent with federal standards, policies, and procedures. This control only applies to areas within facilities that have not been designated as publicly accessible."
 ),
-(116, 11, 3, 1, 1,
+(116, 11, 3, 1, 1, --PE-3
 "PHYSICAL ACCESS CONTROL",
 "The organization: 
 a. Enforces physical access authorizations at [Assignment: organization-defined entry/exit points to the facility where the information system resides] by; 
@@ -1093,42 +1093,42 @@ f. Inventories [Assignment: organization-defined physical access devices] every 
 g. Changes combinations and keys [Assignment: organization-defined frequency] and/or when keys are lost, combinations are compromised, or individuals are transferred or terminated. ",
 "This control applies to organizational employees and visitors. Individuals (e.g., employees, contractors, and others) with permanent physical access authorization credentials are not considered visitors. Organizations determine the types of facility guards needed including, for example, professional physical security staff or other personnel such as administrative staff or information system users. Physical access devices include, for example, keys, locks, combinations, and card readers. Safeguards for publicly accessible areas within organizational facilities include, for example, cameras, monitoring by guards, and isolating selected information systems and/or system components in secured areas. Physical access control systems comply with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance. The Federal Identity, Credential, and Access Management Program provides implementation guidance for identity, credential, and access management capabilities for physical access control systems. Organizations have flexibility in the types of audit logs employed. Audit logs can be procedural (e.g., a written log of individuals accessing the facility and when such access occurred), automated (e.g., capturing ID provided by a PIV card), or some combination thereof. Physical access points can include facility access points, interior access points to information systems and/or components requiring supplemental access controls, or both. Components of organizational information systems (e.g., workstations, terminals) may be located in areas designated as publicly accessible with organizations safeguarding access to such devices."
 ),
-(117, 11, 4, 1, 2,
+(117, 11, 4, 1, 2, --PE-4
 "ACCESS CONTROL FOR TRANSMISSION MEDIUM",
 "The organization controls physical access to [Assignment: organization-defined information system distribution and transmission lines] within organizational facilities using [Assignment: organization-defined security safeguards].",
-"Physical security safeguards applied to information system distribution and transmission lines help to prevent accidental damage, disruption, and physical tampering. In addition, physical safeguards may be necessary to help prevent eavesdropping or in transit modification of unencrypted transmissions. Security safeguards to control physical access to system distribution and transmission lines include, for example: I. locked wiring closets; II. disconnected or locked spare jacks; and/or III. protection of cabling by conduit or cable trays."
+"Physical security safeguards applied to information system distribution and transmission lines help to prevent accidental damage, disruption, and physical tampering. In addition, physical safeguards may be necessary to help prevent eavesdropping or in transit modification of unencrypted transmissions. Security safeguards to control physical access to system distribution and transmission lines include, for example: (i) locked wiring closets; (ii) disconnected or locked spare jacks; and/or (iii) protection of cabling by conduit or cable trays."
 ),
-(118, 11, 5, 2, 2,
+(118, 11, 5, 2, 2, --PE-5
 "ACCESS CONTROL FOR OUTPUT DEVICES",
 "The organization controls physical access to information system output devices to prevent unauthorized individuals from obtaining the output.",
 "Controlling physical access to output devices includes, for example, placing output devices in locked rooms or other secured areas and allowing access to authorized individuals only, and placing output devices in locations that can be monitored by organizational personnel. Monitors, printers, copiers, scanners, facsimile machines, and audio devices are examples of information system output devices."
 ),
-(119, 11, 6, 1, 1,
+(119, 11, 6, 1, 1, --PE-6
 "MONITORING PHYSICAL ACCESS",
 "The organization: 
 a. Monitors physical access to the facility where the information system resides to detect and respond to physical security incidents; 
 b. Reviews physical access logs [Assignment: organization-defined frequency] and upon occurrence of [Assignment: organization-defined events or potential indications of events]; and 
 c. Coordinates results of reviews and investigations with the organizational incident response capability.",
-"Organizational incident response capabilities include investigations of and responses to detected physical security incidents. Security incidents include, for example, apparent security violations or suspicious physical access activities. Suspicious physical access activities include, for example: I. accesses outside of normal work hours; II. repeated accesses to areas not normally accessed; III. accesses for unusual lengths of time; and IV. out-of-sequence accesses."
+"Organizational incident response capabilities include investigations of and responses to detected physical security incidents. Security incidents include, for example, apparent security violations or suspicious physical access activities. Suspicious physical access activities include, for example: (i) accesses outside of normal work hours; (ii) repeated accesses to areas not normally accessed; (iii) accesses for unusual lengths of time; and (iv) out-of-sequence accesses."
 ),
-(120, 11, 7, 0, 0,
+(120, 11, 7, 0, 0, --PE-7
 "VISITOR CONTROL",
 "[Withdrawn: Incorporated into PE-2 and PE-3].",
 NULL
 ),
-(121, 11, 8, 3, 1,
+(121, 11, 8, 3, 1, --PE-8
 "VISITOR ACCESS RECORDS",
 "The organization: 
 a. Maintains visitor access records to the facility where the information system resides for [Assignment: organization-defined time period]; and 
 b. Reviews visitor access records [Assignment: organization-defined frequency].",
 "Visitor access records include, for example, names and organizations of persons visiting, visitor signatures, forms of identification, dates of access, entry and departure times, purposes of visits, and names and organizations of persons visited. Visitor access records are not required for publicly accessible areas."
 ),
-(122, 11, 9, 1, 2,
+(122, 11, 9, 1, 2, --PE-9
 "POWER EQUIPMENT AND CABLING",
 "The organization protects power equipment and power cabling for the information system from damage and destruction.",
 "Organizations determine the types of protection necessary for power equipment and cabling employed at different locations both internal and external to organizational facilities and environments of operation. This includes, for example, generators and power cabling outside of buildings, internal cabling and uninterruptable power sources within an office or data center, and power sources for self-contained entities such as vehicles and satellites."
 ),
-(123, 11, 10, 1, 2,
+(123, 11, 10, 1, 2, --PE-10
 "EMERGENCY SHUTOFF",
 "The organization: 
 a. Provides the capability of shutting off power to the information system or individual system components in emergency situations; 
@@ -1136,39 +1136,39 @@ b. Places emergency shutoff switches or devices in [Assignment: organization-def
 c. Protects emergency power shutoff capability from unauthorized activation.",
 "This control applies primarily to facilities containing concentrations of information system resources including, for example, data centers, server rooms, and mainframe computer rooms."
 ),
-(124, 11, 11, 1, 2,
+(124, 11, 11, 1, 2, --PE-11
 "EMERGENCY POWER",
 "The organization provides a short-term uninterruptible power supply to facilitate [Selection (one or more): an orderly shutdown of the information system; transition of the information system to long-term alternate power] in the event of a primary power source loss.",
 NULL
 ),
-(125, 11, 12, 1, 1,
+(125, 11, 12, 1, 1, --PE-12
 "EMERGENCY LIGHTING",
 "The organization employs and maintains automatic emergency lighting for the information system that activates in the event of a power outage or disruption and that covers emergency exits and evacuation routes within the facility.",
 "This control applies primarily to facilities containing concentrations of information system resources including, for example, data centers, server rooms, and mainframe computer rooms."
 ),
-(126, 11, 13, 1, 1,
+(126, 11, 13, 1, 1, --PE-13
 "FIRE PROTECTION",
 "The organization employs and maintains fire suppression and detection devices/systems for the information system that are supported by an independent energy source.",
 "This control applies primarily to facilities containing concentrations of information system resources including, for example, data centers, server rooms, and mainframe computer rooms. Fire suppression and detection devices/systems include, for example, sprinkler systems, handheld fire extinguishers, fixed fire hoses, and smoke detectors."
 ),
-(127, 11, 14, 1, 1,
+(127, 11, 14, 1, 1, --PE-14
 "TEMPERATURE AND HUMIDITY CONTROLS",
 "The organization: 
 a. Maintains temperature and humidity levels within the facility where the information system resides at [Assignment: organization-defined acceptable levels]; and 
 b. Monitors temperature and humidity levels [Assignment: organization-defined frequency]. ",
 "This control applies primarily to facilities containing concentrations of information system resources, for example, data centers, server rooms, and mainframe computer rooms."
 ),
-(128, 11, 15, 1, 1,
+(128, 11, 15, 1, 1, --PE-15
 "WATER DAMAGE PROTECTION",
 "The organization protects the information system from damage resulting from water leakage by providing master shutoff or isolation valves that are accessible, working properly, and known to key personnel.",
 "This control applies primarily to facilities containing concentrations of information system resources including, for example, data centers, server rooms, and mainframe computer rooms. Isolation valves can be employed in addition to or in lieu of master shutoff valves to shut off water supplies in specific areas of concern, without affecting entire organizations."
 ),
-(129, 11, 16, 2, 1,
+(129, 11, 16, 2, 1, --PE-16
 "DELIVERY AND REMOVAL",
 "The organization authorizes, monitors, and controls [Assignment: organization-defined types of information system components] entering and exiting the facility and maintains records of those items.",
 "Effectively enforcing authorizations for entry and exit of information system components may require restricting access to delivery areas and possibly isolating the areas from the information system and media libraries."
 ),
-(130, 11, 17, 2, 2,
+(130, 11, 17, 2, 2, --PE-17
 "ALTERNATE WORK SITE",
 "The organization: 
 a. Employs [Assignment: organization-defined security controls] at alternate work sites; 
@@ -1176,17 +1176,17 @@ b. Assesses as feasible, the effectiveness of security controls at alternate wor
 c. Provides a means for employees to communicate with information security personnel in case of security incidents or problems.",
 "Alternate work sites may include, for example, government facilities or private residences of employees. While commonly distinct from alternative processing sites, alternate work sites may provide readily available alternate locations as part of contingency operations. Organizations may define different sets of security controls for specific alternate work sites or types of sites depending on the work-related activities conducted at those sites. This control supports the contingency planning activities of organizations and the federal telework initiative."
 ),
-(131, 11, 18, 3, 3,
+(131, 11, 18, 3, 3, --PE-18
 "LOCATION OF INFORMATION SYSTEM COMPONENTS",
 "The organization positions information system components within the facility to minimize potential damage from [Assignment: organization-defined physical and environmental hazards] and to minimize the opportunity for unauthorized access.",
 "Physical and environmental hazards include, for example, flooding, fire, tornados, earthquakes, hurricanes, acts of terrorism, vandalism, electromagnetic pulse, electrical interference, and other forms of incoming electromagnetic radiation. In addition, organizations consider the location of physical entry points where unauthorized individuals, while not being granted access, might nonetheless be in close proximity to information systems and therefore increase the potential for unauthorized access to organizational communications (e.g., through the use of wireless sniffers or microphones)."
 ),
-(132, 11, 19, 0, 0,
+(132, 11, 19, 0, 0, --PE-19
 "INFORMATION LEAKAGE",
 "The organization protects the information system from information leakage due to electromagnetic signals emanations.",
 "Information leakage is the intentional or unintentional release of information to an untrusted environment from electromagnetic signals emanations. Security categories or classifications of information systems (with respect to confidentiality) and organizational security policies guide the selection of security controls employed to protect systems against information leakage due to electromagnetic signals emanations."
 ),
-(133, 11, 20, 0, 0,
+(133, 11, 20, 0, 0, --PE-20
 "ASSET MONITORING AND TRACKING",
 "The organization: 
 a. Employs [Assignment: organization-defined asset location technologies] to track and monitor the location and movement of [Assignment: organization-defined assets] within [Assignment: organization-defined controlled areas]; and 
@@ -1199,7 +1199,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(134, 12, 1, 1, 1,
+(134, 12, 1, 1, 1, --PL-1
 "SECURITY PLANNING POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -1210,7 +1210,7 @@ b. Reviews and updates the current:
 2. Security planning procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the PL family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(135, 12, 2, 1, 1,
+(135, 12, 2, 1, 1, --PL-2
 "SYSTEM SECURITY PLAN",
 "The organization: 
 a. Develops a security plan for the information system that: 
@@ -1229,12 +1229,12 @@ d. Updates the plan to address changes to the information system/environment of 
 e. Protects the security plan from unauthorized disclosure and modification.",
 "Security plans relate security requirements to a set of security controls and control enhancements. Security plans also describe, at a high level, how the security controls and control enhancements meet those security requirements, but do not provide detailed, technical descriptions of the specific design or implementation of the controls/enhancements. Security plans contain sufficient information (including the specification of parameter values for assignment and selection statements either explicitly or by reference) to enable a design and implementation that is unambiguously compliant with the intent of the plans and subsequent determinations of risk to organizational operations and assets, individuals, other organizations, and the Nation if the plan is implemented as intended. Organizations can also apply tailoring guidance to the security control baselines in Appendix D and CNSS Instruction 1253 to develop overlays for community-wide use or to address specialized requirements, technologies, or missions/environments of operation (e.g., DoD-tactical, Federal Public Key Infrastructure, or Federal Identity, Credential, and Access Management, space operations). Appendix I provides guidance on developing overlays. Security plans need not be single documents; the plans can be a collection of various documents including documents that already exist. Effective security plans make extensive use of references to policies, procedures, and additional documents (e.g., design and implementation specifications) where more detailed information can be obtained. This reduces the documentation requirements associated with security programs and maintains security-related information in other established management/operational areas related to enterprise architecture, system development life cycle, systems engineering, and acquisition. For example, security plans do not contain detailed contingency plan or incident response plan information but instead provide explicitly or by reference, sufficient information to define what needs to be accomplished by those plans."
 ),
-(136, 12, 3, 0, 0,
+(136, 12, 3, 0, 0, --PL-3
 "SYSTEM SECURITY PLAN UPDATE",
 "[Withdrawn: Incorporated into PL-2].",
 NULL
 ),
-(137, 12, 4, 2, 1,
+(137, 12, 4, 2, 1, --PL-4
 "RULES OF BEHAVIOR",
 "The organization: 
 a. Establishes and makes readily available to individuals requiring access to the information system, the rules that describe their responsibilities and expected behavior with regard to information and information system usage; 
@@ -1243,24 +1243,24 @@ c. Reviews and updates the rules of behavior [Assignment: organization-defined f
 d. Requires individuals who have signed a previous version of the rules of behavior to read and re-sign when the rules of behavior are revised/updated.",
 "This control enhancement applies to organizational users. Organizations consider rules of behavior based on individual user roles and responsibilities, differentiating, for example, between rules that apply to privileged users and rules that apply to general users. Establishing rules of behavior for some types of non-organizational users including, for example, individuals who simply receive data/information from federal information systems, is often not feasible given the large number of such users and the limited nature of their interactions with the systems. Rules of behavior for both organizational and non-organizational users can also be established in AC-8, System Use Notification. PL-4 b. (the signed acknowledgment portion of this control) may be satisfied by the security awareness training and role-based security training programs conducted by organizations if such training includes rules of behavior. Organizations can use electronic signatures for acknowledging rules of behavior."
 ),
-(138, 12, 5, 0, 0,
+(138, 12, 5, 0, 0, --PL-5
 "PRIVACY IMPACT ASSESSMENT",
 "[Withdrawn: Incorporated into Appendix J, AR-2].",
 NULL
 ),
-(139, 12, 6, 0, 0,
+(139, 12, 6, 0, 0, --PL-6
 "SECURITY-RELATED ACTIVITY PLANNING",
 "[Withdrawn: Incorporated into PL-2].",
 NULL
 ),
-(140, 12, 7, 0, 0,
+(140, 12, 7, 0, 0, --PL-7
 "SECURITY CONCEPT OF OPERATIONS",
 "The organization: 
 a. Develops a security Concept of Operations (CONOPS) for the information system containing at a minimum, how the organization intends to operate the system from the perspective of information security; and 
 b. Reviews and updates the CONOPS [Assignment: organization-defined frequency].",
 "The security CONOPS may be included in the security plan for the information system or in other system development life cycle-related documents, as appropriate. Changes to the CONOPS are reflected in ongoing updates to the security plan, the information security architecture, and other appropriate organizational documents (e.g., security specifications for procurements/acquisitions, system development life cycle documents, and systems/security engineering documents)."
 ),
-(141, 12, 8, 1, 2,
+(141, 12, 8, 1, 2, --PL-8
 "INFORMATION SECURITY ARCHITECTURE",
 "The organization: 
 a. Develops an information security architecture for the information system that: 
@@ -1271,7 +1271,7 @@ b. Reviews and updates the information security architecture [Assignment: organi
 c. Ensures that planned information security architecture changes are reflected in the security plan, the security Concept of Operations (CONOPS), and organizational procurements/acquisitions.",
 "This control addresses actions taken by organizations in the design and development of information systems. The information security architecture at the individual information system level is consistent with and complements the more global, organization-wide information security architecture described in PM-7 that is integral to and developed as part of the enterprise architecture. The information security architecture includes an architectural description, the placement/allocation of security functionality (including security controls), security-related information for external interfaces, information being exchanged across the interfaces, and the protection mechanisms associated with each interface. In addition, the security architecture can include other important security-related information, for example, user roles and access privileges assigned to each role, unique security requirements, the types of information processed, stored, and transmitted by the information system, restoration priorities of information and information system services, and any other specific protection needs. In today's modern architecture, it is becoming less common for organizations to control all information resources. There are going to be key dependencies on external information services and service providers. Describing such dependencies in the information security architecture is important to developing a comprehensive mission/business protection strategy. Establishing, developing, documenting, and maintaining under configuration control, a baseline configuration for organizational information systems is critical to implementing and maintaining an effective information security architecture. The development of the information security architecture is coordinated with the Senior Agency Official for Privacy (SAOP)/Chief Privacy Officer (CPO) to ensure that security controls needed to support privacy requirements are identified and effectively implemented. PL-8 is primarily directed at organizations (i.e., internally focused) to help ensure that organizations develop an information security architecture for the information system, and that the security architecture is integrated with or tightly coupled to the enterprise architecture through the organization-wide information security architecture. In contrast, SA-17 is primarily directed at external information technology product/system developers and integrators (although SA-17 could be used internally within organizations for in-house system development). SA-17, which is complementary to PL-8, is selected when organizations outsource the development of information systems or information system components to external entities, and there is a need to demonstrate/show consistency with the organization's enterprise architecture and information security architecture."
 ),
-(142, 12, 9, 0, 0,
+(142, 12, 9, 0, 0, --PL-9
 "CENTRAL MANAGEMENT",
 "The organization centrally manages [Assignment: organization-defined security controls and related processes].",
 "Central management refers to the organization-wide management and implementation of selected security controls and related processes. Central management includes planning, implementing, assessing, authorizing, and monitoring the organization-defined, centrally managed security controls and processes. As central management of security controls is generally associated with common controls, such management promotes and facilitates standardization of security control implementations and management and judicious use of organizational resources. Centrally-managed security controls and processes may also meet independence requirements for assessments in support of initial and ongoing authorizations to operate as part of organizational continuous monitoring. As part of the security control selection process, organizations determine which controls may be suitable for central management based on organizational resources and capabilities. Organizations consider that it may not always be possible to centrally manage every aspect of a security control. In such cases, the security control is treated as a hybrid control with the control managed and implemented either centrally or at the information system level. Controls and control enhancements that are candidates for full or partial central management include, but are not limited to: AC-2 (1) (2) (3) (4); AC-17 (1) (2) (3) (9); AC-18 (1) (3) (4) (5); AC-19 (4); AC-22; AC-23; AT-2 (1) (2); AT-3 (1) (2) (3); AT-4; AU-6 (1) (3) (5) (6) (9); AU-7 (1) (2); AU-11, AU-13, AU-16, CA-2 (1) (2) (3); CA-3 (1) (2) (3); CA-7 (1); CA-9; CM-2 (1) (2); CM-3 (1) (4); CM-4; CM-6 (1); CM-7 (4) (5); CM-8 (all); CM-9 (1); CM-10; CM-11; CP-7 (all); CP-8 (all); SC-43; SI-2; SI-3; SI-7; and SI-8."
@@ -1282,7 +1282,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(143, 13, 1, 0, 0,
+(143, 13, 1, 0, 0, --PM-1
 "INFORMATION SECURITY PROGRAM PLAN",
 "The organization: 
 a. Develops and disseminates an organization-wide information security program plan that: 
@@ -1295,12 +1295,12 @@ c. Updates the plan to address organizational changes and problems identified du
 d. Protects the information security program plan from unauthorized disclosure and modification.",
 "Information security program plans can be represented in single documents or compilations of documents at the discretion of organizations. The plans document the program management controls and organization-defined common controls. Information security program plans provide sufficient information about the program management controls/common controls (including specification of parameters for any assignment and selection statements either explicitly or by reference) to enable implementations that are unambiguously compliant with the intent of the plans and a determination of the risk to be incurred if the plans are implemented as intended. The security plans for individual information systems and the organization-wide information security program plan together, provide complete coverage for all security controls employed within the organization. Common controls are documented in an appendix to the organization's information security program plan unless the controls are included in a separate security plan for an information system (e.g., security controls employed as part of an intrusion detection system providing organization-wide boundary protection inherited by one or more organizational information systems). The organization-wide information security program plan will indicate which separate security plans contain descriptions of common controls. Organizations have the flexibility to describe common controls in a single document or in multiple documents. In the case of multiple documents, the documents describing common controls are included as attachments to the information security program plan. If the information security program plan contains multiple documents, the organization specifies in each document the organizational official or officials responsible for the development, implementation, assessment, authorization, and monitoring of the respective common controls. For example, the organization may require that the Facilities Management Office develop, implement, assess, authorize, and continuously monitor common physical and environmental protection controls from the PE family when such controls are not associated with a particular information system but instead, support multiple information systems."
 ),
-(144, 13, 2, 0, 0,
+(144, 13, 2, 0, 0, --PM-2
 "SENIOR INFORMATION SECURITY OFFICER",
 "The organization appoints a senior information security officer with the mission and resources to coordinate, develop, implement, and maintain an organization-wide information security program.",
 "The security officer described in this control is an organizational official. For a federal agency (as defined in applicable federal laws, Executive Orders, directives, policies, or regulations) this official is the Senior Agency Information Security Officer. Organizations may also refer to this official as the Senior Information Security Officer or Chief Information Security Officer."
 ),
-(145, 13, 3, 0, 0,
+(145, 13, 3, 0, 0, --PM-3
 "INFORMATION SECURITY RESOURCES",
 "The organization: 
 a. Ensures that all capital planning and investment requests include the resources needed to implement the information security program and documents all exceptions to this requirement; 
@@ -1308,7 +1308,7 @@ b. Employs a business case/Exhibit 300/Exhibit 53 to record the resources requir
 c. Ensures that information security resources are available for expenditure as planned.",
 "Organizations consider establishing champions for information security efforts and as part of including the necessary resources, assign specialized expertise and resources as needed. Organizations may designate and empower an Investment Review Board (or similar group) to manage and provide oversight for the information security-related aspects of the capital planning and investment control process."
 ),
-(146, 13, 4, 0, 0,
+(146, 13, 4, 0, 0, --PM-4
 "PLAN OF ACTION AND MILESTONES PROCESS",
 "The organization: 
 a. Implements a process for ensuring that plans of action and milestones for the security program and associated organizational information systems: 
@@ -1318,27 +1318,27 @@ a. Implements a process for ensuring that plans of action and milestones for the
 b. Reviews plans of action and milestones for consistency with the organizational risk management strategy and organization-wide priorities for risk response actions.",
 "The plan of action and milestones is a key document in the information security program and is subject to federal reporting requirements established by OMB. With the increasing emphasis on organization-wide risk management across all three tiers in the risk management hierarchy (i.e., organization, mission/business process, and information system), organizations view plans of action and milestones from an organizational perspective, prioritizing risk response actions and ensuring consistency with the goals and objectives of the organization. Plan of action and milestones updates are based on findings from security control assessments and continuous monitoring activities. OMB FISMA reporting guidance contains instructions regarding organizational plans of action and milestones."
 ),
-(147, 13, 5, 0, 0,
+(147, 13, 5, 0, 0, --PM-5
 "INFORMATION SYSTEM INVENTORY",
 "The organization develops and maintains an inventory of its information systems.",
 "This control addresses the inventory requirements in FISMA. OMB provides guidance on developing information systems inventories and associated reporting requirements. For specific information system inventory reporting requirements, organizations consult OMB annual FISMA reporting guidance."
 ),
-(148, 13, 6, 0, 0,
+(148, 13, 6, 0, 0, --PM-6
 "INFORMATION SECURITY MEASURES OF PERFORMANCE",
 "The organization develops, monitors, and reports on the results of information security measures of performance.",
 "Measures of performance are outcome-based metrics used by an organization to measure the effectiveness or efficiency of the information security program and the security controls employed in support of the program."
 ),
-(149, 13, 7, 0, 0,
+(149, 13, 7, 0, 0, --PM-7
 "ENTERPRISE ARCHITECTURE",
 "The organization develops an enterprise architecture with consideration for information security and the resulting risk to organizational operations, organizational assets, individuals, other organizations, and the Nation.",
 "The enterprise architecture developed by the organization is aligned with the Federal Enterprise Architecture. The integration of information security requirements and associated security controls into the organization's enterprise architecture helps to ensure that security considerations are addressed by organizations early in the system development life cycle and are directly and explicitly related to the organization's mission/business processes. This process of security requirements integration also embeds into the enterprise architecture, an integral information security architecture consistent with organizational risk management and information security strategies. For PM-7, the information security architecture is developed at a system-of-systems level (organization-wide), representing all of the organizational information systems. For PL-8, the information security architecture is developed at a level representing an individual information system but at the same time, is consistent with the information security architecture defined for the organization. Security requirements and security control integration are most effectively accomplished through the application of the Risk Management Framework and supporting security standards and guidelines. The Federal Segment Architecture Methodology provides guidance on integrating information security requirements and security controls into enterprise architectures."
 ),
-(150, 13, 8, 0, 0,
+(150, 13, 8, 0, 0, --PM-8
 "CRITICAL INFRASTRUCTURE PLAN",
 "The organization addresses information security issues in the development, documentation, and updating of a critical infrastructure and key resources protection plan.",
 "Protection strategies are based on the prioritization of critical assets and resources. The requirement and guidance for defining critical infrastructure and key resources and for preparing an associated critical infrastructure protection plan are found in applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance."
 ),
-(151, 13, 9, 0, 0,
+(151, 13, 9, 0, 0, --PM-9
 "RISK MANAGEMENT STRATEGY",
 "The organization: 
 a. Develops a comprehensive strategy to manage risk to organizational operations and assets, individuals, other organizations, and the Nation associated with the operation and use of information systems; 
@@ -1346,7 +1346,7 @@ b. Implements the risk management strategy consistently across the organization;
 c. Reviews and updates the risk management strategy [Assignment: organization-defined frequency] or as required, to address organizational changes.",
 "An organization-wide risk management strategy includes, for example, an unambiguous expression of the risk tolerance for the organization, acceptable risk assessment methodologies, risk mitigation strategies, a process for consistently evaluating risk across the organization with respect to the organization's risk tolerance, and approaches for monitoring risk over time. The use of a risk executive function can facilitate consistent, organization-wide application of the risk management strategy. The organization-wide risk management strategy can be informed by risk-related inputs from other sources both internal and external to the organization to ensure the strategy is both broad-based and comprehensive."
 ),
-(152, 13, 10, 0, 0,
+(152, 13, 10, 0, 0, --PM-10
 "SECURITY AUTHORIZATION PROCESS",
 "The organization: 
 a. Manages (i.e., documents, tracks, and reports) the security state of organizational information systems and the environments in which those systems operate through security authorization processes; 
@@ -1354,24 +1354,24 @@ b. Designates individuals to fulfill specific roles and responsibilities within 
 c. Fully integrates the security authorization processes into an organization-wide risk management program.",
 "Security authorization processes for information systems and environments of operation require the implementation of an organization-wide risk management process, a Risk Management Framework, and associated security standards and guidelines. Specific roles within the risk management process include an organizational risk executive (function) and designated authorizing officials for each organizational information system and common control provider. Security authorization processes are integrated with organizational continuous monitoring processes to facilitate ongoing understanding and acceptance of risk to organizational operations and assets, individuals, other organizations, and the Nation."
 ),
-(153, 13, 11, 0, 0,
+(153, 13, 11, 0, 0, --PM-11
 "MISSION/BUSINESS PROCESS DEFINITION",
 "The organization: 
 a. Defines mission/business processes with consideration for information security and the resulting risk to organizational operations, organizational assets, individuals, other organizations, and the Nation; and 
 b. Determines information protection needs arising from the defined mission/business processes and revises the processes as necessary, until achievable protection needs are obtained.",
 "Information protection needs are technology-independent, required capabilities to counter threats to organizations, individuals, or the Nation through the compromise of information (i.e., loss of confidentiality, integrity, or availability). Information protection needs are derived from the mission/business needs defined by the organization, the mission/business processes selected to meet the stated needs, and the organizational risk management strategy. Information protection needs determine the required security controls for the organization and the associated information systems supporting the mission/business processes. Inherent in defining an organization's information protection needs is an understanding of the level of adverse impact that could result if a compromise of information occurs. The security categorization process is used to make such potential impact determinations. Mission/business process definitions and associated information protection requirements are documented by the organization in accordance with organizational policy and procedure."
 ),
-(154, 13, 12, 0, 0,
+(154, 13, 12, 0, 0, --PM-12
 "INSIDER THREAT PROGRAM",
 "The organization implements an insider threat program that includes a cross-discipline insider threat incident handling team.",
 "Organizations handling classified information are required, under Executive Order 13587 and the National Policy on Insider Threat, to establish insider threat programs. The standards and guidelines that apply to insider threat programs in classified environments can also be employed effectively to improve the security of Controlled Unclassified Information in non-national security systems. Insider threat programs include security controls to detect and prevent malicious insider activity through the centralized integration and analysis of both technical and non-technical information to identify potential insider threat concerns. A senior organizational official is designated by the department/agency head as the responsible individual to implement and provide oversight for the program. In addition to the centralized integration and analysis capability, insider threat programs as a minimum, prepare department/agency insider threat policies and implementation plans, conduct host-based user monitoring of individual employee activities on government-owned classified computers, provide insider threat awareness training to employees, receive access to information from all offices within the department/agency (e.g., human resources, legal, physical security, personnel security, information technology, information system security, and law enforcement) for insider threat analysis, and conduct self-assessments of department/agency insider threat posture. Insider threat programs can leverage the existence of incident handling teams organizations may already have in place, such as computer security incident response teams. Human resources records are especially important in this effort, as there is compelling evidence to show that some types of insider crimes are often preceded by nontechnical behaviors in the workplace (e.g., ongoing patterns of disgruntled behavior and conflicts with coworkers and other colleagues). These precursors can better inform and guide organizational officials in more focused, targeted monitoring efforts. The participation of a legal team is important to ensure that all monitoring activities are performed in accordance with appropriate legislation, directives, regulations, policies, standards, and guidelines."
 ),
-(155, 13, 13, 0, 0,
+(155, 13, 13, 0, 0, --PM-13
 "INFORMATION SECURITY WORKFORCE",
 "The organization establishes an information security workforce development and improvement program.",
-"Information security workforce development and improvement programs include, for example: I. defining the knowledge and skill levels needed to perform information security duties and tasks; II. developing role-based training programs for individuals assigned information security roles and responsibilities; and III. providing standards for measuring and building individual qualifications for incumbents and applicants for information security-related positions. Such workforce programs can also include associated information security career paths to encourage: I. information security professionals to advance in the field and fill positions with greater responsibility; and II. organizations to fill information security-related positions with qualified personnel. Information security workforce development and improvement programs are complementary to organizational security awareness and training programs. Information security workforce development and improvement programs focus on developing and institutionalizing core information security capabilities of selected personnel needed to protect organizational operations, assets, and individuals."
+"Information security workforce development and improvement programs include, for example: (i) defining the knowledge and skill levels needed to perform information security duties and tasks; (ii) developing role-based training programs for individuals assigned information security roles and responsibilities; and (iii) providing standards for measuring and building individual qualifications for incumbents and applicants for information security-related positions. Such workforce programs can also include associated information security career paths to encourage: (i) information security professionals to advance in the field and fill positions with greater responsibility; and (ii) organizations to fill information security-related positions with qualified personnel. Information security workforce development and improvement programs are complementary to organizational security awareness and training programs. Information security workforce development and improvement programs focus on developing and institutionalizing core information security capabilities of selected personnel needed to protect organizational operations, assets, and individuals."
 ),
-(156, 13, 14, 0, 0,
+(156, 13, 14, 0, 0, --PM-14
 "TESTING, TRAINING, AND MONITORING",
 "The organization: 
 a. Implements a process for ensuring that organizational plans for conducting security testing, training, and monitoring activities associated with organizational information systems: 
@@ -1380,7 +1380,7 @@ a. Implements a process for ensuring that organizational plans for conducting se
 b. Reviews testing, training, and monitoring plans for consistency with the organizational risk management strategy and organization-wide priorities for risk response actions.",
 "This control ensures that organizations provide oversight for the security testing, training, and monitoring activities conducted organization-wide and that those activities are coordinated. With the importance of continuous monitoring programs, the implementation of information security across the three tiers of the risk management hierarchy, and the widespread use of common controls, organizations coordinate and consolidate the testing and monitoring activities that are routinely conducted as part of ongoing organizational assessments supporting a variety of security controls. Security training activities, while typically focused on individual information systems and specific roles, also necessitate coordination across all organizational elements. Testing, training, and monitoring plans and activities are informed by current threat and vulnerability assessments."
 ),
-(157, 13, 15, 0, 0,
+(157, 13, 15, 0, 0, --PM-15
 "CONTACTS WITH SECURITY GROUPS AND ASSOCIATIONS",
 "The organization establishes and institutionalizes contact with selected groups and associations within the security community: 
 a. To facilitate ongoing security education and training for organizational personnel; 
@@ -1388,7 +1388,7 @@ b. To maintain currency with recommended security practices, techniques, and tec
 c. To share current security-related information including threats, vulnerabilities, and incidents.",
 "Ongoing contact with security groups and associations is of paramount importance in an environment of rapidly changing technologies and threats. Security groups and associations include, for example, special interest groups, forums, professional associations, news groups, and/or peer groups of security professionals in similar organizations. Organizations select groups and associations based on organizational missions/business functions. Organizations share threat, vulnerability, and incident information consistent with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance."
 ),
-(158, 13, 16, 0, 0,
+(158, 13, 16, 0, 0, --PM-16
 "THREAT AWARENESS PROGRAM",
 "The organization implements a threat awareness program that includes a cross-organization information-sharing capability.",
 "Because of the constantly changing and increasing sophistication of adversaries, especially the advanced persistent threat (APT), it is becoming more likely that adversaries may successfully breach or compromise organizational information systems. One of the best techniques to address this concern is for organizations to share threat information. This can include, for example, sharing threat events (i.e., tactics, techniques, and procedures) that organizations have experienced, mitigations that organizations have found are effective against certain types of threats, threat intelligence (i.e., indications and warnings about threats that are likely to occur). Threat information sharing may be bilateral (e.g., government-commercial cooperatives, government-government cooperatives), or multilateral (e.g., organizations taking part in threat-sharing consortia). Threat information may be highly sensitive requiring special agreements and protection, or less sensitive and freely shared."
@@ -1399,7 +1399,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(159, 14, 1, 1, 1,
+(159, 14, 1, 1, 1, --RA-1
 "RISK ASSESSMENT POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -1410,7 +1410,7 @@ b. Reviews and updates the current:
 2. Risk assessment procedures [Assignment: organization-defined frequency].",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the RA family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(160, 14, 2, 1, 1,
+(160, 14, 2, 1, 1, --RA-2
 "SECURITY CATEGORIZATION",
 "The organization: 
 a. Categorizes information and the information system in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance; 
@@ -1418,7 +1418,7 @@ b. Documents the security categorization results (including supporting rationale
 c. Ensures that the authorizing official or authorizing official designated representative reviews and approves the security categorization decision.",
 "Clearly defined authorization boundaries are a prerequisite for effective security categorization decisions. Security categories describe the potential adverse impacts to organizational operations, organizational assets, and individuals if organizational information and information systems are comprised through a loss of confidentiality, integrity, or availability. Organizations conduct the security categorization process as an organization-wide activity with the involvement of chief information officers, senior information security officers, information system owners, mission/business owners, and information owners/stewards. Organizations also consider the potential adverse impacts to other organizations and, in accordance with the USA PATRIOT Act of 2001 and Homeland Security Presidential Directives, potential national-level adverse impacts. Security categorization processes carried out by organizations facilitate the development of inventories of information assets, and along with CM-8, mappings to specific information system components where information is processed, stored, or transmitted."
 ),
-(161, 14, 3, 1, 1,
+(161, 14, 3, 1, 1, --RA-3
 "RISK ASSESSMENT",
 "The organization: 
 a. Conducts an assessment of risk, including the likelihood and magnitude of harm, from the unauthorized access, use, disclosure, disruption, modification, or destruction of the information system and the information it processes, stores, or transmits; 
@@ -1428,12 +1428,12 @@ d. Disseminates risk assessment results to [Assignment: organization-defined per
 e. Updates the risk assessment [Assignment: organization-defined frequency] or whenever there are significant changes to the information system or environment of operation (including the identification of new threats and vulnerabilities), or other conditions that may impact the security state of the system.",
 "Clearly defined authorization boundaries are a prerequisite for effective risk assessments. Risk assessments take into account threats, vulnerabilities, likelihood, and impact to organizational operations and assets, individuals, other organizations, and the Nation based on the operation and use of information systems. Risk assessments also take into account risk from external parties (e.g., service providers, contractors operating information systems on behalf of the organization, individuals accessing organizational information systems, outsourcing entities). In accordance with OMB policy and related E-authentication initiatives, authentication of public users accessing federal information systems may also be required to protect nonpublic or privacy-related information. As such, organizational assessments of risk also address public access to federal information systems. Risk assessments (either formal or informal) can be conducted at all three tiers in the risk management hierarchy (i.e., organization level, mission/business process level, or information system level) and at any phase in the system development life cycle. Risk assessments can also be conducted at various steps in the Risk Management Framework, including categorization, security control selection, security control implementation, security control assessment, information system authorization, and security control monitoring. RA-3 is noteworthy in that the control must be partially implemented prior to the implementation of other controls in order to complete the first two steps in the Risk Management Framework. Risk assessments can play an important role in security control selection processes, particularly during the application of tailoring guidance, which includes security control supplementation."
 ),
-(162, 14, 4, 0, 0,
+(162, 14, 4, 0, 0, --RA-4
 "RISK ASSESSMENT UPDATE",
 "[Withdrawn: Incorporated into RA-3].",
 NULL
 ),
-(163, 14, 5, 1, 1,
+(163, 14, 5, 1, 1, --RA-5
 "VULNERABILITY SCANNING",
 "The organization: 
 a. Scans for vulnerabilities in the information system and hosted applications [Assignment: organization-defined frequency and/or randomly in accordance with organization-defined process] and when new vulnerabilities potentially affecting the system/applications are identified and reported; 
@@ -1444,9 +1444,9 @@ b. Employs vulnerability scanning tools and techniques that facilitate interoper
 c. Analyzes vulnerability scan reports and results from security control assessments; 
 d. Remediates legitimate vulnerabilities [Assignment: organization-defined response times] in accordance with an organizational assessment of risk; and 
 e. Shares information obtained from the vulnerability scanning process and security control assessments with [Assignment: organization-defined personnel or roles] to help eliminate similar vulnerabilities in other information systems (i.e., systemic weaknesses or deficiencies).",
-"Security categorization of information systems guides the frequency and comprehensiveness of vulnerability scans. Organizations determine the required vulnerability scanning for all information system components, ensuring that potential sources of vulnerabilities such as networked printers, scanners, and copiers are not overlooked. Vulnerability analyses for custom software applications may require additional approaches such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches. Organizations can employ these analysis approaches in a variety of tools (e.g., web-based application scanners, static analysis tools, binary analyzers) and in source code reviews. Vulnerability scanning includes, for example: I. scanning for patch levels; II. scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and III. scanning for improperly configured or incorrectly operating information flow control mechanisms. Organizations consider using tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention and that use the Open Vulnerability Assessment Language (OVAL) to determine/test for the presence of vulnerabilities. Suggested sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD). In addition, security control assessments such as red team exercises provide other sources of potential vulnerabilities for which to scan. Organizations also consider using tools that express vulnerability impact by the Common Vulnerability Scoring System (CVSS)."
+"Security categorization of information systems guides the frequency and comprehensiveness of vulnerability scans. Organizations determine the required vulnerability scanning for all information system components, ensuring that potential sources of vulnerabilities such as networked printers, scanners, and copiers are not overlooked. Vulnerability analyses for custom software applications may require additional approaches such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches. Organizations can employ these analysis approaches in a variety of tools (e.g., web-based application scanners, static analysis tools, binary analyzers) and in source code reviews. Vulnerability scanning includes, for example: (i) scanning for patch levels; (ii) scanning for functions, ports, protocols, and services that should not be accessible to users or devices; and (iii) scanning for improperly configured or incorrectly operating information flow control mechanisms. Organizations consider using tools that express vulnerabilities in the Common Vulnerabilities and Exposures (CVE) naming convention and that use the Open Vulnerability Assessment Language (OVAL) to determine/test for the presence of vulnerabilities. Suggested sources for vulnerability information include the Common Weakness Enumeration (CWE) listing and the National Vulnerability Database (NVD). In addition, security control assessments such as red team exercises provide other sources of potential vulnerabilities for which to scan. Organizations also consider using tools that express vulnerability impact by the Common Vulnerability Scoring System (CVSS)."
 ),
-(164, 14, 6, 0, 0,
+(164, 14, 6, 0, 0, --RA-6
 "TECHNICAL SURVEILLANCE COUNTERMEASURES SURVEY",
 "The organization employs a technical surveillance countermeasures survey at [Assignment: organization-defined locations] [Selection (one or more): [Assignment: organization-defined frequency]; [Assignment: organization-defined events or indicators occur]].",
 "Technical surveillance countermeasures surveys are performed by qualified personnel to detect the presence of technical surveillance devices/hazards and to identify technical security weaknesses that could aid in the conduct of technical penetrations of surveyed facilities. Such surveys provide evaluations of the technical security postures of organizations and facilities and typically include thorough visual, electronic, and physical examinations in and about surveyed facilities. The surveys also provide useful input into risk assessments and organizational exposure to potential adversaries."
@@ -1457,7 +1457,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(165, 15, 1, 1, 1,
+(165, 15, 1, 1, 1, --CA-1
 "SECURITY ASSESSMENT AND AUTHORIZATION POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -1468,7 +1468,7 @@ b. Reviews and updates the current:
 2. Security assessment and authorization procedures [Assignment: organization-defined frequency].",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the CA family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(166, 15, 2, 2, 1,
+(166, 15, 2, 2, 1, --CA-2
 "SECURITY ASSESSMENTS",
 "The organization: 
 a. Develops a security assessment plan that describes the scope of the assessment including: 
@@ -1478,9 +1478,9 @@ a. Develops a security assessment plan that describes the scope of the assessmen
 b. Assesses the security controls in the information system and its environment of operation [Assignment: organization-defined frequency] to determine the extent to which the controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting established security requirements; 
 c. Produces a security assessment report that documents the results of the assessment; and 
 d. Provides the results of the security control assessment to [Assignment: organization-defined individuals or roles].",
-"Organizations assess security controls in organizational information systems and the environments in which those systems operate as part of: I. initial and ongoing security authorizations; II. FISMA annual assessments; III. continuous monitoring; and IV. system development life cycle activities. Security assessments: I. ensure that information security is built into organizational information systems; II. identify weaknesses and deficiencies early in the development process; III. provide essential information needed to make risk-based decisions as part of security authorization processes; and IV. ensure compliance to vulnerability mitigation procedures. Assessments are conducted on the implemented security controls from Appendix F (main catalog) and Appendix G (Program Management controls) as documented in System Security Plans and Information Security Program Plans. Organizations can use other types of assessment activities such as vulnerability scanning and system monitoring to maintain the security posture of information systems during the entire life cycle. Security assessment reports document assessment results in sufficient detail as deemed necessary by organizations, to determine the accuracy and completeness of the reports and whether the security controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting security requirements. The FISMA requirement for assessing security controls at least annually does not require additional assessment activities to those activities already in place in organizational security authorization processes. Security assessment results are provided to the individuals or roles appropriate for the types of assessments being conducted. For example, assessments conducted in support of security authorization decisions are provided to authorizing officials or authorizing official designated representatives. To satisfy annual assessment requirements, organizations can use assessment results from the following sources: I. initial or ongoing information system authorizations; II. continuous monitoring; or III. system development life cycle activities. Organizations ensure that security assessment results are current, relevant to the determination of security control effectiveness, and obtained with the appropriate level of assessor independence. Existing security control assessment results can be reused to the extent that the results are still valid and can also be supplemented with additional assessments as needed. Subsequent to initial authorizations and in accordance with OMB policy, organizations assess security controls during continuous monitoring. Organizations establish the frequency for ongoing security control assessments in accordance with organizational continuous monitoring strategies. Information Assurance Vulnerability Alerts provide useful examples of vulnerability mitigation procedures. External audits (e.g., audits by external entities such as regulatory agencies) are outside the scope of this control."
+"Organizations assess security controls in organizational information systems and the environments in which those systems operate as part of: (i) initial and ongoing security authorizations; (ii) FISMA annual assessments; (iii) continuous monitoring; and (iv) system development life cycle activities. Security assessments: (i) ensure that information security is built into organizational information systems; (ii) identify weaknesses and deficiencies early in the development process; (iii) provide essential information needed to make risk-based decisions as part of security authorization processes; and (iv) ensure compliance to vulnerability mitigation procedures. Assessments are conducted on the implemented security controls from Appendix F (main catalog) and Appendix G (Program Management controls) as documented in System Security Plans and Information Security Program Plans. Organizations can use other types of assessment activities such as vulnerability scanning and system monitoring to maintain the security posture of information systems during the entire life cycle. Security assessment reports document assessment results in sufficient detail as deemed necessary by organizations, to determine the accuracy and completeness of the reports and whether the security controls are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting security requirements. The FISMA requirement for assessing security controls at least annually does not require additional assessment activities to those activities already in place in organizational security authorization processes. Security assessment results are provided to the individuals or roles appropriate for the types of assessments being conducted. For example, assessments conducted in support of security authorization decisions are provided to authorizing officials or authorizing official designated representatives. To satisfy annual assessment requirements, organizations can use assessment results from the following sources: (i) initial or ongoing information system authorizations; (ii) continuous monitoring; or (iii) system development life cycle activities. Organizations ensure that security assessment results are current, relevant to the determination of security control effectiveness, and obtained with the appropriate level of assessor independence. Existing security control assessment results can be reused to the extent that the results are still valid and can also be supplemented with additional assessments as needed. Subsequent to initial authorizations and in accordance with OMB policy, organizations assess security controls during continuous monitoring. Organizations establish the frequency for ongoing security control assessments in accordance with organizational continuous monitoring strategies. Information Assurance Vulnerability Alerts provide useful examples of vulnerability mitigation procedures. External audits (e.g., audits by external entities such as regulatory agencies) are outside the scope of this control."
 ),
-(167, 15, 3, 1, 1,
+(167, 15, 3, 1, 1, --CA-3
 "SYSTEM INTERCONNECTIONS",
 "The organization: 
 a. Authorizes connections from the information system to other information systems through the use of Interconnection Security Agreements; 
@@ -1488,19 +1488,19 @@ b. Documents, for each interconnection, the interface characteristics, security 
 c. Reviews and updates Interconnection Security Agreements [Assignment: organization-defined frequency].",
 "This control applies to dedicated connections between information systems (i.e., system interconnections) and does not apply to transitory, user-controlled connections such as email and website browsing. Organizations carefully consider the risks that may be introduced when information systems are connected to other systems with different security requirements and security controls, both within organizations and external to organizations. Authorizing officials determine the risk associated with information system connections and the appropriate controls employed. If interconnecting systems have the same authorizing official, organizations do not need to develop Interconnection Security Agreements. Instead, organizations can describe the interface characteristics between those interconnecting systems in their respective security plans. If interconnecting systems have different authorizing officials within the same organization, organizations can either develop Interconnection Security Agreements or describe the interface characteristics between systems in the security plans for the respective systems. Organizations may also incorporate Interconnection Security Agreement information into formal contracts, especially for interconnections established between federal agencies and nonfederal (i.e., private sector) organizations. Risk considerations also include information systems sharing the same networks. For certain technologies (e.g., space, unmanned aerial vehicles, and medical devices), there may be specialized connections in place during preoperational testing. Such connections may require Interconnection Security Agreements and be subject to additional security controls."
 ),
-(168, 15, 4, 0, 0,
+(168, 15, 4, 0, 0, --CA-4
 "SECURITY CERTIFICATION",
 "[Withdrawn: Incorporated into CA-2].",
 NULL
 ),
-(169, 15, 5, 3, 1,
+(169, 15, 5, 3, 1, --CA-5
 "PLAN OF ACTION AND MILESTONES",
 "The organization: 
 a. Develops a plan of action and milestones for the information system to document the organization's planned remedial actions to correct weaknesses or deficiencies noted during the assessment of the security controls and to reduce or eliminate known vulnerabilities in the system; and 
 b. Updates existing plan of action and milestones [Assignment: organization-defined frequency] based on the findings from security controls assessments, security impact analyses, and continuous monitoring activities.",
 "Plans of action and milestones are key documents in security authorization packages and are subject to federal reporting requirements established by OMB."
 ),
-(170, 15, 6, 2, 1,
+(170, 15, 6, 2, 1, --CA-6
 "SECURITY AUTHORIZATION",
 "The organization: 
 a. Assigns a senior-level executive or manager as the authorizing official for the information system; 
@@ -1508,7 +1508,7 @@ b. Ensures that the authorizing official authorizes the information system for p
 c. Updates the security authorization [Assignment: organization-defined frequency].",
 "Security authorizations are official management decisions, conveyed through authorization decision documents, by senior organizational officials or executives (i.e., authorizing officials) to authorize operation of information systems and to explicitly accept the risk to organizational operations and assets, individuals, other organizations, and the Nation based on the implementation of agreed-upon security controls. Authorizing officials provide budgetary oversight for organizational information systems or assume responsibility for the mission/business operations supported by those systems. The security authorization process is an inherently federal responsibility and therefore, authorizing officials must be federal employees. Through the security authorization process, authorizing officials assume responsibility and are accountable for security risks associated with the operation and use of organizational information systems. Accordingly, authorizing officials are in positions with levels of authority commensurate with understanding and accepting such information security-related risks. OMB policy requires that organizations conduct ongoing authorizations of information systems by implementing continuous monitoring programs. Continuous monitoring programs can satisfy three-year reauthorization requirements, so separate reauthorization processes are not necessary. Through the employment of comprehensive continuous monitoring processes, critical information contained in authorization packages (i.e., security plans, security assessment reports, and plans of action and milestones) is updated on an ongoing basis, providing authorizing officials and information system owners with an up-to-date status of the security state of organizational information systems and environments of operation. To reduce the administrative cost of security reauthorization, authorizing officials use the results of continuous monitoring processes to the maximum extent possible as the basis for rendering reauthorization decisions."
 ),
-(171, 15, 7, 2, 1,
+(171, 15, 7, 2, 1, --CA-7
 "CONTINUOUS MONITORING",
 "The organization develops a continuous monitoring strategy and implements a continuous monitoring program that includes: 
 a. Establishment of [Assignment: organization-defined metrics] to be monitored; 
@@ -1520,12 +1520,12 @@ f. Response actions to address results of the analysis of security-related infor
 g. Reporting the security status of organization and the information system to [Assignment: organization-defined personnel or roles] [Assignment: organization-defined frequency].",
 "Continuous monitoring programs facilitate ongoing awareness of threats, vulnerabilities, and information security to support organizational risk management decisions. The terms continuous and ongoing imply that organizations assess/analyze security controls and information security-related risks at a frequency sufficient to support organizational risk-based decisions. The results of continuous monitoring programs generate appropriate risk response actions by organizations. Continuous monitoring programs also allow organizations to maintain the security authorizations of information systems and common controls over time in highly dynamic environments of operation with changing mission/business needs, threats, vulnerabilities, and technologies. Having access to security-related information on a continuing basis through reports/dashboards gives organizational officials the capability to make more effective and timely risk management decisions, including ongoing security authorization decisions. Automation supports more frequent updates to security authorization packages, hardware/software/firmware inventories, and other system information. Effectiveness is further enhanced when continuous monitoring outputs are formatted to provide information that is specific, measurable, actionable, relevant, and timely. Continuous monitoring activities are scaled in accordance with the security categories of information systems."
 ),
-(172, 15, 8, 2, 3,
+(172, 15, 8, 2, 3, --CA-8
 "PENETRATION TESTING",
 "The organization conducts penetration testing [Assignment: organization-defined frequency] on [Assignment: organization-defined information systems or system components].",
-"Penetration testing is a specialized type of assessment conducted on information systems or individual system components to identify vulnerabilities that could be exploited by adversaries. Such testing can be used to either validate vulnerabilities or determine the degree of resistance organizational information systems have to adversaries within a set of specified constraints (e.g., time, resources, and/or skills). Penetration testing attempts to duplicate the actions of adversaries in carrying out hostile cyber attacks against organizations and provides a more in-depth analysis of security-related weaknesses/deficiencies. Organizations can also use the results of vulnerability analyses to support penetration testing activities. Penetration testing can be conducted on the hardware, software, or firmware components of an information system and can exercise both physical and technical security controls. A standard method for penetration testing includes, for example: I. pretest analysis based on full knowledge of the target system; II. pretest identification of potential vulnerabilities based on pretest analysis; and III. testing designed to determine exploitability of identified vulnerabilities. All parties agree to the rules of engagement before the commencement of penetration testing scenarios. Organizations correlate the penetration testing rules of engagement with the tools, techniques, and procedures that are anticipated to be employed by adversaries carrying out attacks. Organizational risk assessments guide decisions on the level of independence required for personnel conducting penetration testing."
+"Penetration testing is a specialized type of assessment conducted on information systems or individual system components to identify vulnerabilities that could be exploited by adversaries. Such testing can be used to either validate vulnerabilities or determine the degree of resistance organizational information systems have to adversaries within a set of specified constraints (e.g., time, resources, and/or skills). Penetration testing attempts to duplicate the actions of adversaries in carrying out hostile cyber attacks against organizations and provides a more in-depth analysis of security-related weaknesses/deficiencies. Organizations can also use the results of vulnerability analyses to support penetration testing activities. Penetration testing can be conducted on the hardware, software, or firmware components of an information system and can exercise both physical and technical security controls. A standard method for penetration testing includes, for example: (i) pretest analysis based on full knowledge of the target system; (ii) pretest identification of potential vulnerabilities based on pretest analysis; and (iii) testing designed to determine exploitability of identified vulnerabilities. All parties agree to the rules of engagement before the commencement of penetration testing scenarios. Organizations correlate the penetration testing rules of engagement with the tools, techniques, and procedures that are anticipated to be employed by adversaries carrying out attacks. Organizational risk assessments guide decisions on the level of independence required for personnel conducting penetration testing."
 ),
-(173, 15, 9, 2, 1,
+(173, 15, 9, 2, 1, --CA-9
 "INTERNAL SYSTEM CONNECTIONS",
 "The organization: 
 a. Authorizes internal connections of [Assignment: organization-defined information system components or classes of components] to the information system; and 
@@ -1538,7 +1538,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(174, 16, 1, 1, 1,
+(174, 16, 1, 1, 1, --SC-1
 "SYSTEM AND COMMUNICATIONS PROTECTION POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -1549,32 +1549,32 @@ b. Reviews and updates the current:
 2. System and communications protection procedures [Assignment: organization-defined frequency].",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the SC family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(175, 16, 2, 1, 2,
+(175, 16, 2, 1, 2, --SC-2
 "APPLICATION PARTITIONING",
 "The information system separates user functionality (including user interface services) from information system management functionality.",
 "Information system management functionality includes, for example, functions necessary to administer databases, network components, workstations, or servers, and typically requires privileged user access. The separation of user functionality from information system management functionality is either physical or logical. Organizations implement separation of system management-related functionality from user functionality by using different computers, different central processing units, different instances of operating systems, different network addresses, virtualization techniques, or combinations of these or other methods, as appropriate. This type of separation includes, for example, web administrative interfaces that use separate authentication methods for users of any other information system resources. Separation of system and user functionality may include isolating administrative interfaces on different domains and with additional access controls."
 ),
-(176, 16, 3, 1, 3,
+(176, 16, 3, 1, 3, --SC-3
 "SECURITY FUNCTION ISOLATION",
 "The information system isolates security functions from nonsecurity functions.",
 "The information system isolates security functions from nonsecurity functions by means of an isolation boundary (implemented via partitions and domains). Such isolation controls access to and protects the integrity of the hardware, software, and firmware that perform those security functions. Information systems implement code separation (i.e., separation of security functions from nonsecurity functions) in a number of ways, including, for example, through the provision of security kernels via processor rings or processor modes. For non-kernel code, security function isolation is often achieved through file system protections that serve to protect the code on disk, and address space protections that protect executing code. Information systems restrict access to security functions through the use of access control mechanisms and by implementing least privilege capabilities. While the ideal is for all of the code within the security function isolation boundary to only contain security-relevant code, it is sometimes necessary to include nonsecurity functions within the isolation boundary as an exception."
 ),
-(177, 16, 4, 1, 2,
+(177, 16, 4, 1, 2, --SC-4
 "INFORMATION IN SHARED RESOURCES",
 "The information system prevents unauthorized and unintended information transfer via shared system resources.",
-"This control prevents information, including encrypted representations of information, produced by the actions of prior users/roles (or the actions of processes acting on behalf of prior users/roles) from being available to any current users/roles (or current processes) that obtain access to shared system resources (e.g., registers, main memory, hard disks) after those resources have been released back to information systems. The control of information in shared resources is also commonly referred to as object reuse and residual information protection. This control does not address: I. information remanence which refers to residual representation of data that has been nominally erased or removed; II. covert channels (including storage and/or timing channels) where shared resources are manipulated to violate information flow restrictions; or III. components within information systems for which there are only single users/roles."
+"This control prevents information, including encrypted representations of information, produced by the actions of prior users/roles (or the actions of processes acting on behalf of prior users/roles) from being available to any current users/roles (or current processes) that obtain access to shared system resources (e.g., registers, main memory, hard disks) after those resources have been released back to information systems. The control of information in shared resources is also commonly referred to as object reuse and residual information protection. This control does not address: (i) information remanence which refers to residual representation of data that has been nominally erased or removed; (ii) covert channels (including storage and/or timing channels) where shared resources are manipulated to violate information flow restrictions; or (iii) components within information systems for which there are only single users/roles."
 ),
-(178, 16, 5, 1, 1,
+(178, 16, 5, 1, 1, --SC-5
 "DENIAL OF SERVICE PROTECTION",
 "The information system protects against or limits the effects of the following types of denial of service attacks: [Assignment: organization-defined types of denial of service attacks or references to sources for such information] by employing [Assignment: organization-defined security safeguards].",
 "A variety of technologies exist to limit, or in some cases, eliminate the effects of denial of service attacks. For example, boundary protection devices can filter certain types of packets to protect information system components on internal organizational networks from being directly affected by denial of service attacks. Employing increased capacity and bandwidth combined with service redundancy may also reduce the susceptibility to denial of service attacks."
 ),
-(179, 16, 6, 0, 0,
+(179, 16, 6, 0, 0, --SC-6
 "RESOURCE AVAILABILITY",
 "The information system protects the availability of resources by allocating [Assignment: organization-defined resources] by [Selection (one or more); priority; quota; [Assignment: organization-defined security safeguards]].",
 "Priority protection helps prevent lower-priority processes from delaying or interfering with the information system servicing any higher-priority processes. Quotas prevent users or processes from obtaining more than predetermined amounts of resources. This control does not apply to information system components for which there are only single users/roles."
 ),
-(180, 16, 7, 1, 1,
+(180, 16, 7, 1, 1, --SC-7
 "BOUNDARY PROTECTION",
 "The information system: 
 a. Monitors and controls communications at the external boundary of the system and at key internal boundaries within the system; 
@@ -1582,59 +1582,59 @@ b. Implements subnetworks for publicly accessible system components that are [Se
 c. Connects to external networks or information systems only through managed interfaces consisting of boundary protection devices arranged in accordance with an organizational security architecture. ",
 "Managed interfaces include, for example, gateways, routers, firewalls, guards, network-based malicious code analysis and virtualization systems, or encrypted tunnels implemented within a security architecture (e.g., routers protecting firewalls or application gateways residing on protected subnetworks). Subnetworks that are physically or logically separated from internal networks are referred to as demilitarized zones or DMZs. Restricting or prohibiting interfaces within organizational information systems includes, for example, restricting external web traffic to designated web servers within managed interfaces and prohibiting external traffic that appears to be spoofing internal addresses. Organizations consider the shared nature of commercial telecommunications services in the implementation of security controls associated with the use of such services. Commercial telecommunications services are commonly based on network components and consolidated management systems shared by all attached commercial customers, and may also include third party-provided access lines and other service elements. Such transmission services may represent sources of increased risk despite contract security provisions."
 ),
-(181, 16, 8, 1, 2,
+(181, 16, 8, 1, 2, --SC-8
 "TRANSMISSION CONFIDENTIALITY AND INTEGRITY",
 "The information system protects the [Selection (one or more): confidentiality; integrity] of transmitted information.",
 "This control applies to both internal and external networks and all types of information system components from which information can be transmitted (e.g., servers, mobile devices, notebook computers, printers, copiers, scanners, facsimile machines). Communication paths outside the physical protection of a controlled boundary are exposed to the possibility of interception and modification. Protecting the confidentiality and/or integrity of organizational information can be accomplished by physical means (e.g., by employing protected distribution systems) or by logical means (e.g., employing encryption techniques). Organizations relying on commercial providers offering transmission services as commodity services rather than as fully dedicated services (i.e., services which can be highly specialized to individual customer needs), may find it difficult to obtain the necessary assurances regarding the implementation of needed security controls for transmission confidentiality/integrity. In such situations, organizations determine what types of confidentiality/integrity services are available in standard, commercial telecommunication service packages. If it is infeasible or impractical to obtain the necessary security controls and assurances of control effectiveness through appropriate contracting vehicles, organizations implement appropriate compensating security controls or explicitly accept the additional risk."
 ),
-(182, 16, 9, 0, 0,
+(182, 16, 9, 0, 0, --SC-9
 "TRANSMISSION CONFIDENTIALITY",
 "[Withdrawn: Incorporated into SC-8].",
 NULL
 ),
-(183, 16, 10, 2, 2,
+(183, 16, 10, 2, 2, --SC-10
 "NETWORK DISCONNECT",
 "The information system terminates the network connection associated with a communications session at the end of the session or after [Assignment: organization-defined time period] of inactivity.",
 "This control applies to both internal and external networks. Terminating network connections associated with communications sessions include, for example, de-allocating associated TCP/IP address/port pairs at the operating system level, or de-allocating networking assignments at the application level if multiple application sessions are using a single, operating system-level network connection. Time periods of inactivity may be established by organizations and include, for example, time periods by type of network access or for specific network accesses."
 ),
-(184, 16, 11, 0, 0,
+(184, 16, 11, 0, 0, --SC-11
 "TRUSTED PATH",
 "The information system establishes a trusted communications path between the user and the following security functions of the system: [Assignment: organization-defined security functions to include at a minimum, information system authentication and re-authentication].",
 "Trusted paths are mechanisms by which users (through input devices) can communicate directly with security functions of information systems with the requisite assurance to support information security policies. The mechanisms can be activated only by users or the security functions of organizational information systems. User responses via trusted paths are protected from modifications by or disclosure to untrusted applications. Organizations employ trusted paths for high-assurance connections between security functions of information systems and users (e.g., during system logons). Enforcement of trusted communications paths is typically provided via an implementation that meets the reference monitor concept."
 ),
-(185, 16, 12, 1, 1,
+(185, 16, 12, 1, 1, --SC-12
 "CRYPTOGRAPHIC KEY ESTABLISHMENT AND MANAGEMENT",
 "The organization establishes and manages cryptographic keys for required cryptography employed within the information system in accordance with [Assignment: organization-defined requirements for key generation, distribution, storage, access, and destruction].",
 "Cryptographic key management and establishment can be performed using manual procedures or automated mechanisms with supporting manual procedures. Organizations define key management requirements in accordance with applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance, specifying appropriate options, levels, and parameters. Organizations manage trust stores to ensure that only approved trust anchors are in such trust stores. This includes certificates with visibility external to organizational information systems and certificates related to the internal operations of systems."
 ),
-(186, 16, 13, 1, 1,
+(186, 16, 13, 1, 1, --SC-13
 "CRYPTOGRAPHIC PROTECTION",
 "The information system implements [Assignment: organization-defined cryptographic uses and type of cryptography required for each use] in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards.",
 "Cryptography can be employed to support a variety of security solutions including, for example, the protection of classified and Controlled Unclassified Information, the provision of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances for such information but lack the necessary formal access approvals. Cryptography can also be used to support random number generation and hash generation. Generally applicable cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography. This control does not impose any requirements on organizations to use cryptography. However, if cryptography is required based on the selection of other security controls, organizations define each type of cryptographic use and the type of cryptography required (e.g., protection of classified information: NSA-approved cryptography; provision of digital signatures: FIPS-validated cryptography)."
 ),
-(187, 16, 14, 0, 0,
+(187, 16, 14, 0, 0, --SC-14
 "PUBLIC ACCESS PROTECTIONS",
 "[Withdrawn: Capability provided by AC-2, AC-3, AC-5, AC-6, SI-3, SI-4, SI-5, SI-7, SI-10].",
 NULL
 ),
-(188, 16, 15, 1, 1,
+(188, 16, 15, 1, 1, --SC-15
 "COLLABORATIVE COMPUTING DEVICES",
 "The information system: 
 a. Prohibits remote activation of collaborative computing devices with the following exceptions: [Assignment: organization-defined exceptions where remote activation is to be allowed]; and 
 b. Provides an explicit indication of use to users physically present at the devices. ",
 "Collaborative computing devices include, for example, networked white boards, cameras, and microphones. Explicit indication of use includes, for example, signals to users when collaborative computing devices are activated."
 ),
-(189, 16, 16, 0, 0,
+(189, 16, 16, 0, 0, --SC-16
 "TRANSMISSION OF SECURITY ATTRIBUTES",
 "The information system associates [Assignment: organization-defined security attributes] with information exchanged between information systems and between system components.",
 "Security attributes can be explicitly or implicitly associated with the information contained in organizational information systems or system components."
 ),
-(190, 16, 17, 1, 2,
+(190, 16, 17, 1, 2, --SC-17
 "PUBLIC KEY INFRASTRUCTURE CERTIFICATES",
 "The organization issues public key certificates under an [Assignment: organization-defined certificate policy] or obtains public key certificates from an approved service provider.",
 "For all certificates, organizations manage information system trust stores to ensure only approved trust anchors are in the trust stores. This control addresses both certificates with visibility external to organizational information systems and certificates related to the internal operations of systems, for example, application-specific time services."
 ),
-(191, 16, 18, 2, 2,
+(191, 16, 18, 2, 2, --SC-18
 "MOBILE CODE",
 "The organization: 
 a. Defines acceptable and unacceptable mobile code and mobile code technologies; 
@@ -1642,144 +1642,144 @@ b. Establishes usage restrictions and implementation guidance for acceptable mob
 c. Authorizes, monitors, and controls the use of mobile code within the information system. ",
 "Decisions regarding the employment of mobile code within organizational information systems are based on the potential for the code to cause damage to the systems if used maliciously. Mobile code technologies include, for example, Java, JavaScript, ActiveX, Postscript, PDF, Shockwave movies, Flash animations, and VBScript. Usage restrictions and implementation guidance apply to both the selection and use of mobile code installed on servers and mobile code downloaded and executed on individual workstations and devices (e.g., smart phones). Mobile code policy and procedures address preventing the development, acquisition, or introduction of unacceptable mobile code within organizational information systems."
 ),
-(192, 16, 19, 1, 2,
+(192, 16, 19, 1, 2, --SC-19
 "VOICE OVER INTERNET PROTOCOL",
 "The organization: 
 a. Establishes usage restrictions and implementation guidance for Voice over Internet Protocol (VoIP) technologies based on the potential to cause damage to the information system if used maliciously; and 
 b. Authorizes, monitors, and controls the use of VoIP within the information system.",
 NULL
 ),
-(193, 16, 20, 1, 1,
+(193, 16, 20, 1, 1, --SC-20
 "SECURE NAME / ADDRESS RESOLUTION SERVICE (AUTHORITATIVE SOURCE)",
 "The information system: 
 a. Provides additional data origin authentication and integrity verification artifacts along with the authoritative name resolution data the system returns in response to external name/address resolution queries; and 
 b. Provides the means to indicate the security status of child zones and (if the child supports secure resolution services) to enable verification of a chain of trust among parent and child domains, when operating as part of a distributed, hierarchical namespace.",
 "This control enables external clients including, for example, remote Internet clients, to obtain origin authentication and integrity verification assurances for the host/service name to network address resolution information obtained through the service. Information systems that provide name and address resolution services include, for example, domain name system (DNS) servers. Additional artifacts include, for example, DNS Security (DNSSEC) digital signatures and cryptographic keys. DNS resource records are examples of authoritative data. The means to indicate the security status of child zones includes, for example, the use of delegation signer resource records in the DNS. The DNS security controls reflect (and are referenced from) OMB Memorandum 08-23. Information systems that use technologies other than the DNS to map between host/service names and network addresses provide other means to assure the authenticity and integrity of response data."
 ),
-(194, 16, 21, 1, 1,
+(194, 16, 21, 1, 1, --SC-21
 "SECURE NAME / ADDRESS RESOLUTION SERVICE (RECURSIVE OR CACHING RESOLVER)",
 "The information system requests and performs data origin authentication and data integrity verification on the name/address resolution responses the system receives from authoritative sources.",
 "Each client of name resolution services either performs this validation on its own, or has authenticated channels to trusted validation providers. Information systems that provide name and address resolution services for local clients include, for example, recursive resolving or caching domain name system (DNS) servers. DNS client resolvers either perform validation of DNSSEC signatures, or clients use authenticated channels to recursive resolvers that perform such validations. Information systems that use technologies other than the DNS to map between host/service names and network addresses provide other means to enable clients to verify the authenticity and integrity of response data."
 ),
-(195, 16, 22, 1, 1,
+(195, 16, 22, 1, 1, --SC-22
 "ARCHITECTURE AND PROVISIONING FOR NAME / ADDRESS RESOLUTION SERVICE",
 "The information systems that collectively provide name/address resolution service for an organization are fault-tolerant and implement internal/external role separation.",
 "Information systems that provide name and address resolution services include, for example, domain name system (DNS) servers. To eliminate single points of failure and to enhance redundancy, organizations employ at least two authoritative domain name system servers, one configured as the primary server and the other configured as the secondary server. Additionally, organizations typically deploy the servers in two geographically separated network subnetworks (i.e., not located in the same physical facility). For role separation, DNS servers with internal roles only process name and address resolution requests from within organizations (i.e., from internal clients). DNS servers with external roles only process name and address resolution information requests from clients external to organizations (i.e., on external networks including the Internet). Organizations specify clients that can access authoritative DNS servers in particular roles (e.g., by address ranges, explicit lists)."
 ),
-(196, 16, 23, 1, 2,
+(196, 16, 23, 1, 2, --SC-23
 "SESSION AUTHENTICITY",
 "The information system protects the authenticity of communications sessions.",
 "This control addresses communications protection at the session, versus packet level (e.g., sessions in service-oriented architectures providing web-based services) and establishes grounds for confidence at both ends of communications sessions in ongoing identities of other parties and in the validity of information transmitted. Authenticity protection includes, for example, protecting against man-in-the-middle attacks/session hijacking and the insertion of false information into sessions."
 ),
-(197, 16, 24, 1, 3,
+(197, 16, 24, 1, 3, --SC-24
 "FAIL IN KNOWN STATE",
 "The information system fails to a [Assignment: organization-defined known-state] for [Assignment: organization-defined types of failures] preserving [Assignment: organization-defined system state information] in failure.",
 "Failure in a known state addresses security concerns in accordance with the mission/business needs of organizations. Failure in a known secure state helps to prevent the loss of confidentiality, integrity, or availability of information in the event of failures of organizational information systems or system components. Failure in a known safe state helps to prevent systems from failing to a state that may cause injury to individuals or destruction to property. Preserving information system state information facilitates system restart and return to the operational mode of organizations with less disruption of mission/business processes."
 ),
-(198, 16, 25, 0, 0,
+(198, 16, 25, 0, 0, --SC-25
 "THIN NODES",
 "The organization employs [Assignment: organization-defined information system components] with minimal functionality and information storage.",
 "The deployment of information system components with reduced/minimal functionality (e.g., diskless nodes and thin client technologies) reduces the need to secure every user endpoint, and may reduce the exposure of information, information systems, and services to cyber attacks."
 ),
-(199, 16, 26, 0, 0,
+(199, 16, 26, 0, 0, --SC-26
 "HONEYPOTS",
 "The information system includes components specifically designed to be the target of malicious attacks for the purpose of detecting, deflecting, and analyzing such attacks.",
 "A honeypot is set up as a decoy to attract adversaries and to deflect their attacks away from the operational systems supporting organizational missions/business function. Depending upon the specific usage of the honeypot, consultation with the Office of the General Counsel before deployment may be needed."
 ),
-(200, 16, 27, 0, 0,
+(200, 16, 27, 0, 0, --SC-27
 "PLATFORM-INDEPENDENT APPLICATIONS",
 "The information system includes: [Assignment: organization-defined platform-independent applications].",
-"Platforms are combinations of hardware and software used to run software applications. Platforms include: I. operating systems; II. the underlying computer architectures, or III. both. Platform-independent applications are applications that run on multiple platforms. Such applications promote portability and reconstitution on different platforms, increasing the availability of critical functions within organizations while information systems with specific operating systems are under attack."
+"Platforms are combinations of hardware and software used to run software applications. Platforms include: (i) operating systems; (ii) the underlying computer architectures, or (iii) both. Platform-independent applications are applications that run on multiple platforms. Such applications promote portability and reconstitution on different platforms, increasing the availability of critical functions within organizations while information systems with specific operating systems are under attack."
 ),
-(201, 16, 28, 1, 2,
+(201, 16, 28, 1, 2, --SC-28
 "PROTECTION OF INFORMATION AT REST",
 "The information system protects the [Selection (one or more): confidentiality; integrity] of [Assignment: organization-defined information at rest].",
 "This control addresses the confidentiality and integrity of information at rest and covers user information and system information. Information at rest refers to the state of information when it is located on storage devices as specific components of information systems. System-related information requiring protection includes, for example, configurations or rule sets for firewalls, gateways, intrusion detection/prevention systems, filtering routers, and authenticator content. Organizations may employ different mechanisms to achieve confidentiality and integrity protections, including the use of cryptographic mechanisms and file share scanning. Integrity protection can be achieved, for example, by implementing Write-Once-Read-Many (WORM) technologies. Organizations may also employ other security controls including, for example, secure off-line storage in lieu of online storage when adequate protection of information at rest cannot otherwise be achieved and/or continuous monitoring to identify malicious code at rest."
 ),
-(202, 16, 29, 0, 0,
+(202, 16, 29, 0, 0, --SC-29
 "HETEROGENEITY",
 "The organization employs a diverse set of information technologies for [Assignment: organization-defined information system components] in the implementation of the information system.",
 "Increasing the diversity of information technologies within organizational information systems reduces the impact of potential exploitations of specific technologies and also defends against common mode failures, including those failures induced by supply chain attacks. Diversity in information technologies also reduces the likelihood that the means adversaries use to compromise one information system component will be equally effective against other system components, thus further increasing the adversary work factor to successfully complete planned cyber attacks. An increase in diversity may add complexity and management overhead which could ultimately lead to mistakes and unauthorized configurations."
 ),
-(203, 16, 30, 0, 0,
+(203, 16, 30, 0, 0, --SC-30
 "CONCEALMENT AND MISDIRECTION",
 "The organization employs [Assignment: organization-defined concealment and misdirection techniques] for [Assignment: organization-defined information systems] at [Assignment: organization-defined time periods] to confuse and mislead adversaries.",
 "Concealment and misdirection techniques can significantly reduce the targeting capability of adversaries (i.e., window of opportunity and available attack surface) to initiate and complete cyber attacks. For example, virtualization techniques provide organizations with the ability to disguise information systems, potentially reducing the likelihood of successful attacks without the cost of having multiple platforms. Increased use of concealment/misdirection techniques including, for example, randomness, uncertainty, and virtualization, may sufficiently confuse and mislead adversaries and subsequently increase the risk of discovery and/or exposing tradecraft. Concealment/misdirection techniques may also provide organizations additional time to successfully perform core missions and business functions. Because of the time and effort required to support concealment/misdirection techniques, it is anticipated that such techniques would be used by organizations on a very limited basis."
 ),
-(204, 16, 31, 0, 0,
+(204, 16, 31, 0, 0, --SC-31
 "COVERT CHANNEL ANALYSIS",
 "The organization: 
 a. Performs a covert channel analysis to identify those aspects of communications within the information system that are potential avenues for covert [Selection (one or more): storage; timing] channels; and 
 b. Estimates the maximum bandwidth of those channels. ",
 "Developers are in the best position to identify potential areas within systems that might lead to covert channels. Covert channel analysis is a meaningful activity when there is the potential for unauthorized information flows across security domains, for example, in the case of information systems containing export-controlled information and having connections to external networks (i.e., networks not controlled by organizations). Covert channel analysis is also meaningful for multilevel secure (MLS) information systems, multiple security level (MSL) systems, and cross-domain systems."
 ),
-(205, 16, 32, 0, 0,
+(205, 16, 32, 0, 0, --SC-32
 "INFORMATION SYSTEM PARTITIONING",
 "The organization partitions the information system into [Assignment: organization-defined information system components] residing in separate physical domains or environments based on [Assignment: organization-defined circumstances for physical separation of components].",
 "Information system partitioning is a part of a defense-in-depth protection strategy. Organizations determine the degree of physical separation of system components from physically distinct components in separate racks in the same room, to components in separate rooms for the more critical components, to more significant geographical separation of the most critical components. Security categorization can guide the selection of appropriate candidates for domain partitioning. Managed interfaces restrict or prohibit network access and information flow among partitioned information system components."
 ),
-(206, 16, 33, 0, 0,
+(206, 16, 33, 0, 0, --SC-33
 "TRANSMISSION PREPARATION INTEGRITY",
 "[Withdrawn: Incorporated into SC-8].",
 NULL
 ),
-(207, 16, 34, 0, 0,
+(207, 16, 34, 0, 0, --SC-34
 "NON-MODIFIABLE EXECUTABLE PROGRAMS",
 "The information system at [Assignment: organization-defined information system components]: 
 a. Loads and executes the operating environment from hardware-enforced, read-only media; and 
 b. Loads and executes [Assignment: organization-defined applications] from hardware-enforced, read-only media.",
-"The term operating environment is defined as the specific code that hosts applications, for example, operating systems, executives, or monitors including virtual machine monitors (i.e., hypervisors). It can also include certain applications running directly on hardware platforms. Hardware-enforced, read-only media include, for example, Compact Disk-Recordable (CD-R)/Digital Video Disk-Recordable (DVD-R) disk drives and one-time programmable read-only memory. The use of non-modifiable storage ensures the integrity of software from the point of creation of the read-only image. The use of reprogrammable read-only memory can be accepted as read-only media provided: I. integrity can be adequately protected from the point of initial writing to the insertion of the memory into the information system; and II. there are reliable hardware protections against reprogramming the memory while installed in organizational information systems."
+"The term operating environment is defined as the specific code that hosts applications, for example, operating systems, executives, or monitors including virtual machine monitors (i.e., hypervisors). It can also include certain applications running directly on hardware platforms. Hardware-enforced, read-only media include, for example, Compact Disk-Recordable (CD-R)/Digital Video Disk-Recordable (DVD-R) disk drives and one-time programmable read-only memory. The use of non-modifiable storage ensures the integrity of software from the point of creation of the read-only image. The use of reprogrammable read-only memory can be accepted as read-only media provided: (i) integrity can be adequately protected from the point of initial writing to the insertion of the memory into the information system; and (ii) there are reliable hardware protections against reprogramming the memory while installed in organizational information systems."
 ),
-(208, 16, 35, 0, 0,
+(208, 16, 35, 0, 0, --SC-35
 "HONEYCLIENTS",
 "The information system includes components that proactively seek to identify malicious websites and/or web-based malicious code.",
 "Honeyclients differ from honeypots in that the components actively probe the Internet in search of malicious code (e.g., worms) contained on external websites. As with honeypots, honeyclients require some supporting isolation measures (e.g., virtualization) to ensure that any malicious code discovered during the search and subsequently executed does not infect organizational information systems."
 ),
-(209, 16, 36, 0, 0,
+(209, 16, 36, 0, 0, --SC-36
 "DISTRIBUTED PROCESSING AND STORAGE",
 "The organization distributes [Assignment: organization-defined processing and storage] across multiple physical locations.",
 "Distributing processing and storage across multiple physical locations provides some degree of redundancy or overlap for organizations, and therefore increases the work factor of adversaries to adversely impact organizational operations, assets, and individuals. This control does not assume a single primary processing or storage location, and thus allows for parallel processing and storage."
 ),
-(210, 16, 37, 0, 0,
+(210, 16, 37, 0, 0, --SC-37
 "OUT-OF-BAND CHANNELS",
 "The organization employs [Assignment: organization-defined out-of-band channels] for the physical delivery or electronic transmission of [Assignment: organization-defined information, information system components, or devices] to [Assignment: organization-defined individuals or information systems].",
 "Out-of-band channels include, for example, local (nonnetwork) accesses to information systems, network paths physically separate from network paths used for operational traffic, or nonelectronic paths such as the US Postal Service. This is in contrast with using the same channels (i.e., in-band channels) that carry routine operational traffic. Out-of-band channels do not have the same vulnerability/exposure as in-band channels, and hence the confidentiality, integrity, or availability compromises of in-band channels will not compromise the out-of-band channels. Organizations may employ out-of-band channels in the delivery or transmission of many organizational items including, for example, identifiers/authenticators, configuration management changes for hardware, firmware, or software, cryptographic key management information, security updates, system/data backups, maintenance information, and malicious code protection updates."
 ),
-(211, 16, 38, 0, 0,
+(211, 16, 38, 0, 0, --SC-38
 "OPERATIONS SECURITY",
 "The organization employs [Assignment: organization-defined operations security safeguards] to protect key organizational information throughout the system development life cycle.",
-"Operations security (OPSEC) is a systematic process by which potential adversaries can be denied information about the capabilities and intentions of organizations by identifying, controlling, and protecting generally unclassified information that specifically relates to the planning and execution of sensitive organizational activities. The OPSEC process involves five steps: I. identification of critical information (e.g., the security categorization process); II. analysis of threats; III. analysis of vulnerabilities; IV. assessment of risks; and V. the application of appropriate countermeasures. OPSEC safeguards are applied to both organizational information systems and the environments in which those systems operate. OPSEC safeguards help to protect the confidentiality of key information including, for example, limiting the sharing of information with suppliers and potential suppliers of information system components, information technology products and services, and with other non-organizational elements and individuals. Information critical to mission/business success includes, for example, user identities, element uses, suppliers, supply chain processes, functional and security requirements, system design specifications, testing protocols, and security control implementation details."
+"Operations security (OPSEC) is a systematic process by which potential adversaries can be denied information about the capabilities and intentions of organizations by identifying, controlling, and protecting generally unclassified information that specifically relates to the planning and execution of sensitive organizational activities. The OPSEC process involves five steps: (i) identification of critical information (e.g., the security categorization process); (ii) analysis of threats; (iii) analysis of vulnerabilities; (iv) assessment of risks; and (v) the application of appropriate countermeasures. OPSEC safeguards are applied to both organizational information systems and the environments in which those systems operate. OPSEC safeguards help to protect the confidentiality of key information including, for example, limiting the sharing of information with suppliers and potential suppliers of information system components, information technology products and services, and with other non-organizational elements and individuals. Information critical to mission/business success includes, for example, user identities, element uses, suppliers, supply chain processes, functional and security requirements, system design specifications, testing protocols, and security control implementation details."
 ),
-(212, 16, 39, 1, 1,
+(212, 16, 39, 1, 1, --SC-39
 "PROCESS ISOLATION",
 "The information system maintains a separate execution domain for each executing process.",
 "Information systems can maintain separate execution domains for each executing process by assigning each process a separate address space. Each information system process has a distinct address space so that communication between processes is performed in a manner controlled through the security functions, and one process cannot modify the executing code of another process. Maintaining separate execution domains for executing processes can be achieved, for example, by implementing separate address spaces. This capability is available in most commercial operating systems that employ multi-state processor technologies."
 ),
-(213, 16, 40, 0, 0,
+(213, 16, 40, 0, 0, --SC-40
 "WIRELESS LINK PROTECTION",
 "The information system protects external and internal [Assignment: organization-defined wireless links] from [Assignment: organization-defined types of signal parameter attacks or references to sources for such attacks].",
 "This control applies to internal and external wireless communication links that may be visible to individuals who are not authorized information system users. Adversaries can exploit the signal parameters of wireless links if such links are not adequately protected. There are many ways to exploit the signal parameters of wireless links to gain intelligence, deny service, or to spoof users of organizational information systems. This control reduces the impact of attacks that are unique to wireless systems. If organizations rely on commercial service providers for transmission services as commodity items rather than as fully dedicated services, it may not be possible to implement this control."
 ),
-(214, 16, 41, 0, 0,
+(214, 16, 41, 0, 0, --SC-41
 "PORT AND I/O DEVICE ACCESS",
 "The organization physically disables or removes [Assignment: organization-defined connection ports or input/output devices] on [Assignment: organization-defined information systems or information system components].",
 "Connection ports include, for example, Universal Serial Bus (USB) and Firewire (IEEE 1394). Input/output (I/O) devices include, for example, Compact Disk (CD) and Digital Video Disk (DVD) drives. Physically disabling or removing such connection ports and I/O devices helps prevent exfiltration of information from information systems and the introduction of malicious code into systems from those ports/devices."
 ),
-(215, 16, 42, 0, 0,
+(215, 16, 42, 0, 0, --SC-42
 "SENSOR CAPABILITY AND DATA",
 "The information system: 
 a. Prohibits the remote activation of environmental sensing capabilities with the following exceptions: [Assignment: organization-defined exceptions where remote activation of sensors is allowed]; and 
 b. Provides an explicit indication of sensor use to [Assignment: organization-defined class of users]. ",
 "This control often applies to types of information systems or system components characterized as mobile devices, for example, smart phones, tablets, and E-readers. These systems often include sensors that can collect and record data regarding the environment where the system is in use. Sensors that are embedded within mobile devices include, for example, cameras, microphones, Global Positioning System (GPS) mechanisms, and accelerometers. While the sensors on mobiles devices provide an important function, if activated covertly, such devices can potentially provide a means for adversaries to learn valuable information about individuals and organizations. For example, remotely activating the GPS function on a mobile device could provide an adversary with the ability to track the specific movements of an individual."
 ),
-(216, 16, 43, 0, 0,
+(216, 16, 43, 0, 0, --SC-43
 "USAGE RESTRICTIONS",
 "The organization: 
 a. Establishes usage restrictions and implementation guidance for [Assignment: organization-defined information system components] based on the potential to cause damage to the information system if used maliciously; and 
 b. Authorizes, monitors, and controls the use of such components within the information system.",
 "Information system components include hardware, software, or firmware components (e.g., Voice Over Internet Protocol, mobile code, digital copiers, printers, scanners, optical devices, wireless technologies, mobile devices)."
 ),
-(217, 16, 44, 0, 0,
+(217, 16, 44, 0, 0, --SC-44
 "DETONATION CHAMBERS",
 "The organization employs a detonation chamber capability within [Assignment: organization-defined information system, system component, or location].",
 "Detonation chambers, also known as dynamic execution environments, allow organizations to open email attachments, execute untrusted or suspicious applications, and execute Universal Resource Locator (URL) requests in the safety of an isolated environment or virtualized sandbox. These protected and isolated execution environments provide a means of determining whether the associated attachments/applications contain malicious code. While related to the concept of deception nets, the control is not intended to maintain a long-term environment in which adversaries can operate and their actions can be observed. Rather, it is intended to quickly identify malicious code and reduce the likelihood that the code is propagated to user environments of operation (or prevent such propagation completely)."
@@ -1790,7 +1790,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(218, 17, 1, 1, 1,
+(218, 17, 1, 1, 1, --SI-1
 "SYSTEM AND INFORMATION INTEGRITY POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -1801,7 +1801,7 @@ b. Reviews and updates the current:
 2. System and information integrity procedures [Assignment: organization-defined frequency]. ",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the SI family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(219, 17, 2, 1, 1,
+(219, 17, 2, 1, 1, --SI-2
 "FLAW REMEDIATION",
 "The organization: 
 a. Identifies, reports, and corrects information system flaws; 
@@ -1810,7 +1810,7 @@ c. Installs security-relevant software and firmware updates within [Assignment: 
 d. Incorporates flaw remediation into the organizational configuration management process.",
 "Organizations identify information systems affected by announced software flaws including potential vulnerabilities resulting from those flaws, and report this information to designated organizational personnel with information security responsibilities. Security-relevant software updates include, for example, patches, service packs, hot fixes, and anti-virus signatures. Organizations also address flaws discovered during security assessments, continuous monitoring, incident response activities, and system error handling. Organizations take advantage of available resources such as the Common Weakness Enumeration (CWE) or Common Vulnerabilities and Exposures (CVE) databases in remediating flaws discovered in organizational information systems. By incorporating flaw remediation into ongoing configuration management processes, required/anticipated remediation actions can be tracked and verified. Flaw remediation actions that can be tracked and verified include, for example, determining whether organizations follow US-CERT guidance and Information Assurance Vulnerability Alerts. Organization-defined time periods for updating security-relevant software and firmware may vary based on a variety of factors including, for example, the security category of the information system or the criticality of the update (i.e., severity of the vulnerability related to the discovered flaw). Some types of flaw remediation may require more testing than other types. Organizations determine the degree and type of testing needed for the specific type of flaw remediation activity under consideration and also the types of changes that are to be configuration-managed. In some situations, organizations may determine that the testing of software and/or firmware updates is not necessary or practical, for example, when implementing simple anti-virus signature updates. Organizations may also consider in testing decisions, whether security-relevant software or firmware updates are obtained from authorized sources with appropriate digital signatures."
 ),
-(220, 17, 3, 1, 1,
+(220, 17, 3, 1, 1, --SI-3
 "MALICIOUS CODE PROTECTION",
 "The organization: 
 a. Employs malicious code protection mechanisms at information system entry and exit points to detect and eradicate malicious code; 
@@ -1821,7 +1821,7 @@ c. Configures malicious code protection mechanisms to:
 d. Addresses the receipt of false positives during malicious code detection and eradication and the resulting potential impact on the availability of the information system. ",
 "Information system entry and exit points include, for example, firewalls, electronic mail servers, web servers, proxy servers, remote-access servers, workstations, notebook computers, and mobile devices. Malicious code includes, for example, viruses, worms, Trojan horses, and spyware. Malicious code can also be encoded in various formats (e.g., UUENCODE, Unicode), contained within compressed or hidden files, or hidden in files using steganography. Malicious code can be transported by different means including, for example, web accesses, electronic mail, electronic mail attachments, and portable storage devices. Malicious code insertions occur through the exploitation of information system vulnerabilities. Malicious code protection mechanisms include, for example, anti-virus signature definitions and reputation-based technologies. A variety of technologies and methods exist to limit or eliminate the effects of malicious code. Pervasive configuration management and comprehensive software integrity controls may be effective in preventing execution of unauthorized code. In addition to commercial off-the-shelf software, malicious code may also be present in custom-built software. This could include, for example, logic bombs, back doors, and other types of cyber attacks that could affect organizational missions/business functions. Traditional malicious code protection mechanisms cannot always detect such code. In these situations, organizations rely instead on other safeguards including, for example, secure coding practices, configuration management and control, trusted procurement processes, and monitoring practices to help ensure that software does not perform functions other than the functions intended. Organizations may determine that in response to the detection of malicious code, different actions may be warranted. For example, organizations can define actions in response to malicious code detection during periodic scans, actions in response to detection of malicious downloads, and/or actions in response to detection of maliciousness when attempting to open or execute files."
 ),
-(221, 17, 4, 1, 1,
+(221, 17, 4, 1, 1, --SI-4
 "INFORMATION SYSTEM MONITORING",
 "The organization: 
 a. Monitors the information system to detect: 
@@ -1837,7 +1837,7 @@ f. Obtains legal opinion with regard to information system monitoring activities
 g. Provides [Assignment: organization-defined information system monitoring information] to [Assignment: organization-defined personnel or roles] [Selection (one or more): as needed; [Assignment: organization-defined frequency]].",
 "Information system monitoring includes external and internal monitoring. External monitoring includes the observation of events occurring at the information system boundary (i.e., part of perimeter defense and boundary protection). Internal monitoring includes the observation of events occurring within the information system. Organizations can monitor information systems, for example, by observing audit activities in real time or by observing other system aspects such as access patterns, characteristics of access, and other actions. The monitoring objectives may guide determination of the events. Information system monitoring capability is achieved through a variety of tools and techniques (e.g., intrusion detection systems, intrusion prevention systems, malicious code protection software, scanning tools, audit record monitoring software, network monitoring software). Strategic locations for monitoring devices include, for example, selected perimeter locations and near server farms supporting critical applications, with such devices typically being employed at the managed interfaces associated with controls SC-7 and AC-17. Einstein network monitoring devices from the Department of Homeland Security can also be included as monitoring devices. The granularity of monitoring information collected is based on organizational monitoring objectives and the capability of information systems to support such objectives. Specific types of transactions of interest include, for example, Hyper Text Transfer Protocol (HTTP) traffic that bypasses HTTP proxies. Information system monitoring is an integral part of organizational continuous monitoring and incident response programs. Output from system monitoring serves as input to continuous monitoring and incident response programs. A network connection is any connection with a device that communicates through a network (e.g., local area network, Internet). A remote connection is any connection with a device communicating through an external network (e.g., the Internet). Local, network, and remote connections can be either wired or wireless."
 ),
-(222, 17, 5, 1, 1,
+(222, 17, 5, 1, 1, --SI-5
 "SECURITY ALERTS, ADVISORIES, AND DIRECTIVES",
 "The organization: 
 a. Receives information system security alerts, advisories, and directives from [Assignment: organization-defined external organizations] on an ongoing basis; 
@@ -1846,7 +1846,7 @@ c. Disseminates security alerts, advisories, and directives to: [Selection (one 
 d. Implements security directives in accordance with established time frames, or notifies the issuing organization of the degree of noncompliance.",
 "The United States Computer Emergency Readiness Team (US-CERT) generates security alerts and advisories to maintain situational awareness across the federal government. Security directives are issued by OMB or other designated organizations with the responsibility and authority to issue such directives. Compliance to security directives is essential due to the critical nature of many of these directives and the potential immediate adverse effects on organizational operations and assets, individuals, other organizations, and the Nation should the directives not be implemented in a timely manner. External organizations include, for example, external mission/business partners, supply chain partners, external service providers, and other peer/supporting organizations."
 ),
-(223, 17, 6, 1, 3,
+(223, 17, 6, 1, 3, --SI-6
 "SECURITY FUNCTION VERIFICATION",
 "The information system: 
 a. Verifies the correct operation of [Assignment: organization-defined security functions]; 
@@ -1855,63 +1855,63 @@ c. Notifies [Assignment: organization-defined personnel or roles] of failed secu
 d. [Selection (one or more): shuts the information system down; restarts the information system; [Assignment: organization-defined alternative action(s)]] when anomalies are discovered. ",
 "Transitional states for information systems include, for example, system startup, restart, shutdown, and abort. Notifications provided by information systems include, for example, electronic alerts to system administrators, messages to local computer consoles, and/or hardware indications such as lights."
 ),
-(224, 17, 7, 1, 2,
+(224, 17, 7, 1, 2, --SI-7
 "SOFTWARE, FIRMWARE, AND INFORMATION INTEGRITY",
 "The organization employs integrity verification tools to detect unauthorized changes to [Assignment: organization-defined software, firmware, and information].",
 "Unauthorized changes to software, firmware, and information can occur due to errors or malicious activity (e.g., tampering). Software includes, for example, operating systems (with key internal components such as kernels, drivers), middleware, and applications. Firmware includes, for example, the Basic Input Output System (BIOS). Information includes metadata such as security attributes associated with information. State-of-the-practice integrity-checking mechanisms (e.g., parity checks, cyclical redundancy checks, cryptographic hashes) and associated tools can automatically monitor the integrity of information systems and hosted applications."
 ),
-(225, 17, 8, 2, 2,
+(225, 17, 8, 2, 2, --SI-8
 "SPAM PROTECTION",
 "The organization: 
 a. Employs spam protection mechanisms at information system entry and exit points to detect and take action on unsolicited messages; and 
 b. Updates spam protection mechanisms when new releases are available in accordance with organizational configuration management policy and procedures.",
 "Information system entry and exit points include, for example, firewalls, electronic mail servers, web servers, proxy servers, remote-access servers, workstations, mobile devices, and notebook/laptop computers. Spam can be transported by different means including, for example, electronic mail, electronic mail attachments, and web accesses. Spam protection mechanisms include, for example, signature definitions."
 ),
-(226, 17, 9, 0, 0,
+(226, 17, 9, 0, 0, --SI-9
 "INFORMATION INPUT RESTRICTIONS",
 "[Withdrawn: Incorporated into AC-2, AC-3, AC-5, AC-6].",
 NULL
 ),
-(227, 17, 10, 1, 2,
+(227, 17, 10, 1, 2, --SI-10
 "INFORMATION INPUT VALIDATION",
 "The information system checks the validity of [Assignment: organization-defined information inputs].",
 "Checking the valid syntax and semantics of information system inputs (e.g., character set, length, numerical range, and acceptable values) verifies that inputs match specified definitions for format and content. Software applications typically follow well-defined protocols that use structured messages (i.e., commands or queries) to communicate between software modules or system components. Structured messages can contain raw or unstructured data interspersed with metadata or control information. If software applications use attacker-supplied inputs to construct structured messages without properly encoding such messages, then the attacker could insert malicious commands or special characters that can cause the data to be interpreted as control information or metadata. Consequently, the module or component that receives the tainted output will perform the wrong operations or otherwise interpret the data incorrectly. Prescreening inputs prior to passing to interpreters prevents the content from being unintentionally interpreted as commands. Input validation helps to ensure accurate and correct inputs and prevent attacks such as cross-site scripting and a variety of injection attacks."
 ),
-(228, 17, 11, 2, 2,
+(228, 17, 11, 2, 2, --SI-11
 "ERROR HANDLING",
 "The information system: 
 a. Generates error messages that provide information necessary for corrective actions without revealing information that could be exploited by adversaries; and 
 b. Reveals error messages only to [Assignment: organization-defined personnel or roles].",
 "Organizations carefully consider the structure/content of error messages. The extent to which information systems are able to identify and handle error conditions is guided by organizational policy and operational requirements. Information that could be exploited by adversaries includes, for example, erroneous logon attempts with passwords entered by mistake as the username, mission/business information that can be derived from (if not stated explicitly by) information recorded, and personal information such as account numbers, social security numbers, and credit card numbers. In addition, error messages may provide a covert channel for transmitting information."
 ),
-(229, 17, 12, 2, 1,
+(229, 17, 12, 2, 1, --SI-12
 "INFORMATION HANDLING AND RETENTION",
 "The organization handles and retains information within the information system and information output from the system in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and operational requirements.",
 "Information handling and retention requirements cover the full life cycle of information, in some cases extending beyond the disposal of information systems. The National Archives and Records Administration provides guidance on records retention."
 ),
-(230, 17, 13, 0, 0,
+(230, 17, 13, 0, 0, --SI-13
 "PREDICTABLE FAILURE PREVENTION",
 "The organization: 
 a. Determines mean time to failure (MTTF) for [Assignment: organization-defined information system components] in specific environments of operation; and 
 b. Provides substitute information system components and a means to exchange active and standby components at [Assignment: organization-defined MTTF substitution criteria].",
 "While MTTF is primarily a reliability issue, this control addresses potential failures of specific information system components that provide security capability. Failure rates reflect installation-specific consideration, not industry-average. Organizations define criteria for substitution of information system components based on MTTF value with consideration for resulting potential harm from component failures. Transfer of responsibilities between active and standby components does not compromise safety, operational readiness, or security capability (e.g., preservation of state variables). Standby components remain available at all times except for maintenance issues or recovery failures in progress."
 ),
-(231, 17, 14, 0, 0,
+(231, 17, 14, 0, 0, --SI-14
 "NON-PERSISTENCE",
 "The organization implements non-persistent [Assignment: organization-defined information system components and services] that are initiated in a known state and terminated [Selection (one or more): upon end of session of use; periodically at [Assignment: organization-defined frequency]].",
 "This control mitigates risk from advanced persistent threats (APTs) by significantly reducing the targeting capability of adversaries (i.e., window of opportunity and available attack surface) to initiate and complete cyber attacks. By implementing the concept of non-persistence for selected information system components, organizations can provide a known state computing resource for a specific period of time that does not give adversaries sufficient time on target to exploit vulnerabilities in organizational information systems and the environments in which those systems operate. Since the advanced persistent threat is a high-end threat with regard to capability, intent, and targeting, organizations assume that over an extended period of time, a percentage of cyber attacks will be successful. Non-persistent information system components and services are activated as required using protected information and terminated periodically or upon the end of sessions. Non-persistence increases the work factor of adversaries in attempting to compromise or breach organizational information systems. Non-persistent system components can be implemented, for example, by periodically re-imaging components or by using a variety of common virtualization techniques. Non-persistent services can be implemented using virtualization techniques as part of virtual machines or as new instances of processes on physical machines (either persistent or non-persistent).The benefit of periodic refreshes of information system components/services is that it does not require organizations to first determine whether compromises of components or services have occurred (something that may often be difficult for organizations to determine). The refresh of selected information system components and services occurs with sufficient frequency to prevent the spread or intended impact of attacks, but not with such frequency that it makes the information system unstable. In some instances, refreshes of critical components and services may be done periodically in order to hinder the ability of adversaries to exploit optimum windows of vulnerabilities."
 ),
-(232, 17, 15, 0, 0,
+(232, 17, 15, 0, 0, --SI-15
 "INFORMATION OUTPUT FILTERING",
 "The information system validates information output from [Assignment: organization-defined software programs and/or applications] to ensure that the information is consistent with the expected content.",
 "Certain types of cyber attacks (e.g., SQL injections) produce output results that are unexpected or inconsistent with the output results that would normally be expected from software programs or applications. This control enhancement focuses on detecting extraneous content, preventing such extraneous content from being displayed, and alerting monitoring tools that anomalous behavior has been discovered."
 ),
-(233, 17, 16, 1, 2,
+(233, 17, 16, 1, 2, --SI-16
 "MEMORY PROTECTION",
 "The information system implements [Assignment: organization-defined security safeguards] to protect its memory from unauthorized code execution.",
 "Some adversaries launch attacks with the intent of executing code in non-executable regions of memory or in memory locations that are prohibited. Security safeguards employed to protect memory include, for example, data execution prevention and address space layout randomization. Data execution prevention safeguards can either be hardware-enforced or software-enforced with hardware providing the greater strength of mechanism."
 ),
-(234, 17, 17, 0, 0,
+(234, 17, 17, 0, 0, --SI-17
 "FAIL-SAFE PROCEDURES",
 "The information system implements [Assignment: organization-defined fail-safe procedures] when [Assignment: organization-defined failure conditions occur].",
 "Failure conditions include, for example, loss of communications among critical system components or between system components and operational facilities. Fail-safe procedures include, for example, alerting operator personnel and providing specific instructions on subsequent steps to take (e.g., do nothing, reestablish system settings, shut down processes, restart the system, or contact designated organizational personnel)."
@@ -1922,7 +1922,7 @@ INSERT INTO "security_control"
 ("id", "family", "number", "priority", "impact", 
 "control", "description", "guidance")
 VALUES
-(235, 18, 1, 1, 1,
+(235, 18, 1, 1, 1, --SA-1
 "SYSTEM AND SERVICES ACQUISITION POLICY AND PROCEDURES",
 "The organization: 
 a. Develops, documents, and disseminates to [Assignment: organization-defined personnel or roles]: 
@@ -1933,7 +1933,7 @@ b. Reviews and updates the current:
 2. System and services acquisition procedures [Assignment: organization-defined frequency].",
 "This control addresses the establishment of policy and procedures for the effective implementation of selected security controls and control enhancements in the SA family. Policy and procedures reflect applicable federal laws, Executive Orders, directives, regulations, policies, standards, and guidance. Security program policies and procedures at the organization level may make the need for system-specific policies and procedures unnecessary. The policy can be included as part of the general information security policy for organizations or conversely, can be represented by multiple policies reflecting the complex nature of certain organizations. The procedures can be established for the security program in general and for particular information systems, if needed. The organizational risk management strategy is a key factor in establishing policy and procedures."
 ),
-(236, 18, 2, 1, 1,
+(236, 18, 2, 1, 1, --SA-2
 "ALLOCATION OF RESOURCES",
 "The organization: 
 a. Determines information security requirements for the information system or information system service in mission/business process planning; 
@@ -1941,7 +1941,7 @@ b. Determines, documents, and allocates the resources required to protect the in
 c. Establishes a discrete line item for information security in organizational programming and budgeting documentation.",
 "Resource allocation for information security includes funding for the initial information system or information system service acquisition and funding for the sustainment of the system/service."
 ),
-(237, 18, 3, 1, 1,
+(237, 18, 3, 1, 1, --SA-3
 "SYSTEM DEVELOPMENT LIFE CYCLE",
 "The organization: 
 a. Manages the information system using [Assignment: organization-defined system development life cycle] that incorporates information security considerations; 
@@ -1950,7 +1950,7 @@ c. Identifies individuals having information security roles and responsibilities
 d. Integrates the organizational information security risk management process into system development life cycle activities.",
 "A well-defined system development life cycle provides the foundation for the successful development, implementation, and operation of organizational information systems. To apply the required security controls within the system development life cycle requires a basic understanding of information security, threats, vulnerabilities, adverse impacts, and risk to critical missions/business functions. The security engineering principles in SA-8 cannot be properly applied if individuals that design, code, and test information systems and system components (including information technology products) do not understand security. Therefore, organizations include qualified personnel, for example, chief information security officers, security architects, security engineers, and information system security officers in system development life cycle activities to ensure that security requirements are incorporated into organizational information systems. It is equally important that developers include individuals on the development team that possess the requisite security expertise and skills to ensure that needed security capabilities are effectively integrated into the information system. Security awareness and training programs can help ensure that individuals having key security roles and responsibilities have the appropriate experience, skills, and expertise to conduct assigned system development life cycle activities. The effective integration of security requirements into enterprise architecture also helps to ensure that important security considerations are addressed early in the system development life cycle and that those considerations are directly related to the organizational mission/business processes. This process also facilitates the integration of the information security architecture into the enterprise architecture, consistent with organizational risk management and information security strategies."
 ),
-(238, 18, 4, 1, 1,
+(238, 18, 4, 1, 1, --SA-4
 "ACQUISITION PROCESS",
 "The organization includes the following requirements, descriptions, and criteria, explicitly or by reference, in the acquisition contract for the information system, system component, or information system service in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, guidelines, and organizational mission/business needs: 
 a. Security functional requirements; 
@@ -1960,9 +1960,9 @@ d. Security-related documentation requirements;
 e. Requirements for protecting security-related documentation; 
 f. Description of the information system development environment and environment in which the system is intended to operate; and 
 g. Acceptance criteria.",
-"Information system components are discrete, identifiable information technology assets (e.g., hardware, software, or firmware) that represent the building blocks of an information system. Information system components include commercial information technology products. Security functional requirements include security capabilities, security functions, and security mechanisms. Security strength requirements associated with such capabilities, functions, and mechanisms include degree of correctness, completeness, resistance to direct attack, and resistance to tampering or bypass. Security assurance requirements include: I. development processes, procedures, practices, and methodologies; and II. evidence from development and assessment activities providing grounds for confidence that the required security functionality has been implemented and the required security strength has been achieved. Security documentation requirements address all phases of the system development life cycle. Security functionality, assurance, and documentation requirements are expressed in terms of security controls and control enhancements that have been selected through the tailoring process. The security control tailoring process includes, for example, the specification of parameter values through the use of assignment and selection statements and the specification of platform dependencies and implementation information. Security documentation provides user and administrator guidance regarding the implementation and operation of security controls. The level of detail required in security documentation is based on the security category or classification level of the information system and the degree to which organizations depend on the stated security capability, functions, or mechanisms to meet overall risk response expectations (as defined in the organizational risk management strategy). Security requirements can also include organizationally mandated configuration settings specifying allowed functions, ports, protocols, and services. Acceptance criteria for information systems, information system components, and information system services are defined in the same manner as such criteria for any organizational acquisition or procurement. The Federal Acquisition Regulation (FAR) Section 7.103 contains information security requirements from FISMA."
+"Information system components are discrete, identifiable information technology assets (e.g., hardware, software, or firmware) that represent the building blocks of an information system. Information system components include commercial information technology products. Security functional requirements include security capabilities, security functions, and security mechanisms. Security strength requirements associated with such capabilities, functions, and mechanisms include degree of correctness, completeness, resistance to direct attack, and resistance to tampering or bypass. Security assurance requirements include: (i) development processes, procedures, practices, and methodologies; and (ii) evidence from development and assessment activities providing grounds for confidence that the required security functionality has been implemented and the required security strength has been achieved. Security documentation requirements address all phases of the system development life cycle. Security functionality, assurance, and documentation requirements are expressed in terms of security controls and control enhancements that have been selected through the tailoring process. The security control tailoring process includes, for example, the specification of parameter values through the use of assignment and selection statements and the specification of platform dependencies and implementation information. Security documentation provides user and administrator guidance regarding the implementation and operation of security controls. The level of detail required in security documentation is based on the security category or classification level of the information system and the degree to which organizations depend on the stated security capability, functions, or mechanisms to meet overall risk response expectations (as defined in the organizational risk management strategy). Security requirements can also include organizationally mandated configuration settings specifying allowed functions, ports, protocols, and services. Acceptance criteria for information systems, information system components, and information system services are defined in the same manner as such criteria for any organizational acquisition or procurement. The Federal Acquisition Regulation (FAR) Section 7.103 contains information security requirements from FISMA."
 ),
-(239, 18, 5, 2, 1,
+(239, 18, 5, 2, 1, --SA-5
 "INFORMATION SYSTEM DOCUMENTATION",
 "The organization: 
 a. Obtains administrator documentation for the information system, system component, or information system service that describes: 
@@ -1978,22 +1978,22 @@ d. Protects documentation as required, in accordance with the risk management st
 e. Distributes documentation to [Assignment: organization-defined personnel or roles].",
 "This control helps organizational personnel understand the implementation and operation of security controls associated with information systems, system components, and information system services. Organizations consider establishing specific measures to determine the quality/completeness of the content provided. The inability to obtain needed documentation may occur, for example, due to the age of the information system/component or lack of support from developers and contractors. In those situations, organizations may need to recreate selected documentation if such documentation is essential to the effective implementation or operation of security controls. The level of protection provided for selected information system, component, or service documentation is commensurate with the security category or classification of the system. For example, documentation associated with a key DoD weapons system or command and control system would typically require a higher level of protection than a routine administrative system. Documentation that addresses information system vulnerabilities may also require an increased level of protection. Secure operation of the information system, includes, for example, initially starting the system and resuming secure system operation after any lapse in system operation."
 ),
-(240, 18, 6, 0, 0,
+(240, 18, 6, 0, 0, --SA-6
 "SOFTWARE USAGE RESTRICTIONS",
 "[Withdrawn: Incorporated into CM-10 and SI-7].",
 NULL
 ),
-(241, 18, 7, 0, 0,
+(241, 18, 7, 0, 0, --SA-7
 "USER-INSTALLED SOFTWARE",
 "[Withdrawn: Incorporated into CM-11 and SI-7].",
 NULL
 ),
-(242, 18, 8, 1, 2,
+(242, 18, 8, 1, 2, --SA-8
 "SECURITY ENGINEERING PRINCIPLES",
 "The organization applies information system security engineering principles in the specification, design, development, implementation, and modification of the information system.",
-"Organizations apply security engineering principles primarily to new development information systems or systems undergoing major upgrades. For legacy systems, organizations apply security engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware within those systems. Security engineering principles include, for example: I. developing layered protections; II. establishing sound security policy, architecture, and controls as the foundation for design; III. incorporating security requirements into the system development life cycle; IV. delineating physical and logical security boundaries; V. ensuring that system developers are trained on how to build secure software; VI. tailoring security controls to meet organizational and operational needs; VII. performing threat modeling to identify use cases, threat agents, attack vectors, and attack patterns as well as compensating controls and design patterns needed to mitigate risk; and VIII. reducing risk to acceptable levels, thus enabling informed risk management decisions."
+"Organizations apply security engineering principles primarily to new development information systems or systems undergoing major upgrades. For legacy systems, organizations apply security engineering principles to system upgrades and modifications to the extent feasible, given the current state of hardware, software, and firmware within those systems. Security engineering principles include, for example: (i) developing layered protections; (ii) establishing sound security policy, architecture, and controls as the foundation for design; (iii) incorporating security requirements into the system development life cycle; (iv) delineating physical and logical security boundaries; (v) ensuring that system developers are trained on how to build secure software; (vi) tailoring security controls to meet organizational and operational needs; (vii) performing threat modeling to identify use cases, threat agents, attack vectors, and attack patterns as well as compensating controls and design patterns needed to mitigate risk; and (viii) reducing risk to acceptable levels, thus enabling informed risk management decisions."
 ),
-(243, 18, 9, 1, 1,
+(243, 18, 9, 1, 1, --SA-9
 "EXTERNAL INFORMATION SYSTEM SERVICES",
 "The organization: 
 a. Requires that providers of external information system services comply with organizational information security requirements and employ [Assignment: organization-defined security controls] in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance; 
@@ -2001,7 +2001,7 @@ b. Defines and documents government oversight and user roles and responsibilitie
 c. Employs [Assignment: organization-defined processes, methods, and techniques] to monitor security control compliance by external service providers on an ongoing basis.",
 "External information system services are services that are implemented outside of the authorization boundaries of organizational information systems. This includes services that are used by, but not a part of, organizational information systems. FISMA and OMB policy require that organizations using external service providers that are processing, storing, or transmitting federal information or operating information systems on behalf of the federal government ensure that such providers meet the same security requirements that federal agencies are required to meet. Organizations establish relationships with external service providers in a variety of ways including, for example, through joint ventures, business partnerships, contracts, interagency agreements, lines of business arrangements, licensing agreements, and supply chain exchanges. The responsibility for managing risks from the use of external information system services remains with authorizing officials. For services external to organizations, a chain of trust requires that organizations establish and retain a level of confidence that each participating provider in the potentially complex consumer-provider relationship provides adequate protection for the services rendered. The extent and nature of this chain of trust varies based on the relationships between organizations and the external providers. Organizations document the basis for trust relationships so the relationships can be monitored over time. External information system services documentation includes government, service providers, end user security roles and responsibilities, and service-level agreements. Service-level agreements define expectations of performance for security controls, describe measurable outcomes, and identify remedies and response requirements for identified instances of noncompliance."
 ),
-(244, 18, 10, 1, 2,
+(244, 18, 10, 1, 2, --SA-10
 "DEVELOPER CONFIGURATION MANAGEMENT",
 "The organization requires the developer of the information system, system component, or information system service to: 
 a. Perform configuration management during system, component, or service [Selection (one or more): design; development; implementation; operation]; 
@@ -2011,7 +2011,7 @@ d. Document approved changes to the system, component, or service and the potent
 e. Track security flaws and flaw resolution within the system, component, or service and report findings to [Assignment: organization-defined personnel].",
 "This control also applies to organizations conducting internal information systems development and integration. Organizations consider the quality and completeness of the configuration management activities conducted by developers as evidence of applying effective security safeguards. Safeguards include, for example, protecting from unauthorized modification or destruction, the master copies of all material used to generate security-relevant portions of the system hardware, software, and firmware. Maintaining the integrity of changes to the information system, information system component, or information system service requires configuration control throughout the system development life cycle to track authorized changes and prevent unauthorized changes. Configuration items that are placed under configuration management (if existence/use is required by other security controls) include: the formal model; the functional, high-level, and low-level design specifications; other design data; implementation documentation; source code and hardware schematics; the running version of the object code; tools for comparing new versions of security-relevant hardware descriptions and software/firmware source code with previous versions; and test fixtures and documentation. Depending on the mission/business needs of organizations and the nature of the contractual relationships in place, developers may provide configuration management support during the operations and maintenance phases of the life cycle."
 ),
-(245, 18, 11, 1, 2,
+(245, 18, 11, 1, 2, --SA-11
 "DEVELOPER SECURITY TESTING AND EVALUATION",
 "The organization requires the developer of the information system, system component, or information system service to: 
 a. Create and implement a security assessment plan; 
@@ -2021,24 +2021,24 @@ d. Implement a verifiable flaw remediation process; and
 e. Correct flaws identified during security testing/evaluation.",
 "Developmental security testing/evaluation occurs at all post-design phases of the system development life cycle. Such testing/evaluation confirms that the required security controls are implemented correctly, operating as intended, enforcing the desired security policy, and meeting established security requirements. Security properties of information systems may be affected by the interconnection of system components or changes to those components. These interconnections or changes (e.g., upgrading or replacing applications and operating systems) may adversely affect previously implemented security controls. This control provides additional types of security testing/evaluation that developers can conduct to reduce or eliminate potential flaws. Testing custom software applications may require approaches such as static analysis, dynamic analysis, binary analysis, or a hybrid of the three approaches. Developers can employ these analysis approaches in a variety of tools (e.g., web-based application scanners, static analysis tools, binary analyzers) and in source code reviews. Security assessment plans provide the specific activities that developers plan to carry out including the types of analyses, testing, evaluation, and reviews of software and firmware components, the degree of rigor to be applied, and the types of artifacts produced during those processes. The depth of security testing/evaluation refers to the rigor and level of detail associated with the assessment process (e.g., black box, gray box, or white box testing). The coverage of security testing/evaluation refers to the scope (i.e., number and type) of the artifacts included in the assessment process. Contracts specify the acceptance criteria for security assessment plans, flaw remediation processes, and the evidence that the plans/processes have been diligently applied. Methods for reviewing and protecting assessment plans, evidence, and documentation are commensurate with the security category or classification level of the information system. Contracts may specify documentation protection requirements."
 ),
-(246, 18, 12, 1, 3,
+(246, 18, 12, 1, 3, --SA-12
 "SUPPLY CHAIN PROTECTION",
 "The organization protects against supply chain threats to the information system, system component, or information system service by employing [Assignment: organization-defined security safeguards] as part of a comprehensive, defense-in-breadth information security strategy.",
-"Information systems (including system components that compose those systems) need to be protected throughout the system development life cycle (i.e., during design, development, manufacturing, packaging, assembly, distribution, system integration, operations, maintenance, and retirement). Protection of organizational information systems is accomplished through threat awareness, by the identification, management, and reduction of vulnerabilities at each phase of the life cycle and the use of complementary, mutually reinforcing strategies to respond to risk. Organizations consider implementing a standardized process to address supply chain risk with respect to information systems and system components, and to educate the acquisition workforce on threats, risk, and required security controls. Organizations use the acquisition/procurement processes to require supply chain entities to implement necessary security safeguards to: I. reduce the likelihood of unauthorized modifications at each stage in the supply chain; and II. protect information systems and information system components, prior to taking delivery of such systems/components. This control also applies to information system services. Security safeguards include, for example: I. security controls for development systems, development facilities, and external connections to development systems; II. vetting development personnel; and III. use of tamper-evident packaging during shipping/warehousing. Methods for reviewing and protecting development plans, evidence, and documentation are commensurate with the security category or classification level of the information system. Contracts may specify documentation protection requirements."
+"Information systems (including system components that compose those systems) need to be protected throughout the system development life cycle (i.e., during design, development, manufacturing, packaging, assembly, distribution, system integration, operations, maintenance, and retirement). Protection of organizational information systems is accomplished through threat awareness, by the identification, management, and reduction of vulnerabilities at each phase of the life cycle and the use of complementary, mutually reinforcing strategies to respond to risk. Organizations consider implementing a standardized process to address supply chain risk with respect to information systems and system components, and to educate the acquisition workforce on threats, risk, and required security controls. Organizations use the acquisition/procurement processes to require supply chain entities to implement necessary security safeguards to: (i) reduce the likelihood of unauthorized modifications at each stage in the supply chain; and (ii) protect information systems and information system components, prior to taking delivery of such systems/components. This control also applies to information system services. Security safeguards include, for example: (i) security controls for development systems, development facilities, and external connections to development systems; (ii) vetting development personnel; and (iii) use of tamper-evident packaging during shipping/warehousing. Methods for reviewing and protecting development plans, evidence, and documentation are commensurate with the security category or classification level of the information system. Contracts may specify documentation protection requirements."
 ),
-(247, 18, 13, 0, 0,
+(247, 18, 13, 0, 0, --SA-13
 "TRUSTWORTHINESS",
 "The organization: 
 a. Describes the trustworthiness required in the [Assignment: organization-defined information system, information system component, or information system service] supporting its critical missions/business functions; and 
 b. Implements [Assignment: organization-defined assurance overlay] to achieve such trustworthiness.",
-"This control helps organizations to make explicit trustworthiness decisions when designing, developing, and implementing information systems that are needed to conduct critical organizational missions/business functions. Trustworthiness is a characteristic/property of an information system that expresses the degree to which the system can be expected to preserve the confidentiality, integrity, and availability of the information it processes, stores, or transmits. Trustworthy information systems are systems that are capable of being trusted to operate within defined levels of risk despite the environmental disruptions, human errors, and purposeful attacks that are expected to occur in the specified environments of operation. Trustworthy systems are important to mission/business success. Two factors affecting the trustworthiness of information systems include: I. security functionality (i.e., the security features, functions, and/or mechanisms employed within the system and its environment of operation); and II. security assurance (i.e., the grounds for confidence that the security functionality is effective in its application). Developers, implementers, operators, and maintainers of organizational information systems can increase the level of assurance (and trustworthiness), for example, by employing well-defined security policy models, structured and rigorous hardware, software, and firmware development techniques, sound system/security engineering principles, and secure configuration settings (defined by a set of assurance-related security controls in Appendix E). Assurance is also based on the assessment of evidence produced during the system development life cycle. Critical missions/business functions are supported by high-impact systems and the associated assurance requirements for such systems. The additional assurance controls in Table E-4 in Appendix E (designated as optional) can be used to develop and implement high-assurance solutions for specific information systems and system components using the concept of overlays described in Appendix I. Organizations select assurance overlays that have been developed, validated, and approved for community adoption (e.g., cross-organization, governmentwide), limiting the development of such overlays on an organization-by-organization basis. Organizations can conduct criticality analyses as described in SA-14, to determine the information systems, system components, or information system services that require high-assurance solutions. Trustworthiness requirements and assurance overlays can be described in the security plans for organizational information systems."
+"This control helps organizations to make explicit trustworthiness decisions when designing, developing, and implementing information systems that are needed to conduct critical organizational missions/business functions. Trustworthiness is a characteristic/property of an information system that expresses the degree to which the system can be expected to preserve the confidentiality, integrity, and availability of the information it processes, stores, or transmits. Trustworthy information systems are systems that are capable of being trusted to operate within defined levels of risk despite the environmental disruptions, human errors, and purposeful attacks that are expected to occur in the specified environments of operation. Trustworthy systems are important to mission/business success. Two factors affecting the trustworthiness of information systems include: (i) security functionality (i.e., the security features, functions, and/or mechanisms employed within the system and its environment of operation); and (ii) security assurance (i.e., the grounds for confidence that the security functionality is effective in its application). Developers, implementers, operators, and maintainers of organizational information systems can increase the level of assurance (and trustworthiness), for example, by employing well-defined security policy models, structured and rigorous hardware, software, and firmware development techniques, sound system/security engineering principles, and secure configuration settings (defined by a set of assurance-related security controls in Appendix E). Assurance is also based on the assessment of evidence produced during the system development life cycle. Critical missions/business functions are supported by high-impact systems and the associated assurance requirements for such systems. The additional assurance controls in Table E-4 in Appendix E (designated as optional) can be used to develop and implement high-assurance solutions for specific information systems and system components using the concept of overlays described in Appendix I. Organizations select assurance overlays that have been developed, validated, and approved for community adoption (e.g., cross-organization, governmentwide), limiting the development of such overlays on an organization-by-organization basis. Organizations can conduct criticality analyses as described in SA-14, to determine the information systems, system components, or information system services that require high-assurance solutions. Trustworthiness requirements and assurance overlays can be described in the security plans for organizational information systems."
 ),
-(248, 18, 14, 0, 0,
+(248, 18, 14, 0, 0, --SA-14
 "CRITICALITY ANALYSIS",
 "The organization identifies critical information system components and functions by performing a criticality analysis for [Assignment: organization-defined information systems, information system components, or information system services] at [Assignment: organization-defined decision points in the system development life cycle].",
 "Criticality analysis is a key tenet of supply chain risk management and informs the prioritization of supply chain protection activities such as attack surface reduction, use of all-source intelligence, and tailored acquisition strategies. Information system engineers can conduct an end-to-end functional decomposition of an information system to identify mission-critical functions and components. The functional decomposition includes the identification of core organizational missions supported by the system, decomposition into the specific functions to perform those missions, and traceability to the hardware, software, and firmware components that implement those functions, including when the functions are shared by many components within and beyond the information system boundary. Information system components that allow for unmediated access to critical components or functions are considered critical due to the inherent vulnerabilities such components create. Criticality is assessed in terms of the impact of the function or component failure on the ability of the component to complete the organizational missions supported by the information system. A criticality analysis is performed whenever an architecture or design is being developed or modified, including upgrades."
 ),
-(249, 18, 15, 2, 3,
+(249, 18, 15, 2, 3, --SA-15
 "DEVELOPMENT PROCESS, STANDARDS, AND TOOLS",
 "The organization: 
 a. Requires the developer of the information system, system component, or information system service to follow a documented development process that: 
@@ -2049,12 +2049,12 @@ a. Requires the developer of the information system, system component, or inform
 b. Reviews the development process, standards, tools, and tool options/configurations [Assignment: organization-defined frequency] to determine if the process, standards, tools, and tool options/configurations selected and employed can satisfy [Assignment: organization-defined security requirements].",
 "Development tools include, for example, programming languages and computer-aided design (CAD) systems. Reviews of development processes can include, for example, the use of maturity models to determine the potential effectiveness of such processes. Maintaining the integrity of changes to tools and processes enables accurate supply chain risk assessment and mitigation, and requires robust configuration control throughout the life cycle (including design, development, transport, delivery, integration, and maintenance) to track authorized changes and prevent unauthorized changes."
 ),
-(250, 18, 16, 2, 3,
+(250, 18, 16, 2, 3, --SA-16
 "DEVELOPER-PROVIDED TRAINING",
 "The organization requires the developer of the information system, system component, or information system service to provide [Assignment: organization-defined training] on the correct use and operation of the implemented security functions, controls, and/or mechanisms.",
 "This control applies to external and internal (in-house) developers. Training of personnel is an essential element to ensure the effectiveness of security controls implemented within organizational information systems. Training options include, for example, classroom-style training, web-based/computer-based training, and hands-on training. Organizations can also request sufficient training materials from developers to conduct in-house training or offer self-training to organizational personnel. Organizations determine the type of training necessary and may require different types of training for different security functions, controls, or mechanisms."
 ),
-(251, 18, 17, 1, 3,
+(251, 18, 17, 1, 3, --SA-17
 "DEVELOPER SECURITY ARCHITECTURE AND DESIGN",
 "The organization requires the developer of the information system, system component, or information system service to produce a design specification and security architecture that: 
 a. Is consistent with and supportive of the organization's security architecture which is established within and is an integrated part of the organization's enterprise architecture; 
@@ -2062,31 +2062,31 @@ b. Accurately and completely describes the required security functionality, and 
 c. Expresses how individual security functions, mechanisms, and services work together to provide required security capabilities and a unified approach to protection.",
 "This control is primarily directed at external developers, although it could also be used for internal (in-house) development. In contrast, PL-8 is primarily directed at internal developers to help ensure that organizations develop an information security architecture and such security architecture is integrated or tightly coupled to the enterprise architecture. This distinction is important if/when organizations outsource the development of information systems, information system components, or information system services to external entities, and there is a requirement to demonstrate consistency with the organization's enterprise architecture and information security architecture."
 ),
-(252, 18, 18, 0, 0,
+(252, 18, 18, 0, 0, --SA-18
 "TAMPER RESISTANCE AND DETECTION",
 "The organization implements a tamper protection program for the information system, system component, or information system service.",
 "Anti-tamper technologies and techniques provide a level of protection for critical information systems, system components, and information technology products against a number of related threats including modification, reverse engineering, and substitution. Strong identification combined with tamper resistance and/or tamper detection is essential to protecting information systems, components, and products during distribution and when in use."
 ),
-(253, 18, 19, 0, 0,
+(253, 18, 19, 0, 0, --SA-19
 "COMPONENT AUTHENTICITY",
 "The organization: 
 a. Develops and implements anti-counterfeit policy and procedures that include the means to detect and prevent counterfeit components from entering the information system; and 
 b. Reports counterfeit information system components to [Selection (one or more): source of counterfeit component; [Assignment: organization-defined external reporting organizations]; [Assignment: organization-defined personnel or roles]].",
 "Sources of counterfeit components include, for example, manufacturers, developers, vendors, and contractors. Anti-counterfeiting policy and procedures support tamper resistance and provide a level of protection against the introduction of malicious code. External reporting organizations include, for example, US-CERT."
 ),
-(254, 18, 20, 0, 0,
+(254, 18, 20, 0, 0, --SA-20
 "CUSTOMIZED DEVELOPMENT OF CRITICAL COMPONENTS",
 "The organization re-implements or custom develops [Assignment: organization-defined critical information system components].",
 "Organizations determine that certain information system components likely cannot be trusted due to specific threats to and vulnerabilities in those components, and for which there are no viable security controls to adequately mitigate the resulting risk. Re-implementation or custom development of such components helps to satisfy requirements for higher assurance. This is accomplished by initiating changes to system components (including hardware, software, and firmware) such that the standard attacks by adversaries are less likely to succeed. In situations where no alternative sourcing is available and organizations choose not to re-implement or custom develop critical information system components, additional safeguards can be employed (e.g., enhanced auditing, restrictions on source code and system utility access, and protection from deletion of system and application files."
 ),
-(255, 18, 21, 0, 0,
+(255, 18, 21, 0, 0, --SA-21
 "DEVELOPER SCREENING",
 "The organization requires that the developer of [Assignment: organization-defined information system, system component, or information system service]: 
 a. Have appropriate access authorizations as determined by assigned [Assignment: organization-defined official government duties]; and 
 b. Satisfy [Assignment: organization-defined additional personnel screening criteria].",
 "Because the information system, system component, or information system service may be employed in critical activities essential to the national and/or economic security interests of the United States, organizations have a strong interest in ensuring that the developer is trustworthy. The degree of trust required of the developer may need to be consistent with that of the individuals accessing the information system/component/service once deployed. Examples of authorization and personnel screening criteria include clearance, satisfactory background checks, citizenship, and nationality. Trustworthiness of developers may also include a review and analysis of company ownership and any relationships the company has with entities potentially affecting the quality/reliability of the systems, components, or services being developed."
 ),
-(256, 18, 22, 0, 0,
+(256, 18, 22, 0, 0, --SA-22
 "UNSUPPORTED SYSTEM COMPONENTS",
 "The organization: 
 a. Replaces information system components when support for the components is no longer available from the developer, vendor, or manufacturer; and 
