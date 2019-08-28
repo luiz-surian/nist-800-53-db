@@ -3,14 +3,16 @@
 
 """NIST 800-53 Controls - Word Document Generator"""
 
-__title__ = 'NIST 800-53 - Word Document'
-__version__ = '0.1'
+__title__ = 'NIST 800-53'
+__author__ = 'Luiz Fernando Surian Filho'
+__version__ = '1'
 __language__ = 'en'
 __license__ = 'GPL'
-__author__ = 'Luiz Fernando Surian Filho'
 
 import os
 import sqlite3
+import uuid
+from datetime import datetime
 
 from docx import Document
 from docx.shared import Pt
@@ -27,6 +29,16 @@ def build_doc(target):
             'supplemental_guidance': 'Supplemental Guidance',
             'control_enhancements': 'Control Enhancements',
             'references': 'References',
+            'metadata': {
+                'category': 'Security Controls List',
+                'comments': 'Security Controls and Assessment Procedures for '
+                            'Federal Information Systems and Organizations',
+                'description': 'National Vulnerability Database',
+                'language': 'en',
+                'subject': 'This database represents the security controls and associated assessment procedures '
+                           'defined in NIST SP 800-53 Revision 4 - Recommended Security Controls for '
+                           'Federal Information Systems and Organizations.'
+            }
         }
     elif target == 'nist_800_53_br':
         language = {
@@ -34,6 +46,16 @@ def build_doc(target):
             'supplemental_guidance': 'Guia Adicional',
             'control_enhancements': 'Melhorias do Controle',
             'references': 'Referências',
+            'metadata': {
+                'category': 'Lista de Controles de Segurança',
+                'comments': 'Controles de Segurança e Procedimentos de Avaliação para '
+                            'Sistemas de Informação Federais e Organizaçionais',
+                'description': 'Base de Dados de Vulnerabilidades',
+                'language': 'pt-BR',
+                'subject': 'Essa base de dados representa os controles de segurança e procedimentos de avaliação '
+                           'definidos no NIST SP 800-53 Revisão 4 - Controles de Segurança Recomendados para '
+                           'Sistemas de Informação Federais e Organizacionais.'
+            }
         }
     else:
         raise MissingLanguage('This language was not implemented yet.')
@@ -41,8 +63,8 @@ def build_doc(target):
     connection = sqlite3.connect(':memory:')
     cursor = connection.cursor()
 
-    with open(f'database/{target}.sql', 'rb') as file:
-        sequel = file.read().decode('utf-8')
+    with open(f'database/{target}.sql', 'rb') as db_file:
+        sequel = db_file.read().decode('utf-8')
     cursor.executescript(sequel)
     connection.commit()
 
@@ -81,7 +103,8 @@ def build_doc(target):
                 paragraph.add_run(f'{language["control_enhancements"]}:\n').bold = True
                 for enhancement_id, enhancement_control, enhancement_number, enhancement_impact, \
                         enhancement_name, enhancement_text, enhancement_supplemental in enhancements:
-                    enhancement_title = f'{family_abbreviation}-{control_number}({enhancement_number}): {enhancement_name}'
+                    enhancement_title = f'{family_abbreviation}-{control_number}({enhancement_number}): ' \
+                                        f'{control_name} | {enhancement_name}'
                     document.add_heading(enhancement_title, level=3)
                     paragraph = document.add_paragraph()
                     paragraph.add_run(f'{enhancement_text}\n')
@@ -104,8 +127,27 @@ def build_doc(target):
 
         document.add_page_break()
 
-    document.save(f'documents/{target}.docx')
+    today = datetime.now()
+    meta = language['metadata']
+    core_properties = document.core_properties
+    core_properties.author = __author__
+    core_properties.category = meta['category']
+    core_properties.comments = meta['comments']
+    core_properties.content_status = 'Final'
+    core_properties.created = today
+    core_properties.description = meta['description']
+    core_properties.identifier = str(uuid.uuid4())
+    core_properties.keywords = 'Banco Bradesco S.A.'
+    core_properties.language = meta['language']
+    core_properties.last_modified_by = __author__
+    core_properties.last_printed = today
+    core_properties.modified = today
+    core_properties.revision = 1
+    core_properties.subject = meta['subject']
+    core_properties.title = __title__
+    core_properties.version = 'Rev. 4'
 
+    document.save(f'documents/{target}.docx')
     connection.close()
 
 
