@@ -137,7 +137,7 @@ def build_doc(target):
     core_properties.created = today
     core_properties.description = meta['description']
     core_properties.identifier = str(uuid.uuid4())
-    core_properties.keywords = 'Banco Bradesco S.A.'
+    core_properties.keywords = 'NIST'
     core_properties.language = meta['language']
     core_properties.last_modified_by = __author__
     core_properties.last_printed = today
